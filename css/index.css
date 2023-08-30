@@ -1,3 +1,4 @@
+/*General*/
 * {
     margin: 0;
     padding: 0;
@@ -14,24 +15,40 @@
         url('./fonts/FrankRuhlLibre-Regular.woff') format('woff');
 }
 
+:root {
+    --text-color: rgb(255, 255, 255);
+    --background-banner: rgba(0, 0, 0, 0.600);
+}
+
 body,
 html {
     height: 100%;
     font-family: 'frankruhlibre', sans-serif;
 }
 
+/*Header*/
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.541);
-    color: #fff;
-    padding: 10px 30px;
+    background-color: var(--background-banner);
+    color: var(--text-color);
+    padding: 10px 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header img {
@@ -44,9 +61,16 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
+
+nav a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/*Contents*/
 
 main {
     height: 100%;
@@ -58,7 +82,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--text-color);
     font-size: 24px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +114,55 @@ main {
     background-image: url('../img/footer.webp');
 }
 
+.button {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.banner {
+    width: 100%;
+    background-color: var(--background-banner);
+    color: var(--text-color);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .logobig {
+    max-width: 300px;
+    margin: 0 50px 0 50px;
+}
+
+.info {
+    margin: 0 50px 0 50px;
+}
+
+/*Responsive*/
+
 @media (max-width: 900px) {
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
     .container:nth-child(1) {
         background-image: url('../img/mobile-start.webp');
     }
