@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth !important;
+}
+
+@font-face {
+    font-family: 'frankruhlibre';
+    src: url('./fonts/FrankRuhlLibre-Regular.woff2') format('woff2'),
+        url('./fonts/FrankRuhlLibre-Regular.woff') format('woff');
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'frankruhlibre', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+.container:nth-child(1) {
+    background-image: url('../img/start.webp');
+}
+
+.container:nth-child(2) {
+    background-image: url('../img/bowl.webp');
+}
+
+.container:nth-child(3) {
+    background-image: url('../img/desktop.webp');
+}
+
+.container:nth-child(4) {
+    background-image: url('../img/services.webp');
+}
+
+.container:nth-child(5) {
+    background-image: url('../img/prices.webp');
+}
+
+.container:nth-child(6) {
+    background-image: url('../img/footer.webp');
+}
+
+@media (max-width: 900px) {
+    .container:nth-child(1) {
+        background-image: url('../img/mobile-start.webp');
+    }
+}
