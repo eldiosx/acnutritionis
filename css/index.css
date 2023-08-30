@@ -20,6 +20,38 @@ html {
     font-family: 'frankruhlibre', sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: #fff;
+    padding: 10px 30px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    height: 100%;
+}
+
 .container {
     width: 100%;
     height: 100%;
