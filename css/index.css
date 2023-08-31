@@ -27,6 +27,10 @@ html {
     font-size: 30px;
 }
 
+h1{
+    font-size: 48px;
+}
+
 /*Header*/
 
 header {
@@ -276,6 +280,17 @@ textarea {
 /*Responsive*/
 
 @media (max-width: 900px) {
+
+    h1{
+        font-size: 40px;
+    }
+
+    form {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 
     nav {
         flex-direction: column;
