@@ -11,16 +11,19 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <div class="header-container">
             <img src="./img/aclogo.webp" alt="Logo">
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#info">Nutrición</a>
-                <a href="#aboutme">Sobre mí</a>
-                <a href="#services">Servicios</a>
-                <a href="#footer">Contacto</a>
+            <nav id="navLinks">
+                <a href="#" onclick="toggleNav()">Inicio</a>
+                <a href="#info" onclick="toggleNav()">Nutrición</a>
+                <a href="#aboutme" onclick="toggleNav()">Sobre mí</a>
+                <a href="#services" onclick="toggleNav()">Servicios</a>
+                <a href="#contact" onclick="toggleNav()">Contacto</a>
             </nav>
+            <div class="menu-button" onclick="toggleNav()">
+                <span id="button-menu" class="icon-menu"></span>
+            </div>
         </div>
     </header>
     <!-- Content -->
@@ -31,22 +34,212 @@
                     <img class="logobig" src="./img/aclogobig.webp" alt="Logo">
                     <div class="info">
                         <h1>Nutrición para la recuperación</h1>
-                        <p>Soy Alejandro Campos, el nutricionista que te ayudará a dejar de lado las dietas
-                            restrictivas, a
-                            que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la
-                            alimentación.
-                        </p>
+                        <p><span class="start">Soy Alejandro Campos, el nutricionista que te ayudará a dejar de lado las
+                                dietas
+                                restrictivas, a
+                                que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la
+                                alimentación.
+                            </span></p>
                         <button type="button" class="button">¡Quiero una cita!</button>
                     </div>
                 </div>
             </section>
         </div>
-        <div class="container" id="info">Info</div>
-        <div class="container" id="aboutme">About me</div>
-        <div class="container" id="services">Services</div>
-        <div class="container">Prices</div>
-        <div class="container" id="footer">Footer</div>
+        <div class="container col">
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h1>Come sin culpa</h1>
+                        <p>Consigamos juntos dejar de lado a la cultura de la dieta, permitiéndote cultivar aspectos
+                            como
+                            la autocompasión, el placer por la comida y a reconectar con tus señales de hambre y
+                            saciedad.
+                        </p>
+                        <button type="button" class="button">¡Crea tu plan de acción ahora!</button>
+                    </div>
+                </div>
+            </section>
+            <div class="padding"></div>
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h1>Consultas Online</h1>
+                        <p>Si quieres conocer más sobre cómo establecer y mantener una relación sana con la comida desde
+                            la
+                            teoria hasta la práctica en directo conmigo y de forma personalizada, esta opción es para
+                            ti.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container" id="aboutme">
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h2>Sobre mi...</h2>
+                        <h1>Alejandro Campos</h1>
+                        <p>Dietista-Nutricionista, mi pasión es ayudar a las personas a mejorar su calidad de vida
+                            mediante una alimentación flexible y equilibrada, sin obsesión por la comida y sin temor a
+                            perder el control. Mi marco de trabajo está basado en la evidencia científica actual y,
+                            mediante mi práctica clínica, te ayudaré a lograr tu objetivo.
+                        </p><br>
+                        <p>
+                            Dietista-Nutricionista, mi pasión es ayudar a las personas a mejorar su calidad de vida
+                            mediante una alimentación flexible y equilibrada, sin obsesión por la comida y sin temor a
+                            perder el control. Mi marco de trabajo está basado en la evidencia científica actual y,
+                            mediante mi práctica clínica, te ayudaré a lograr tu objetivo.
+                        </p><br>
+                        <p>Te acompañaré en un proceso de reeducación alimentaria consciente, equilibrada y flexible
+                            dejando de lado la cultura de la dieta.</p>
+                    </div>
+                    <div class="image-container"><img src="./img/alex.webp" alt="Logo"></div>
+                </div>
+            </section>
+        </div>
+        <div class="container" id="services">
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h1>Asesoramiento Nutricional</h1>
+                        <ul>
+                            <li>Alimentación en trastornos del comportamiento alimentario (Anorexia, Bulimia y Trastorno
+                                por Atracón entre otros)</li>
+                            <li>Reeducación alimentaria</li>
+                            <li>Alimentación en pacientes con patologías digestivas (SII, SIBO etc.)</li>
+                            <li>Alergias e intolerancias</li>
+                            <li>Alimentación vegana y vegetariana</li>
+                            <li>Alimentación para pacientes obesos, DM2 etc.</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Formaciones</h1>
+                        <ul>
+                            <li>Alimentación consciente (reconexión con tus señales de hambre-saciedad)</li>
+                            <li>Mitos alimentarios</li>
+                            <li>Interpretación del etiquetado nutricional</li>
+                            <li>Microbiota intestinal y su papel en la salud</li>
+                            <li>Cultura de la dieta y cómo afrontarla</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Coaching Nutricional</h1>
+                        <ul>
+                            <li>Mediante este método de trabajo te ayudaré a mejorar tu alimentación y salud, trabajando
+                                sobre diferentes aspectos como la autoestima, la autocompasión y la motivación.</li>
+                            <li>Serás capaz de identificar tus objetivos, vencer los obstáculos y ser el protagonista de
+                                tus logros, aprendiendo a usar las herramientas necesarias para conseguir tus objetivos.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container col">
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h1>Consultas Personalizadas</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="padding"></div>
+            <section class="banner-empty">
+                <div class="content">
+                    <div class="info">
+                        <h1>PACK INICIAL CONSULTA NUTRICIÓN</h1>
+                        <ul>
+                            <li>Incluye la primera y segunda consulta por videollamada conmigo.</li>
+                            <li>Estudio y valoración de tus necesidades + Herramientas prácticas para mejorar tu
+                                relación con la comida</li>
+                            <li>Herramientas nutricionales (Recetas, menús ejemplo)</li>
+                            <li>Entrega de tu tratamiento nutricional personalizado</li>
+                            <li>Los seguimientos posteriores tienen un coste de 40€. Se realizan a las 3-4 semanas
+                                dependiendo de cada paciente</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>CONSULTA PARA FORMACIONES</h1>
+                        <ul>
+                            <li>Incluye 1 sesión de la formación contratada</li>
+                            <li>Incluye las herramientas utilizadas en la presentación, tanto ejercicios prácticos (en
+                                caso necesario) como las diapositivas creadas para la sesión</li>
+                            <li>Contarás con la evidencia científica más actualizada</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>PACK DE 4 SESIONES NUTRICIONALES</h1>
+                        <ul>
+                            <li>Incluye 4 consultas por videollamada conmigo</li>
+                            <li>Incluye TODOS los servicios referentes al pack de 80€</li>
+                            <li>De esta forma te saldrá 1 consulta gratuita</li>
+                            <li>Los seguimientos posteriores tienen un coste de 40€. Se realizan a las 3-4 semanas
+                                dependiendo de cada paciente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container col" id="contact">
+            <section class="banner">
+                <div class="content">
+                    <div class="info">
+                        <h1>Solicita ya tu consulta online rellenando el siguiente formulario</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-empty">
+                <div class="content">
+                    <div class="info">
+                        <form id="contact-form">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required><br>
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br>
+
+                            <label for="info">Tipo de consulta y pack escogido:</label>
+                            <textarea id="info" name="info" rows="4"></textarea><br>
+
+                            <button class="button" type="submit" id="send">Solicitar consulta</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer col" id="footer">
+            <section class="banner-empty">
+                <div class="content">
+                    <div class="info">
+                        <h1>Para cualquier otro tipo de consultas, dudas o propuestas, ¡contáctame ahora!</h1>
+                        <br>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-empty">
+                <div class="content">
+                    <div class="info">
+                        <p><a href="mailto:acnutricion@protonmail.com" class="icon-envelop">
+                                ACnutricion@protonmail.com</a></p><br>
+                    </div>
+                    <div class="info">
+                        <p class="icon-phone"> +34 672 268 898</p><br>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-empty">
+                <div class="content">
+                    <div class="info">
+                        <p>(Recibirás siempre una respuesta en un plazo de 24-48 H días hábiles)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
