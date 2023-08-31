@@ -136,17 +136,18 @@ main {
 .container p {
     text-align: justify;
     font-size: 24px;
+    line-height: 1.5;
 
 }
 
 .start {
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: white;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .button {
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -228,14 +229,13 @@ li {
 form {
     text-align: left;
     padding: 20px;
-    border-radius: 10px;
-    width: 800px;
+    border-radius: 5px;
 }
 
 label {
-    font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -244,9 +244,9 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 /*Footer*/
@@ -303,5 +303,9 @@ textarea {
 
     .padding {
         display: none;
+    }
+
+    form {
+        padding: 10px;
     }
 }
