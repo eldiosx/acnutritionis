@@ -29,9 +29,12 @@ html {
 
 h1 {
     font-size: 48px;
+    padding: 20px 0 20px 0;
 }
 
 h2 {
+    font-size: 30px;
+    padding: 20px 0 20px 0;
     text-align: center;
 }
 
@@ -142,15 +145,21 @@ main {
 }
 
 .container p {
-    text-align: justify;
     font-size: 24px;
     line-height: 1.5;
 
 }
 
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
 .start {
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
+
     font-size: 26px;
 }
 
@@ -235,6 +244,7 @@ main {
     color: black;
     background-color: white;
     font-size: 20px;
+    flex-direction: column;
 }
 
 .col {
@@ -283,6 +293,10 @@ main {
 
 li {
     list-style-type: disc;
+}
+
+ul{
+    padding: 50px;
 }
 
 /*Contact*/
@@ -375,6 +389,12 @@ textarea {
 
     .padding {
         display: none;
+    }
+
+    .services {
+        margin: 0 10% 0 10%;
+        flex-direction: column;
+
     }
 
     form {
