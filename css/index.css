@@ -137,6 +137,7 @@ main {
 }
 
 .container:nth-child(5) {
+    height: 150%;
     background-image: url('../img/prices.webp');
 }
 
@@ -199,20 +200,22 @@ main {
 
 .content {
     max-width: 1600px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .banner .logobig {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
     margin: 0 50px 0 50px;
 }
 
 .info {
     text-align: center;
     margin: 0 50px 0 50px;
+    margin: auto;
 }
 
 .price {
@@ -239,7 +242,7 @@ main {
 .card {
     width: 100%;
     height: 100%;
-    margin: 0 50px 0 50px;
+    margin: 0 50px 20px 50px;
     border-radius: 50px;
     color: black;
     background-color: white;
@@ -295,8 +298,9 @@ li {
     list-style-type: disc;
 }
 
-ul{
+ul {
     padding: 50px;
+    text-align: left;
 }
 
 /*Contact*/
@@ -339,11 +343,11 @@ textarea {
     background-color: #232323
 }
 
-.icon-envelop {
+.icon-envelope {
     color: white;
 }
 
-.icon-envelop:hover {
+.icon-envelope:hover {
     cursor: pointer;
     text-decoration: underline;
 }

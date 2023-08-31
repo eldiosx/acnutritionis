@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?cusiaw');
-  src:  url('fonts/icomoon.eot?cusiaw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?cusiaw') format('truetype'),
-    url('fonts/icomoon.woff?cusiaw') format('woff'),
-    url('fonts/icomoon.svg?cusiaw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?is6rc5');
+  src:  url('fonts/icomoon.eot?is6rc5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?is6rc5') format('truetype'),
+    url('fonts/icomoon.woff?is6rc5') format('woff'),
+    url('fonts/icomoon.svg?is6rc5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-signal:before {
-  content: "\eaeb";
-  color: #2592e9;
+.icon-list1:before {
+  content: "\eaef";
+}
+.icon-envelope:before {
+  content: "\eaec";
+}
+.icon-phone1:before {
+  content: "\eaee";
 }
 .icon-home:before {
   content: "\e900";
@@ -1501,4 +1506,8 @@
 }
 .icon-IcoMoon:before {
   content: "\eaea";
+}
+.icon-signal:before {
+  content: "\eaeb";
+  color: #2592e9;
 }
