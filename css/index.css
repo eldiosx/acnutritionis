@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'frankruhlibre';
-    src: url('./fonts/FrankRuhlLibre-Regular.woff2') format('woff2'),
-        url('./fonts/FrankRuhlLibre-Regular.woff') format('woff');
+    src: url('./fonts/FrankRuhlLibre-Bold.woff2') format('woff2'),
+        url('./fonts/FrankRuhlLibre-Bold.woff') format('woff');
 }
 
 :root {
@@ -74,7 +74,7 @@ header img {
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 nav a {
