@@ -174,6 +174,7 @@ main {
 }
 
 .left {
+    padding: 0 25px 0 25px;
     text-align: left;
 }
 
@@ -219,7 +220,7 @@ main {
     align-items: center;
 }
 
-.banner .logobig {
+.logobig {
     max-width: 400px;
     max-height: 400px;
     margin: 0 50px 0 50px;
@@ -316,19 +317,54 @@ textarea {
 }
 
 /*Responsive*/
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     body,
     html {
-        font-size: 20px;
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 35px;
+        padding: 15px 0 15px 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .logobig {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 25px 0 25px;
+    }
+
+    .image-container {
+        max-width: 250px;
+        max-height: 250px;
+        margin: 0 20px 0 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    body,
+    html {
+        font-size: 24px;
     }
 
     h1 {
         font-size: 30px;
         padding: 10px 0 10px 0;
     }
-    
+
     h2 {
         font-size: 25px;
         padding: 10px 0 10px 0;
@@ -336,8 +372,9 @@ textarea {
     }
 
     .container p {
-        font-size: 14px;    
+        font-size: 14px;
     }
+
 
     .image-container {
         display: none;
