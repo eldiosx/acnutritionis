@@ -56,11 +56,6 @@ header {
     transition: height 0.3s;
 }
 
-.open-header {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.900);
-}
-
 .header-container {
     width: 100%;
     max-width: 1600px;
@@ -359,7 +354,11 @@ textarea {
 
 @media (max-width: 900px) {
 
-    header{
+    .open-header {
+        background-color: rgba(0, 0, 0, 0.900);
+    }
+
+    header {
         height: 80px;
     }
 
