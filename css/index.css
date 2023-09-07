@@ -52,6 +52,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    transition: height 0.3s;
 }
 
 .open-header {
@@ -68,7 +70,8 @@ header {
     padding: 0 20px;
 }
 
-header img {
+#logo {
+    transition: height 0.3s;
     height: 100px;
 }
 
@@ -356,6 +359,10 @@ textarea {
 
 @media (max-width: 900px) {
 
+    header{
+        height: 80px;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -379,8 +386,8 @@ textarea {
         display: block;
     }
 
-    header img {
-        height: 50px;
+    #logo {
+        height: 60px;
     }
 
     .container:nth-child(1) {
