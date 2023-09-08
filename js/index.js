@@ -1,3 +1,5 @@
+// Scroll Animation
+
 const header = document.querySelector('header');
 var logo = document.getElementById("logo");
 
@@ -17,7 +19,6 @@ window.addEventListener('scroll', checkScrollAnimations);
 
 checkScrollAnimations();
 
-
 window.addEventListener('scroll', () => {
     if (window.innerWidth > 1000) {
         if (window.scrollY > 100) {
@@ -29,6 +30,8 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+// Header Mobile
 
 function toggleNav() {
     if (window.innerWidth < 1000) {
@@ -55,6 +58,8 @@ function toggleNav() {
     }
 }
 
+// Send email
+
 document.getElementById("send").addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const telefono = document.getElementById("telefono").value;
@@ -66,3 +71,48 @@ document.getElementById("send").addEventListener("click", function () {
     const link = `mailto:acnutricion@protonmail.com?subject=Formulario de AC Nutricion&body=${encodeURIComponent(mensaje)}`;
     window.location.href = link;
 });
+
+// Slider
+
+const prevBtn = document.querySelector('.icon-circle-left');
+const nextBtn = document.querySelector('.icon-circle-right');
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+let intervalId;
+function showSlide(index) {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+
+    slides[index].classList.add('active');
+    currentIndex = index;
+}
+function showNextSlide() {
+    let newIndex = currentIndex + 1;
+    if (newIndex >= slides.length) {
+        newIndex = 0;
+    }
+    showSlide(newIndex);
+}
+function startAutoSlide() {
+    intervalId = setInterval(showNextSlide, 6000);
+}
+function stopAutoSlide() {
+    clearInterval(intervalId);
+}
+prevBtn.addEventListener('click', function () {
+    stopAutoSlide();
+    let newIndex = currentIndex - 1;
+    if (newIndex < 0) {
+        newIndex = slides.length - 1;
+    }
+    showSlide(newIndex);
+    startAutoSlide();
+});
+nextBtn.addEventListener('click', function () {
+    stopAutoSlide();
+    showNextSlide();
+    startAutoSlide();
+});
+showSlide(currentIndex);
+startAutoSlide();
