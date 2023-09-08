@@ -191,13 +191,6 @@ main {
 
 }
 
-.footer p {
-    font-size: 23px;
-    line-height: 1.5;
-
-}
-
-
 .center {
     text-align: center;
 }
@@ -280,6 +273,8 @@ main {
     padding: 25px;
 }
 
+/*About me*/
+
 .mobile-image-container {
     display: none;
 }
@@ -299,62 +294,7 @@ main {
     object-fit: cover;
 }
 
-li {
-    list-style-type: disc;
-}
-
-ul {
-    padding: 50px;
-    text-align: left;
-}
-
-/*Contact*/
-
-form {
-    text-align: left;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/*Footer*/
-
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--text-color);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #232323
-}
-
-.icon-envelope {
-    color: white;
-}
-
-.icon-envelope:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
+/*Planing*/
 
 .icon-circle-left,
 .icon-circle-right {
@@ -409,6 +349,69 @@ textarea {
     opacity: 1;
 }
 
+li {
+    list-style-type: disc;
+}
+
+ul {
+    padding: 50px;
+    text-align: left;
+}
+
+/*Contact*/
+
+form {
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #232323
+}
+
+.footer p {
+    font-size: 23px;
+    line-height: 1.5;
+
+}
+
+.icon-envelope {
+    color: white;
+}
+
+.icon-envelope:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .alex {
     overflow: hidden;
     border-radius: 10px;
@@ -423,8 +426,10 @@ textarea {
     object-fit: cover;
 }
 
-/*Responsive*/
+/*Responsive - Tablet mode*/
 @media (max-width: 1200px) {
+
+    /*General*/
 
     body,
     html {
@@ -441,6 +446,18 @@ textarea {
         padding: 10px 0 10px 0;
         text-align: center;
     }
+
+    /*Header*/
+
+    header {
+        height: 70px;
+    }
+
+    #logo {
+        height: 60px;
+    }
+
+    /*Contents*/
 
     .container p {
         font-size: 16px;
@@ -466,22 +483,13 @@ textarea {
         max-height: 250px;
         margin: 0 20px 0 20px;
     }
-
-    header {
-        height: 70px;
-    }
-
-    #logo {
-        height: 60px;
-    }
 }
 
+/*Responsive - Mobile mode*/
 
 @media (max-width: 700px) {
 
-    #navLinks {
-        display: none;
-    }
+    /*General*/
 
     body,
     html {
@@ -499,23 +507,29 @@ textarea {
         text-align: center;
     }
 
+    /*Header*/
+
+    header {
+        height: 70px;
+    }
+
+    #logo {
+        height: 60px;
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    /*Contents*/
+
     .container p {
         font-size: 14px;
     }
-    .footer {
-        padding: 5px;
-    }
-
-    .footer p {
-        font-size: 13px;
-    
-    }
-
 
     .container li {
         font-size: 14px;
     }
-
 
     .image-container {
         display: none;
@@ -544,10 +558,14 @@ textarea {
         background-color: rgba(0, 0, 0, 0.900);
     }
 
-    header {
-        height: 70px;
+    .footer {
+        padding: 5px;
     }
 
+    .footer p {
+        font-size: 13px;
+
+    }
 
     form {
         text-align: center;
@@ -571,10 +589,6 @@ textarea {
         display: block;
     }
 
-    #logo {
-        height: 60px;
-    }
-
     .container:nth-child(1) {
         background-image: url('../img/mobile-start.webp');
     }
@@ -588,7 +602,6 @@ textarea {
         min-height: 900px;
         background-image: url('../img/footer.webp');
     }
-    
 
     .logobig {
         display: none;
@@ -602,3 +615,5 @@ textarea {
         padding: 10px;
     }
 }
+
+/*Responsive - Smartwatch mode*/
