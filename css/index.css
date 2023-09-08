@@ -101,6 +101,10 @@ nav {
     gap: 50px;
 }
 
+#navLinks {
+    display: flex;
+}
+
 nav a {
     color: var(--text-color);
     text-decoration: none;
@@ -147,30 +151,37 @@ main {
 }
 
 .container:nth-child(1) {
+    min-height: 600px;
     background-image: url('../img/start.webp');
 }
 
 .container:nth-child(2) {
+    min-height: 800px;
     background-image: url('../img/bowl.webp');
 }
 
 .container:nth-child(3) {
+    min-height: 900px;
     background-image: url('../img/desktop.webp');
 }
 
 .container:nth-child(4) {
+    min-height: 900px;
     background-image: url('../img/services.webp');
 }
 
 .container:nth-child(5) {
+    min-height: 700px;
     background-image: url('../img/working.webp');
 }
 
 .container:nth-child(6) {
+    min-height: 800px;
     background-image: url('../img/prices.webp');
 }
 
 .container:nth-child(7) {
+    min-height: 800px;
     background-image: url('../img/footer.webp');
 }
 
@@ -179,6 +190,13 @@ main {
     line-height: 1.5;
 
 }
+
+.footer p {
+    font-size: 23px;
+    line-height: 1.5;
+
+}
+
 
 .center {
     text-align: center;
@@ -448,10 +466,22 @@ textarea {
         max-height: 250px;
         margin: 0 20px 0 20px;
     }
+
+    header {
+        height: 70px;
+    }
+
+    #logo {
+        height: 60px;
+    }
 }
 
 
 @media (max-width: 700px) {
+
+    #navLinks {
+        display: none;
+    }
 
     body,
     html {
@@ -472,6 +502,15 @@ textarea {
     .container p {
         font-size: 14px;
     }
+    .footer {
+        padding: 5px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    
+    }
+
 
     .container li {
         font-size: 14px;
@@ -488,8 +527,8 @@ textarea {
 
     .mobile-image-container {
         display: block;
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 150px;
+        max-height: 150px;
         margin: 0 50px 0 50px;
         border-radius: 50%;
         overflow: hidden;
@@ -506,7 +545,7 @@ textarea {
     }
 
     header {
-        height: 80px;
+        height: 70px;
     }
 
 
@@ -539,6 +578,17 @@ textarea {
     .container:nth-child(1) {
         background-image: url('../img/mobile-start.webp');
     }
+
+    .container:nth-child(5) {
+        min-height: 1200px;
+        background-image: url('../img/working.webp');
+    }
+
+    .container:nth-child(7) {
+        min-height: 900px;
+        background-image: url('../img/footer.webp');
+    }
+    
 
     .logobig {
         display: none;

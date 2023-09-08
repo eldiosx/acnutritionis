@@ -31,10 +31,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+window.addEventListener('scroll', () => {
+    header.style.height = '70px';
+    logo.style.height = '60px';
+});
+
 // Header Mobile
 
 function toggleNav() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 700) {
         var header = document.getElementById("header");
         var navLinks = document.getElementById("navLinks");
         var menuIcon = document.getElementById("button-menu");
