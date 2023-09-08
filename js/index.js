@@ -120,7 +120,7 @@ startAutoSlide();
 const select = document.getElementById("selectplan");
 const freepack = document.getElementById("freepack");
 const startplan = document.getElementById("startplan");
-const nutritionpack = document.getElementById("nutritionpack");
+const nutritionpack = document.getElementById("nutritionplan");
 const checkplan = document.getElementById("checkplan");
 select.addEventListener("change", () => {
     if (select.value === "free") {
