@@ -31,10 +31,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-window.addEventListener('scroll', () => {
-    header.style.height = '70px';
-    logo.style.height = '60px';
-});
+
 
 // Header Mobile
 
