@@ -147,3 +147,9 @@ select.addEventListener("change", () => {
         checkplan.classList.add("show");
     }
 });
+//Loader
+window.addEventListener("load", function () {
+    var loadingContainer = document.getElementById("loader");
+    loadingContainer.style.display = "none";
+});
+
