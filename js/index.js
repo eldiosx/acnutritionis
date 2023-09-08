@@ -116,3 +116,32 @@ nextBtn.addEventListener('click', function () {
 });
 showSlide(currentIndex);
 startAutoSlide();
+//Select pack
+const select = document.getElementById("selectplan");
+const freepack = document.getElementById("freepack");
+const startplan = document.getElementById("startplan");
+const nutritionpack = document.getElementById("nutritionpack");
+const checkplan = document.getElementById("checkplan");
+select.addEventListener("change", () => {
+    if (select.value === "free") {
+        freepack.classList.add("show");
+        startplan.classList.remove("show");
+        nutritionpack.classList.remove("show");
+        checkplan.classList.remove("show");
+    } else if (select.value === "start") {
+        freepack.classList.remove("show");
+        startplan.classList.add("show");
+        nutritionpack.classList.remove("show");
+        checkplan.classList.remove("show");
+    } else if (select.value === "nutrition") {
+        freepack.classList.remove("show");
+        startplan.classList.remove("show");
+        nutritionpack.classList.add("show");
+        checkplan.classList.remove("show");
+    } else if (select.value === "check") {
+        freepack.classList.remove("show");
+        startplan.classList.remove("show");
+        nutritionpack.classList.remove("show");
+        checkplan.classList.add("show");
+    }
+});
