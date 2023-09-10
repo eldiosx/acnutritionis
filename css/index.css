@@ -375,6 +375,7 @@ main {
 }
 
 .fatcs {
+    margin: 50px;
     display: flex;
     text-align: center;
 }
@@ -512,6 +513,19 @@ textarea {
         font-size: 16px;
     }
 
+    .icon-circle-left {
+        left: 1%;
+    }
+    
+    .icon-circle-right {
+        right: 1%;
+    }
+    
+    .icon-circle-left::before,
+    .icon-circle-right::before {
+        font-size: 40px;
+    }
+
     .logobig {
         max-width: 300px;
         max-height: 300px;
@@ -573,11 +587,21 @@ textarea {
     }
 
     .fatcs {
+        margin: 0;
         display: block;
+    }
+
+    .list {
+        max-width: 70%;
     }
 
     .image-container {
         display: none;
+    }
+    
+    .icon-circle-left::before,
+    .icon-circle-right::before {
+        font-size: 30px;
     }
 
     .custom {
@@ -606,6 +630,20 @@ textarea {
 
     .open-header {
         background-color: rgba(0, 0, 0, 0.900);
+    }
+
+    .alex {
+        overflow: hidden;
+        border-radius: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+    
+    .alex img {
+    
+        height: 150%;
+        object-fit: cover;
     }
 
     .footer {
@@ -649,7 +687,7 @@ textarea {
     }
 
     .container:nth-child(6) {
-        min-height: 1000px;
+        min-height: 900px;
         background-image: url('../img/prices.webp');
     }
 
