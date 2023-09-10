@@ -445,11 +445,11 @@ textarea {
 
 }
 
-.icon-envelope {
+.icon-envelope, .icon-phone1 {
     color: white;
 }
 
-.icon-envelope:hover {
+.icon-envelope:hover, .icon-phone1:hover {
     cursor: pointer;
     text-decoration: underline;
 }
