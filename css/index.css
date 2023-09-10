@@ -195,7 +195,7 @@ main {
 }
 
 .container:nth-child(4) {
-    min-height: 900px;
+    min-height: 800px;
     background-image: url('../img/services.webp');
 }
 
@@ -205,7 +205,7 @@ main {
 }
 
 .container:nth-child(6) {
-    min-height: 800px;
+    min-height: 700px;
     background-image: url('../img/prices.webp');
 }
 
@@ -252,6 +252,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.custom {
+    max-width: 50%;
+    min-width: 50%;
 }
 
 .background {
@@ -347,7 +352,7 @@ main {
 
 .slider {
     width: 100%;
-    height: 60%;
+    height: 50%;
     overflow: hidden;
     position: relative;
 }
@@ -369,9 +374,17 @@ main {
 
 }
 
+.fatcs {
+    display: flex;
+    text-align: center;
+}
+
 .list {
+    max-width: 40%;
     margin: auto;
-    padding: 0 10% 0 10%;
+    padding: 0;
+    list-style: none;
+
 }
 
 .slide.active {
@@ -383,7 +396,6 @@ li {
 }
 
 ul {
-    padding: 50px;
     text-align: left;
 }
 
@@ -493,7 +505,6 @@ textarea {
     }
 
     ul {
-        padding: 20px;
         text-align: left;
     }
 
@@ -561,8 +572,17 @@ textarea {
         font-size: 14px;
     }
 
+    .fatcs {
+        display: block;
+    }
+
     .image-container {
         display: none;
+    }
+
+    .custom {
+        max-width: 100%;
+        min-width: 100%;
     }
 
     .left {
@@ -626,6 +646,11 @@ textarea {
     .container:nth-child(5) {
         min-height: 1200px;
         background-image: url('../img/working.webp');
+    }
+
+    .container:nth-child(6) {
+        min-height: 1000px;
+        background-image: url('../img/prices.webp');
     }
 
     .container:nth-child(7) {
