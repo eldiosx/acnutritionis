@@ -70,7 +70,7 @@ document.getElementById("send").addEventListener("click", function () {
 
     const mensaje = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
 
-    const link = `mailto:acnutricion@protonmail.com?subject=Formulario de AC Nutricion&body=${encodeURIComponent(mensaje)}`;
+    const link = `mailto:acnutritionis@protonmail.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
     window.location.href = link;
 });
 
