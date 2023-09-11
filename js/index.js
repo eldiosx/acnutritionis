@@ -21,7 +21,7 @@ checkScrollAnimations();
 
 window.addEventListener('scroll', () => {
     var navLinks = document.getElementById("navLinks");
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 1300) {
         if (window.scrollY > 100) {
             navLinks.style.display = "flex";
             header.style.height = '70px';
