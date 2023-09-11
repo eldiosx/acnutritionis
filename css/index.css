@@ -289,6 +289,14 @@ main {
     text-align: justify;
 }
 
+.title1 {
+    width: 50%;
+}
+
+.title2 {
+    width: 50%;
+}
+
 .scheme2 {
     border-radius: 50px;
     background-color: rgba(77, 90, 93, 0.7);
