@@ -20,43 +20,51 @@ window.addEventListener('scroll', checkScrollAnimations);
 checkScrollAnimations();
 
 window.addEventListener('scroll', () => {
+    var navLinks = document.getElementById("navLinks");
     if (window.innerWidth > 1000) {
         if (window.scrollY > 100) {
+            navLinks.style.display = "flex";
             header.style.height = '70px';
             logo.style.height = '70px';
         } else {
+            navLinks.style.display = "flex";
             header.style.height = '120px';
             logo.style.height = '110px';
+        }
+    } else if (window.innerWidth > 700) {
+        if (window.scrollY > 50) {
+            navLinks.style.display = "flex";
+            header.style.height = '60px';
+            logo.style.height = '60px';
+        } else {
+            navLinks.style.display = "flex";
+            header.style.height = '80px';
+            logo.style.height = '70px';
         }
     }
 });
 
-
-
 // Header Mobile
 
 function toggleNav() {
-    if (window.innerWidth < 700) {
-        var header = document.getElementById("header");
-        var navLinks = document.getElementById("navLinks");
-        var menuIcon = document.getElementById("button-menu");
-        if (navLinks.style.display === "flex") {
-            header.classList.remove("open-header");
-            header.style.height = '80px';
-            logo.style.height = '60px';
-            navLinks.style.display = "none";
-            menuIcon.classList.remove("icon-cross");
-            menuIcon.classList.add("icon-menu");
-        } else {
-            header.classList.add("open-header");
-            header.style.height = '100%';
-            logo.style.height = '100px';
-            navLinks.style.display = "flex";
-            menuIcon.classList.remove("icon-menu");
-            menuIcon.classList.add("icon-cross");
-            menuIcon.style.paddingRight = '20px';
-
-        }
+    var header = document.getElementById("header");
+    var navLinks = document.getElementById("navLinks");
+    var menuIcon = document.getElementById("button-menu");
+    if (navLinks.style.display === "flex") {
+        header.classList.remove("open-header");
+        header.style.height = '80px';
+        logo.style.height = '60px';
+        navLinks.style.display = "none";
+        menuIcon.classList.remove("icon-cross");
+        menuIcon.classList.add("icon-menu");
+    } else {
+        header.classList.add("open-header");
+        header.style.height = '100%';
+        logo.style.height = '100px';
+        navLinks.style.display = "flex";
+        menuIcon.classList.remove("icon-menu");
+        menuIcon.classList.add("icon-cross");
+        menuIcon.style.paddingRight = '20px';
     }
 }
 
@@ -119,28 +127,34 @@ nextBtn.addEventListener('click', function () {
 showSlide(currentIndex);
 startAutoSlide();
 //Select pack
+const guide = document.getElementById("guidepack");
 const select = document.getElementById("selectplan");
 const freepack = document.getElementById("freepack");
 const startplan = document.getElementById("startplan");
 const nutritionpack = document.getElementById("nutritionplan");
 const checkplan = document.getElementById("checkplan");
+guide.classList.add("show");
 select.addEventListener("change", () => {
     if (select.value === "free") {
+        guide.classList.remove("show");
         freepack.classList.add("show");
         startplan.classList.remove("show");
         nutritionpack.classList.remove("show");
         checkplan.classList.remove("show");
     } else if (select.value === "start") {
+        guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.add("show");
         nutritionpack.classList.remove("show");
         checkplan.classList.remove("show");
     } else if (select.value === "nutrition") {
+        guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.remove("show");
         nutritionpack.classList.add("show");
         checkplan.classList.remove("show");
     } else if (select.value === "check") {
+        guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.remove("show");
         nutritionpack.classList.remove("show");
