@@ -88,28 +88,35 @@ document.getElementById("send").addEventListener("click", function () {
 
 // Slider
 
-const prevBtn = document.querySelector('.icon-circle-left');
-const nextBtn = document.querySelector('.icon-circle-right');
+const background4 = document.querySelector('.background4');
+const prevBtn = document.querySelector('.icon-navigate_before');
+const nextBtn = document.querySelector('.icon-navigate_next');
 const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
 let intervalId;
 function showSlide(index) {
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('active');
+
     }
 
     slides[index].classList.add('active');
+
     currentIndex = index;
 }
 function showNextSlide() {
+    background4.classList.add("background4-2");
     let newIndex = currentIndex + 1;
     if (newIndex >= slides.length) {
         newIndex = 0;
+        background4.classList.remove("background4-2");
+
     }
     showSlide(newIndex);
 }
 function startAutoSlide() {
-    intervalId = setInterval(showNextSlide, 6000);
+    intervalId = setInterval(showNextSlide, 10000);
+
 }
 function stopAutoSlide() {
     clearInterval(intervalId);
@@ -171,3 +178,64 @@ window.addEventListener("load", function () {
     loadingContainer.style.display = "none";
 });
 
+// Translations
+const translations = {
+    '': '',
+    'Inicio': 'Home',
+    'Nutrición': 'Nutrition',
+    'Sobre mí': 'About me',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+};
+const elementsToTranslate = document.querySelectorAll('[data-translate]');
+let isTranslated = getCookie('isTranslated') === 'es';
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+}
+function getCookie(name) {
+    const cookies = document.cookie.split(';').map(cookie => cookie.trim().split('='));
+    const cookie = cookies.find(cookie => cookie[0] === name);
+    return cookie ? decodeURIComponent(cookie[1]) : null;
+}
+
+function applyTranslation() {
+    elementsToTranslate.forEach(element => {
+        const originalText = element.getAttribute('data-translate');
+        const translatedText = translations[originalText];
+        if (isTranslated && translatedText) {
+            element.textContent = translatedText;
+        } else {
+            element.textContent = originalText;
+        }
+    });
+    updateButtonText();
+}
+function toggleLang() {
+    isTranslated = !isTranslated;
+    setCookie('isTranslated', isTranslated ? 'es' : 'en', 30);
+    applyTranslation();
+    location.reload();
+}
+function updateButtonText() {
+    const translateButton = document.querySelector('.translateButton');
+    if (isTranslated) {
+        translateButton.textContent = '🇪🇸';
+    } else {
+        translateButton.textContent = '🇬🇧';
+    }
+    const translateButtonMobile = document.querySelector('.menuUsercontent .translateButton');
+    if (isTranslated) {
+        translateButtonMobile.textContent = '🇪🇸';
+    } else {
+        translateButtonMobile.textContent = '🇬🇧';
+    }
+}
+applyTranslation();
+const translateButton = document.querySelector('.translateButton');
+translateButton.addEventListener('click', toggleTranslation);
+const translateButtonUserMenu = document.querySelector('.menuUsercontent .translateButton');
+translateButtonUserMenu.addEventListener('click', toggleTranslation);
+let language = isTranslated ? 'es' : 'en';

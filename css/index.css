@@ -194,9 +194,13 @@ main {
     background-image: url('../img/desktop.webp');
 }
 
-.container:nth-child(4) {
+.background4 {
     min-height: 800px;
     background-image: url('../img/services.webp');
+}
+
+.background4-2 {
+    background-image: url('../img/working2.webp');
 }
 
 .container:nth-child(5) {
@@ -395,30 +399,30 @@ main {
 }
 
 .image-container img {
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 /*Planing*/
 
-.icon-circle-left,
-.icon-circle-right {
+.icon-navigate_before,
+.icon-navigate_next {
     position: absolute;
     color: var(--text-color);
     cursor: pointer;
 }
 
-.icon-circle-left {
+.icon-navigate_before {
     left: 5%;
 }
 
-.icon-circle-right {
+.icon-navigate_next {
     right: 5%;
 }
 
-.icon-circle-left::before,
-.icon-circle-right::before {
+.icon-navigate_before::before,
+.icon-navigate_next::before {
     font-size: 50px;
 }
 
@@ -593,16 +597,16 @@ textarea {
         font-size: 16px;
     }
 
-    .icon-circle-left {
+    .icon-navigate_before {
         left: 1%;
     }
 
-    .icon-circle-right {
+    .icon-navigate_next {
         right: 1%;
     }
 
-    .icon-circle-left::before,
-    .icon-circle-right::before {
+    .icon-navigate_before::before,
+    .icon-navigate_next::before {
         font-size: 40px;
     }
 
@@ -683,8 +687,8 @@ textarea {
         display: none;
     }
 
-    .icon-circle-left::before,
-    .icon-circle-right::before {
+    .icon-navigate_before::before,
+    .icon-navigate_next::before {
         font-size: 30px;
     }
 

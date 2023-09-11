@@ -19,11 +19,12 @@
         <div class="header-container">
             <img id="logo" src="./img/aclogo.webp" alt="Logo">
             <nav id="navLinks">
-                <a href="#" onclick="toggleNav()">Inicio</a>
-                <a href="#nutrition" onclick="toggleNav()">Nutrición</a>
-                <a href="#aboutme" onclick="toggleNav()">Sobre mí</a>
+                <a href="#" onclick="toggleNav()" data-translate="Inicio">Inicio</a>
+                <a href="#nutrition" onclick="toggleNav()" data-translate="Nutrición">Nutrición</a>
+                <a href="#aboutme" onclick="toggleNav()" data-translate="Sobre mí">Sobre mí</a>
                 <a href="#services" onclick="toggleNav()">Servicios</a>
                 <a href="#contact" onclick="toggleNav()">Contacto</a>
+                <a href="#lamguage" onclick="toggleLang()">Idioma</a>
             </nav>
             <div class="menu-button" onclick="toggleNav()">
                 <span id="button-menu" class="icon-menu"></span>
@@ -79,7 +80,7 @@
                     <div class="mobile-image-container"><img src="./img/alex.webp" alt="Logo"></div>
                     <div class="info">
                         <br>
-                        <h2 class="left">Sobre mí...</h2>
+                        <h2 class="left"><span data-translate="Sobre mí">Sobre mí</span>...</h2>
                         <h1 class="left">Alejandro Campos</h1>
                         <p class="left">Mi pasión siempre ha sido ayudar a las personas a mejorar su calidad de vida
                             mediante una alimentación flexible y equilibrada, evitando la obsesión por la comida y las
@@ -97,7 +98,7 @@
                 </div>
             </section>
         </div>
-        <div class="container" id="services">
+        <div class="container background4" id="services">
             <div class="slider">
                 <section class="slide">
                     <div class="scroll-animation content">
@@ -144,8 +145,8 @@
                     </div>
                 </section>
             </div>
-            <div class="icon-circle-left"></div>
-            <div class="icon-circle-right"></div>
+            <div class="icon-navigate_before"></div>
+            <div class="icon-navigate_next"></div>
         </div>
         <div class="container col">
             <section class="banner">
