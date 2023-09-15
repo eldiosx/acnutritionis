@@ -204,7 +204,7 @@ main {
 }
 
 .container:nth-child(5) {
-    min-height: 800px;
+    min-height: 900px;
     background-image: url('../img/working.webp');
 }
 
@@ -270,8 +270,8 @@ main {
     padding: 30px;
     margin: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     text-align: justify;
 }
 
@@ -282,35 +282,65 @@ main {
 }
 
 .scheme1 {
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: rgba(90, 115, 109, 0.7);
     color: var(--text-color);
-    padding: 30px;
+    padding: 20px;
     margin: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: justify;
 }
 
-.title1 {
-    width: 50%;
+.schemetitle {
+    border-radius: 30px;
+    color: var(--text-color);
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
 }
 
-.title2 {
-    width: 50%;
+.scheme-right {
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-150%);
+    background-color: rgba(90, 115, 109, 0.7);
+
+}
+
+.scheme-left {
+    background-color: rgba(77, 90, 93, 0.7);
+}
+
+.scheme {
+    margin: 20px;
 }
 
 .scheme2 {
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: rgba(77, 90, 93, 0.7);
     color: var(--text-color);
-    padding: 30px;
+    padding: 20px;
     margin: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: justify;
+    margin-top: 160px;
+}
+
+.scheme1:hover,
+.scheme2:hover,
+.schemetitle:hover {
+    padding: 25px;
+    box-shadow: 20px 16px rgba(51, 51, 51, 0.479);
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
 }
 
 .line-container {
@@ -320,7 +350,7 @@ main {
 .line {
     width: 10px;
     background: linear-gradient(to bottom, rgba(90, 115, 109, 0.7), rgba(77, 90, 93, 0.7));
-    height: 350px;
+    height: 360px;
     margin: 0 auto;
 }
 
@@ -585,6 +615,14 @@ textarea {
 
     /*Contents*/
 
+    .desktop {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
     .container p {
         font-size: 16px;
     }
@@ -623,8 +661,9 @@ textarea {
     }
 
     .line {
-        height: 300px;
+        height: 320px;
     }
+
 }
 
 /*Responsive - Mobile mode*/
@@ -665,6 +704,34 @@ textarea {
     }
 
     /*Contents*/
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .scheme2 {
+        margin-top: 20px;
+    }
+
+    .schemetitle {
+        border-radius: 50px;
+        background-color: rgba(90, 115, 109, 0.7);
+        color: var(--text-color);
+        padding: 30px;
+        margin: 30px;
+        background-color: rgba(90, 115, 109, 0.7);
+        position: absolute;
+
+    }
+
+    .scheme-left,
+    .scheme-right {
+        display: none;
+    }
 
     .container p {
         font-size: 14px;
