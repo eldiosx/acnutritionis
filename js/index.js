@@ -184,10 +184,13 @@ const translations = {
     'Inicio': 'Home',
     'Nutrición': 'Nutrition',
     'Sobre mí': 'About me',
-    '': '',
-    '': '',
-    '': '',
-    '': '',
+    'Servicios': 'Services',
+    'Contacto': 'Contact',
+    'Idioma': 'Language',
+    'Nombre': 'Name',
+    'Teléfono': 'Phone',
+    'Mensaje': 'Message',
+    'Todos los derechos reservados ©2023 - Código abierto GPL 3.0': 'All rights reserved ©2023 - Open Source GPL 3.0',
 };
 const elementsToTranslate = document.querySelectorAll('[data-translate]');
 let isTranslated = getCookie('isTranslated') === 'es';

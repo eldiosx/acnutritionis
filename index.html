@@ -22,9 +22,9 @@
                 <a href="#" onclick="toggleNav()" data-translate="Inicio">Inicio</a>
                 <a href="#nutrition" onclick="toggleNav()" data-translate="Nutrición">Nutrición</a>
                 <a href="#aboutme" onclick="toggleNav()" data-translate="Sobre mí">Sobre mí</a>
-                <a href="#services" onclick="toggleNav()">Servicios</a>
-                <a href="#contact" onclick="toggleNav()">Contacto</a>
-                <a href="#lamguage" onclick="toggleLang()">Idioma</a>
+                <a href="#services" onclick="toggleNav()" data-translate="Servicios">Servicios</a>
+                <a href="#contact" onclick="toggleNav()" data-translate="Contacto">Contacto</a>
+                <a href="#lamguage" onclick="toggleLang()" data-translate="Idioma">Idioma</a>
             </nav>
             <div class="menu-button" onclick="toggleNav()">
                 <span id="button-menu" class="icon-menu"></span>
@@ -316,16 +316,16 @@
                 <div class="scroll-animation content">
                     <div class="info">
                         <form id="contact-form">
-                            <label for="name">Nombre:</label>
+                            <label for="name" data-translate="Nombre">Nombre:</label>
                             <input type="text" id="name" name="name" required><br>
 
-                            <label for="telefono">Teléfono:</label>
+                            <label for="telefono" data-translate="Teléfono">Teléfono:</label>
                             <input type="tel" id="telefono" name="telefono" required><br>
 
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required><br>
 
-                            <label for="info">Mensaje:</label>
+                            <label for="info" data-translate="Mensaje">Mensaje:</label>
                             <textarea id="info" name="info" rows="4"></textarea><br>
                             <button class="button" type="submit" id="send">Solicitar consulta</button>
                         </form>
@@ -357,6 +357,15 @@
                 <div class="content">
                     <div class="info">
                         <p>(Recibirás siempre una respuesta en un plazo de 24-48 H días hábiles)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-empty cr">
+                <div class="content">
+                    <div class="info">
+                        <a target="_blank" href="https://github.com/eldiosx/acnutritionis"
+                            data-translate="Todos los derechos reservados ©2023 - Código abierto GPL 3.0">Todos los
+                            derechos reservados ©2023 - Código abierto GPL 3.0</a>
                     </div>
                 </div>
             </section>
