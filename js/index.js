@@ -46,29 +46,27 @@ window.addEventListener('scroll', () => {
 
 // Header Mobile
 
+var isNavOpen = false;
+
 function toggleNav() {
     var header = document.getElementById("header");
     var navLinks = document.getElementById("navLinks");
     var menuIcon = document.getElementById("button-menu");
+
     if (window.innerWidth < 700) {
-        if (navLinks.style.display === "flex") {
+        if (isNavOpen) {
             header.classList.remove("open-header");
             header.style.height = '80px';
             logo.style.height = '60px';
-            navLinks.style.display = "none";
             menuIcon.classList.remove("icon-cross");
             menuIcon.classList.add("icon-menu");
         } else {
             header.classList.add("open-header");
             header.style.height = '100%';
-            logo.style.height = '100px';
-            navLinks.style.display = "flex";
             menuIcon.classList.remove("icon-menu");
             menuIcon.classList.add("icon-cross");
-            menuIcon.style.paddingRight = '20px';
         }
-    } else {
-        navLinks.style.display = "flex";
+        isNavOpen = !isNavOpen;
     }
 }
 
@@ -214,27 +212,12 @@ function applyTranslation() {
             element.textContent = originalText;
         }
     });
-    updateButtonText();
 }
 function toggleLang() {
     isTranslated = !isTranslated;
     setCookie('isTranslated', isTranslated ? 'es' : 'en', 30);
     applyTranslation();
     location.reload();
-}
-function updateButtonText() {
-    const translateButton = document.querySelector('.translateButton');
-    if (isTranslated) {
-        translateButton.textContent = '🇪🇸';
-    } else {
-        translateButton.textContent = '🇬🇧';
-    }
-    const translateButtonMobile = document.querySelector('.menuUsercontent .translateButton');
-    if (isTranslated) {
-        translateButtonMobile.textContent = '🇪🇸';
-    } else {
-        translateButtonMobile.textContent = '🇬🇧';
-    }
 }
 applyTranslation();
 const translateButton = document.querySelector('.translateButton');

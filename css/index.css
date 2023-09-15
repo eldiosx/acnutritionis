@@ -332,7 +332,7 @@ main {
 .scheme2:hover,
 .schemetitle:hover {
     padding: 25px;
-    box-shadow: 20px 16px rgba(51, 51, 51, 0.479);
+    box-shadow: 10px 16px rgba(51, 51, 51, 0.479);
 }
 
 .desktop {
@@ -552,6 +552,10 @@ textarea {
 
 }
 
+.copyright {
+    background-color: #000000;
+}
+
 .icon-envelope,
 .icon-phone1 {
     color: var(--text-color);
@@ -578,17 +582,13 @@ textarea {
 }
 
 .cr {
-    background-color: #000000;
-}
-
-.cr a {
     color: var(--text-color);
     font-size: 15px;
     text-decoration: none;
 
 }
 
-.cr a:hover{
+.cr:hover {
     text-decoration: underline;
 }
 
@@ -800,6 +800,23 @@ textarea {
 
     .open-header {
         background-color: rgba(0, 0, 0, 0.900);
+    }
+
+    .open-header #button-menu {
+        right: 10%;
+        position: absolute;
+    }
+
+    .open-header #navLinks {
+        display: flex;
+        margin: auto;
+    }
+
+    .open-header #logo {
+        height: 100px;
+        left: 5%;
+        position: absolute;
+
     }
 
     .alex {
