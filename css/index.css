@@ -264,7 +264,7 @@ main {
 }
 
 .background {
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: var(--background-banner);
     color: var(--text-color);
     padding: 30px;
@@ -318,33 +318,34 @@ main {
 
 .scheme1:hover,
 .scheme2:hover {
-    transform: translateY(-10px) translateX(-10px);
+    transform: translateY(-5px) translateX(-5px);
     padding: 25px;
-    box-shadow: 10px 16px rgba(51, 51, 51, 0.479);
+    box-shadow: 8px 8px rgba(51, 51, 51, 0.479);
 }
 
 .scheme-right {
     margin: 0 auto;
     left: 50%;
-    transform: translateX(-150%);
+    transform: translateX(-160%);
     background-color: rgba(90, 115, 109, 0.7);
 
 }
 
 .scheme-left {
+    transform: translateY(-20%);
     background-color: rgba(77, 90, 93, 0.7);
 }
 
 .scheme-left:hover {
-    transform: translateY(-10px) translateX(-10px);
+    transform: translateY(-5px) translateX(-5px);
     padding: 25px;
-    box-shadow: 10px 8px rgba(51, 51, 51, 0.479);
+    box-shadow: 5px 5px rgba(51, 51, 51, 0.479);
 }
 
 .scheme-right:hover {
-    transform: translateY(-10px) translateX(-160%);
+    transform: translateY(-5px) translateX(-165%);
     padding: 25px;
-    box-shadow: 10px 8px rgba(51, 51, 51, 0.479);
+    box-shadow: 5px 5px rgba(51, 51, 51, 0.479);
 }
 
 .desktop {
@@ -360,32 +361,32 @@ main {
 }
 
 .line {
-    width: 10px;
+    width: 5px;
     background: linear-gradient(to bottom, rgba(90, 115, 109, 0.7), rgba(77, 90, 93, 0.7));
-    height: 360px;
+    height: 500px;
     margin: 0 auto;
 }
 
 .circle1 {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: rgba(90, 115, 109, 0.7);
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -50px;
+    top: -35px;
 }
 
 .circle2 {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: rgba(77, 90, 93, 0.7);
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -50px;
+    bottom: -35px;
 }
 
 .banner-empty {
@@ -409,6 +410,10 @@ main {
     max-width: 400px;
     max-height: 400px;
     margin: 0 50px 0 50px;
+}
+
+.aboutme {
+    padding-top: 30px;
 }
 
 .info {
@@ -456,16 +461,16 @@ main {
 }
 
 .icon-navigate_before {
-    left: 5%;
+    left: 3%;
 }
 
 .icon-navigate_next {
-    right: 5%;
+    right: 3%;
 }
 
 .icon-navigate_before::before,
 .icon-navigate_next::before {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .slider {
@@ -672,7 +677,7 @@ textarea {
 
     .icon-navigate_before::before,
     .icon-navigate_next::before {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .logobig {
@@ -688,14 +693,30 @@ textarea {
     }
 
     .line {
-        height: 320px;
+        height: 350px;
+    }
+
+    .line-container {
+        transform: translateY(5%);
+
     }
 
 }
 
+@media (max-width: 950px) {
+    .line {
+        height: 450px;
+    }
+
+    .line-container {
+        transform: translateY(0%);
+
+    }
+}
+
 /*Responsive - Mobile mode*/
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
 
     /*General*/
 
@@ -731,6 +752,11 @@ textarea {
     }
 
     /*Contents*/
+
+    .aboutme {
+        padding-top: 5px;
+    }
+
 
     .desktop {
         display: none;
@@ -783,7 +809,7 @@ textarea {
 
     .icon-navigate_before::before,
     .icon-navigate_next::before {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .custom {
@@ -911,6 +937,11 @@ textarea {
     form {
         width: 100%;
         padding: 10px;
+    }
+
+    .cr {
+        font-size: 10px;
+
     }
 }
 

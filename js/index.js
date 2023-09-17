@@ -117,11 +117,7 @@ function stopAutoSlide() {
 }
 prevBtn.addEventListener('click', function () {
     stopAutoSlide();
-    let newIndex = currentIndex - 1;
-    if (newIndex < 0) {
-        newIndex = slides.length - 1;
-    }
-    showSlide(newIndex);
+    showNextSlide();
     startAutoSlide();
 });
 nextBtn.addEventListener('click', function () {
