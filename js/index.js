@@ -127,28 +127,16 @@ function showPrevSlide() {
     showSlide(newIndex);
 }
 
-function startAutoSlide() {
-    intervalId = setInterval(showNextSlide, 10000);
-}
-
-function stopAutoSlide() {
-    clearInterval(intervalId);
-}
 
 prevBtn.addEventListener('click', function () {
-    stopAutoSlide();
     showPrevSlide();
-    startAutoSlide();
 });
 
 nextBtn.addEventListener('click', function () {
-    stopAutoSlide();
     showNextSlide();
-    startAutoSlide();
 });
 
 showSlide(currentIndex);
-startAutoSlide();
 
 
 //Select pack

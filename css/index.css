@@ -20,6 +20,9 @@
 :root {
     --text-color: rgb(255, 255, 255);
     --background-banner: rgba(0, 0, 0, 0.600);
+    --background-button: rgba(255, 255, 255, 0.85);
+    --text-button: rgb(0, 0, 0);
+    --hover-button: rgba(155, 155, 155, 0.85);
 }
 
 .loader {
@@ -123,6 +126,7 @@ header {
 #logo {
     transition: height 0.3s;
     height: 100px;
+    padding: 10px 5px 5px 5px;
 }
 
 nav {
@@ -236,15 +240,15 @@ main {
 .button {
     margin-top: 30px;
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    background-color: var(--background-button);
+    color: var(--text-button);
     text-decoration: none;
     font-size: 24px;
     padding: 10px;
 }
 
 .button:hover {
-    background-color: #232323;
+    background-color: var(--hover-button);
     cursor: pointer;
 }
 
@@ -420,6 +424,10 @@ main {
     text-align: center;
     margin: 0 50px 0 50px;
     margin: auto;
+}
+
+select option{
+    padding-right: 5px;
 }
 
 .col {
