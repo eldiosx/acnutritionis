@@ -68,17 +68,27 @@ function toggleNav() {
 
 // Send email
 
-document.getElementById("send").addEventListener("click", function () {
-    const name = document.getElementById("name").value;
-    const telefono = document.getElementById("telefono").value;
-    const email = document.getElementById("email").value;
-    const info = document.getElementById("info").value;
+// document.getElementById("send").addEventListener("click", function () {
+//     const name = document.getElementById("name").value;
+//     const telefono = document.getElementById("telefono").value;
+//     const email = document.getElementById("email").value;
+//     const info = document.getElementById("info").value;
 
-    const mensaje = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
+//     const mensaje = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
 
-    const link = `mailto:acnutritionis@protonmail.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
-    window.location.href = link;
+//     const link = `mailto:acnutritionis@protonmail.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
+//     window.location.href = link;
+// });
+
+function resetForm() {
+    document.getElementById("contact-form").reset();
+}
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    resetForm();
 });
+
 
 // Slider
 const background4 = document.querySelector('.background4');
