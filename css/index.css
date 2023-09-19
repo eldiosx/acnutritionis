@@ -426,9 +426,19 @@ main {
     margin: auto;
 }
 
-select option{
-    padding-right: 5px;
+
+#selectplan {
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text-button);
+    text-decoration: none;
+    font-size: 24px;
 }
+
+#selectplan:hover {
+    cursor: pointer;
+}
+
 
 .col {
     flex-direction: column;
