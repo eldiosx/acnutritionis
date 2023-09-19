@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mensaje = $_POST["info"];
 
-    $destinatario = "mailto:danieldelgadojimenez@protonmail.com";
+    $destinatario = "acnutritionis@protonmail.com";
     $asunto = "Consulta de $nombre";
 
     $contenido = "Nombre: $nombre\n";
@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cabeceras = "From: $email\r\n";
     $cabeceras .= "Reply-To: $email\r\n";
 
+    // Envía el correo
     mail($destinatario, $asunto, $contenido, $cabeceras);
 
-    header("Location: index.html");
+    header("Location: ./index.html");
 ?>
