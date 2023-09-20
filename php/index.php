@@ -1,23 +1,22 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["name"];
-    $telefono = $_POST["telefono"];
+    $name = $_POST["name"];
+    $phone = $_POST["telefono"];
     $email = $_POST["email"];
-    $mensaje = $_POST["info"];
+    $message = $_POST["info"];
 
-    $destinatario = "acnutritionis@protonmail.com";
-    $asunto = "Consulta de $nombre";
+    $receiver = "acnutritionis@protonmail.com";
+    $main = "Consulta de $name";
 
-    $contenido = "Nombre: $nombre\n";
-    $contenido .= "Teléfono: $telefono\n";
-    $contenido .= "Email: $email\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+    $content = "Nombre: $name\n";
+    $content .= "Teléfono: $phone\n";
+    $content .= "Email: $email\n";
+    $content .= "Mensaje:\n$message\n";
 
-    $cabeceras = "From: $email\r\n";
-    $cabeceras .= "Reply-To: $email\r\n";
+    $header = "From: $email\r\n";
+    $header .= "Reply-To: $email\r\n";
 
-    // Envía el correo
-    mail($destinatario, $asunto, $contenido, $cabeceras);
+    mail($receiver, $main, $content, $header);
 
     header("Location: ./index.html");
 ?>
