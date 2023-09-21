@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $message = $_POST["info"];
 
-    $receiver = "acnutritionis@protonmail.com";
+    $receiver = "danieldelgadojimenez@protonmail.com";
     $main = "Consulta de $name";
 
     $content = "Nombre: $name\n";
