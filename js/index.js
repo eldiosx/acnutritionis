@@ -80,9 +80,9 @@ function toggleNav() {
 //     window.location.href = link;
 // });
 
-function resetForm() {
-    document.getElementById("contact-form").reset();
-}
+// function resetForm() {
+//     document.getElementById("contact-form").reset();
+// }
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
