@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["info"];
     
     // Create email message
-    $to = "danieldelgadojimenez@protonmail.com";
+    $to = "info@acnutritionis.com";
     $subject = "Contact Form AC Nutritionis";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";

@@ -76,13 +76,13 @@ function toggleNav() {
 
 //     const mensaje = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
 
-//     const link = `mailto:acnutritionis@protonmail.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
+//     const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
 //     window.location.href = link;
 // });
 
-// function resetForm() {
-//     document.getElementById("contact-form").reset();
-// }
+function resetForm() {
+    document.getElementById("contact-form").reset();
+}
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
