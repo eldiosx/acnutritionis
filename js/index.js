@@ -26,8 +26,8 @@ window.addEventListener('scroll', () => {
             header.style.height = '70px';
             logo.style.height = '70px';
         } else {
-            header.style.height = '120px';
-            logo.style.height = '110px';
+            header.style.height = '110px';
+            logo.style.height = '100px';
         }
     } else if (window.innerWidth > 700) {
         if (window.scrollY > 50) {
@@ -68,21 +68,19 @@ function toggleNav() {
 
 // Send email
 
-// document.getElementById("send").addEventListener("click", function () {
-//     const name = document.getElementById("name").value;
-//     const telefono = document.getElementById("telefono").value;
-//     const email = document.getElementById("email").value;
-//     const info = document.getElementById("info").value;
+document.getElementById("send").addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const telefono = document.getElementById("telefono").value;
+    const email = document.getElementById("email").value;
+    const info = document.getElementById("info").value;
 
-//     const mensaje = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
+    const message = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
 
-//     const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(mensaje)}`;
-//     window.location.href = link;
-// });
+    const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(message)}`;
+    window.location.href = link;
 
-function resetForm() {
     document.getElementById("contact-form").reset();
-}
+});
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();

@@ -110,7 +110,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 110px;
     transition: height 0.3s;
 }
 
@@ -648,6 +648,12 @@ textarea {
 
     .icon-navigate_next {
         right: 2%;
+    }
+
+    .logobig {
+        max-width: 350px;
+        max-height: 350px;
+        margin: 0 40px 0 40px;
     }
 }
 
