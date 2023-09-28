@@ -68,24 +68,24 @@ function toggleNav() {
 
 // Send email
 
-document.getElementById("send").addEventListener("click", function () {
-    const name = document.getElementById("name").value;
-    const telefono = document.getElementById("telefono").value;
-    const email = document.getElementById("email").value;
-    const info = document.getElementById("info").value;
+// document.getElementById("send").addEventListener("click", function () {
+//     const name = document.getElementById("name").value;
+//     const telefono = document.getElementById("telefono").value;
+//     const email = document.getElementById("email").value;
+//     const info = document.getElementById("info").value;
 
-    const message = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
+//     const message = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
 
-    const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(message)}`;
-    window.location.href = link;
+//     const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(message)}`;
+//     window.location.href = link;
 
-    document.getElementById("contact-form").reset();
-});
+//     document.getElementById("contact-form").reset();
+// });
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    resetForm();
-});
+// document.getElementById("contact-form").addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     resetForm();
+// });
 
 
 // Slider
@@ -227,3 +227,21 @@ translateButton.addEventListener('click', toggleTranslation);
 const translateButtonUserMenu = document.querySelector('.menuUsercontent .translateButton');
 translateButtonUserMenu.addEventListener('click', toggleTranslation);
 let language = isTranslated ? 'es' : 'en';
+function copyemail() {
+    var texto = document.getElementById("email");
+    var textArea = document.createElement("textarea");
+    textArea.value = texto.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+function copynumber() {
+    var texto = document.getElementById("number");
+    var textArea = document.createElement("textarea");
+    textArea.value = texto.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}

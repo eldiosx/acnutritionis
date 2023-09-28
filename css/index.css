@@ -576,6 +576,19 @@ textarea {
 }
 
 /*Footer*/
+.contact div {
+    margin: 50px;
+    width: 250px;
+    background-color: var(--background-button);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    color: var(--text-button);
+}
+
+.contact:hover div {
+    background-color: var(--hover-button);
+}
 
 .footer {
     width: 100%;
@@ -967,11 +980,6 @@ textarea {
     .container:nth-child(6) {
         min-height: 900px;
         background-image: url('../img/prices.webp');
-    }
-
-    .container:nth-child(7) {
-        min-height: 900px;
-        background-image: url('../img/footer.webp');
     }
 
     .logobig {
