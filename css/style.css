@@ -43,6 +43,7 @@
 }
 .icon-envelope:before {
   content: "\eaec";
+  color: #58588c;
 }
 .icon-phone1:before {
   content: "\eaee";
@@ -1255,9 +1256,11 @@
 }
 .icon-instagram:before {
   content: "\ea92";
+  color: #dc1c84;
 }
 .icon-whatsapp:before {
   content: "\ea93";
+  color: #189d0e;
 }
 .icon-spotify:before {
   content: "\ea94";
@@ -1522,4 +1525,5 @@
 }
 .icon-signal:before {
   content: "\eaeb";
+  color: #2592e9;
 }

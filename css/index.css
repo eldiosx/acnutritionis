@@ -612,13 +612,13 @@ textarea {
     background-color: #000000;
 }
 
-.icon-envelope,
-.icon-phone1 {
+.footer .icon-envelope::before,
+.footer .icon-phone1 {
     color: var(--text-color);
 }
 
-.icon-envelope:hover,
-.icon-phone1:hover {
+.footer .icon-envelope:hover,
+.footer .icon-phone1:hover {
     cursor: pointer;
     text-decoration: underline;
 }
