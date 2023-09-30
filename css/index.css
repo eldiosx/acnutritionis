@@ -923,6 +923,7 @@ textarea {
     }
 
     .open-header #logo {
+        transform: translateY(-40%);
         height: 100px;
         left: 5%;
         position: absolute;
