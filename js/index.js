@@ -187,10 +187,13 @@ const translations = {
     'Servicios': 'Services',
     'Contacto': 'Contact',
     'Idioma': 'Language',
+    'Nutrición para la recuperación': 'Nutrition for Recovery',
+    '¡Hola!, soy Alejandro Campos dietista-nutricionista y te ayudaré a dejar de lado las dietas restrictivas, a que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la alimentación.': 'Hi! I\'m Alejandro Campos, a dietitian-nutritionist, and I\'ll help you move away from restrictive diets, learn to eat without guilt, and embrace the pleasure of food.',
+    '¡Quiero una cita!': 'I want a date!',
     'Nombre': 'Name',
     'Teléfono': 'Phone',
     'Mensaje': 'Message',
-    'Todos los derechos reservados ©2023 - Código abierto GPL 3.0': 'All rights reserved ©2023 - Open Source GPL 3.0',
+    'Todos los derechos reservados ©2023 - GPL 3.0': 'All rights reserved ©2023 - GPL 3.0',
 };
 const elementsToTranslate = document.querySelectorAll('[data-translate]');
 let isTranslated = getCookie('isTranslated') === 'es';
