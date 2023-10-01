@@ -797,8 +797,13 @@ textarea {
 
 @media (max-width: 710px) {
 
+    .button {
+        font-size: 18px;
+    }
+
     #selectplan {
         margin-top: 30px;
+        font-size: 18px;
     }
 
     .contact div {
