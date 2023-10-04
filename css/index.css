@@ -667,6 +667,27 @@ textarea {
     left: 2%;
 }
 
+/*Scroll Button*/
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--background-button);
+    color: var(--text-button);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--hover-button);
+}
+
 @media (max-width: 1500px) {
 
     .icon-navigate_before::before,

@@ -40,6 +40,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Scroll Button
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+window.addEventListener('scroll', function () {
+    var scrollButton = document.getElementById('scrollBtn');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+});
+
 // Header Mobile
 
 var isNavOpen = false;
@@ -192,16 +208,42 @@ const translations = {
     '¡Quiero una cita!': 'I want a date!',
     'Come sin culpa': 'Eat without guilt',
     'Consigamos juntos dejar de lado a la cultura de la dieta, permitiéndote cultivar aspectos como la autocompasión, el placer por la comida y a reconectar con tus señales de hambre y saciedad.': 'Let\'s work together to set aside diet culture, allowing you to cultivate aspects such as self-compassion, enjoyment of food, and reconnecting with your hunger and fullness cues.',
-    '¡Crea tu plan de acción ahora!': 'Create your action plan now!',
+    '¡Crea tu plan de acción!': 'Create your action plan!',
     'Consultas Online': 'Online consultations',
     'Si quieres conocer más sobre cómo establecer y mantener una relación sana con la comida desde la teoria hasta la práctica en directo conmigo y de forma personalizada, esta opción es para ti.': 'If you want to learn more about how to establish and maintain a healthy relationship with food, from theory to practical application, live and personalized with me, then this option is for you.',
     'Mi pasión siempre ha sido ayudar a las personas a mejorar su calidad de vida mediante una alimentación flexible y equilibrada, evitando la obsesión por la comida y las dietas restrictivas.': 'My passion has always been to help people improve their quality of life through a flexible and balanced diet, while avoiding obsession with food and restrictive diets.',
     'Siempre me ha apasionado la nutrición clínica, por ello me he especializado en el área de los TCA y obesidad.': 'I have always been passionate about clinical nutrition; that\'s why I have specialized in the field of eating disorders and obesity.',
     'Mi método de trabajo se basa en aplicar las bases de una alimentación flexible, saludable, consciente y personalizada en función tus necesidades, siendo capaz de adaptarme a cada situación.': 'My working method is based on applying the principles of flexible, healthy, mindful, and personalized nutrition according to your needs, and I am capable of adapting to each situation.',
     'Asesoramiento Nutricional': 'Nutritional Counseling',
+    'Trastornos de la conducta alimentaria': 'Eating Disorders',
+    'Reeducación alimentaria': 'Nutritional reeducation',
+    'Alimentación en pacientes con patologías digestivas (SII, SIBO etc.)': 'Nutrition for patients with digestive disorders (such as IBS, SIBO, etc.)',
+    'Alergias e intolerancias': 'Allergies and Intolerances',
+    'Alimentación vegana y vegetariana': 'Vegan and vegetarian diets',
+    'Alimentación para pacientes obesos, DM2 etc.': 'Nutrition for obese patients, DM2, etc.',
     'Coaching Nutricional': 'Nutritional Coaching',
+    'Te ayudaré a mejorar tu alimentación y salud, trabajando diferentes conceptos desde la autocompasión, la motivación y empatía': 'I will help you improve your diet and health by addressing various concepts such as self-compassion, motivation, and empathy',
+    'Juntos identificaremos tus objetivos y serás capaz de vencer los obstáculos durante el proceso': 'Together, we will identify your goals, and you will be able to overcome any obstacles that arise during the process',
+    'Aprenderás a usar las herramientas necesarias para conseguir tus objetivos': 'You will learn how to use the necessary tools to achieve your goals',
+    'Mejorarás tu calidad de vida': 'You will improve your quality of life',
+    'Disfrutarás del placer de la alimentación': 'You will enjoy the pleasure of eating',
     'Consultas Personalizadas': 'Custom Queries',
     '¿Cómo trabajo?': 'How do I work?',
+    '1ª Consulta': '1ª Meeting',
+    'Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades. En cada seguimiento se realizará:': 'They will be conducted once a week or every two weeks, depending on your needs. Each follow-up will include:',
+    'Actualización de tu estado.': 'Update your status.',
+    'Resolución de dudas y/o dificultades durante el proceso.': 'Addressing questions and/or challenges throughout the process.',
+    'Análisis de composición corporal (en caso necesario).': 'Body composition analysis (if necessary).',
+    'Educación nutricional.': 'Nutritional education.',
+    'Modificación de tu planificación dietética.': 'Modification of your dietary plan.',
+    'Duración: 35 minutos.': 'Duration: 35 minutes.',
+    'Seguimientos': 'Follow-ups',
+    'En esta 1ª consulta analizaré detalladamente tu situación:': 'In this first consultation, I will thoroughly analyze your situation:',
+    'Historia clínica y nutricional.': 'Patient\'s medical and nutritional history.',
+    'Herramientas nutricionales.': 'Nutritional tools.',
+    'Establecimiento de objetivos.': 'Setting goals.',
+    'Duración: 45 min. / 1 hora (Dependiendo de tus necesidades)': 'Duration: 45 minutes to 1 hour (Depending on your needs)',
+    'La entrega de tu planificación dietética la realizaré en la mayor brevedad posible tras el estudio de tu caso, por ello, se te entregará en la 2ª consulta.': 'I will deliver your dietary plan as soon as possible after studying your case; therefore, it will be provided to you during the second consultation.',
     'Escoge un plan para saber mas información y su precio.': 'Choose a plan to access more information and its price.',
     'Selecciona tu plan': 'Choose your plan',
     'PLAN GRATUITO': 'FREE PLAN',
