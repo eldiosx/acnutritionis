@@ -253,7 +253,7 @@ const translations = {
     'Historia clínica y nutricional.': 'Patient\'s medical and nutritional history.',
     'Herramientas nutricionales.': 'Nutritional tools.',
     'Establecimiento de objetivos.': 'Setting goals.',
-    'Duración: 45 min. / 1 hora (Dependiendo de tus necesidades)': 'Duration: 45 minutes to 1 hour (Depending on your needs)',
+    'Duración: 45 min. / 1 hora (Dependiendo de tus necesidades).': 'Duration: 45 minutes to 1 hour (Depending on your needs).',
     'La entrega de tu planificación dietética la realizaré en la mayor brevedad posible tras el estudio de tu caso, por ello, se te entregará en la 2ª consulta.': 'I will deliver your dietary plan as soon as possible after studying your case; therefore, it will be provided to you during the second consultation.',
     'Escoge un plan para saber mas información y su precio.': 'Choose a plan to access more information and its price.',
     'Selecciona tu plan': 'Choose your plan',
