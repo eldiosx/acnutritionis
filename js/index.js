@@ -112,12 +112,25 @@ const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
 let intervalId;
 
-function showSlide(index) {
+showSlideNext(currentIndex);
+
+function showSlideNext(index) {
     for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('active');
+        slides[i].classList.remove('activeLeft');
+        slides[i].classList.remove('activeRight');
     }
 
-    slides[index].classList.add('active');
+    slides[index].classList.add('activeRight');
+    currentIndex = index;
+}
+
+function showSlidePrev(index) {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('activeRight');
+        slides[i].classList.remove('activeLeft');
+    }
+
+    slides[index].classList.add('activeLeft');
     currentIndex = index;
 }
 
@@ -128,17 +141,17 @@ function showNextSlide() {
         newIndex = 0;
         background4.classList.remove("background4-2");
     }
-    showSlide(newIndex);
+    showSlideNext(newIndex);
 }
 
 function showPrevSlide() {
-    background4.classList.add("background4-2");
+    background4.classList.remove("background4-2");
     let newIndex = currentIndex - 1;
     if (newIndex < 0) {
         newIndex = slides.length - 1;
-        background4.classList.remove("background4-2");
+        background4.classList.add("background4-2");
     }
-    showSlide(newIndex);
+    showSlidePrev(newIndex);
 }
 
 
@@ -149,8 +162,6 @@ prevBtn.addEventListener('click', function () {
 nextBtn.addEventListener('click', function () {
     showNextSlide();
 });
-
-showSlide(currentIndex);
 
 
 //Select pack
