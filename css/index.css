@@ -819,6 +819,14 @@ textarea {
 
 @media (max-width: 710px) {
 
+    .scroll-to-top {
+        bottom: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+
     .button {
         font-size: 18px;
     }
