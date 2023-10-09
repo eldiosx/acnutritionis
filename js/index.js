@@ -231,7 +231,7 @@ const translations = {
     'Alimentación en pacientes con patologías digestivas (SII, SIBO etc.)': 'Nutrition for patients with digestive disorders (such as IBS, SIBO, etc.)',
     'Alergias e intolerancias': 'Allergies and Intolerances',
     'Alimentación vegana y vegetariana': 'Vegan and vegetarian diets',
-    'Alimentación para pacientes obesos, DM2 etc.': 'Nutrition for obese patients, DM2, etc.',
+    'Alimentación para pacientes con obesidad, DM2 etc.': 'Nutrition for obese patients, DM2, etc.',
     'Coaching Nutricional': 'Nutritional Coaching',
     'Te ayudaré a mejorar tu alimentación y salud, trabajando diferentes conceptos desde la autocompasión, la motivación y empatía': 'I will help you improve your diet and health by addressing various concepts such as self-compassion, motivation, and empathy',
     'Juntos identificaremos tus objetivos y serás capaz de vencer los obstáculos durante el proceso': 'Together, we will identify your goals, and you will be able to overcome any obstacles that arise during the process',
