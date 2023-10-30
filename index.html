@@ -9,6 +9,7 @@
     <title>AC Nutritionis</title>
     <link rel="icon" href="img/logoMini.webp">
     <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/cards.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -23,9 +24,9 @@
             <a href="#"><img id="logo" src="./img/aclogo.webp" alt="Logo"></a>
             <nav id="navLinks">
                 <a href="#" onclick="toggleNav()" data-translate="Inicio">Inicio</a>
-                <a href="#nutrition" onclick="toggleNav()" data-translate="Nutrición">Nutrición</a>
                 <a href="#aboutme" onclick="toggleNav()" data-translate="Sobre mí">Sobre mí</a>
                 <a href="#services" onclick="toggleNav()" data-translate="Servicios">Servicios</a>
+                <a href="#appointments" onclick="toggleNav()" data-translate="Consultas">Consultas</a>
                 <a href="#contact" onclick="toggleNav()" data-translate="Contacto">Contacto</a>
                 <a href="" onclick="toggleLang()" data-translate="Idioma">Idioma</a>
             </nav>
@@ -68,7 +69,7 @@
                             como la autocompasión, el placer por la comida y a reconectar con tus señales de hambre y
                             saciedad.
                         </p><br>
-                        <a class="button" href="#packs" data-translate="¡Crea tu plan de acción!">
+                        <a class="button" href="#appointments" data-translate="¡Crea tu plan de acción!">
                             ¡Crea tu plan deacción!</a><br><br>
                     </div>
                 </div>
@@ -112,7 +113,7 @@
                             saludable, consciente y personalizada en función tus necesidades, siendo capaz de adaptarme
                             a cada situación.</p><br>
                     </div>
-                    <div class="image-container"><img src="./img/alex.webp" alt="Logo"></div>
+                    <div class="alexito"><img src="./img/alex.webp" alt="Logo"></div>
                 </div>
             </section>
         </div>
@@ -325,7 +326,7 @@
                 </div>
             </section>
         </div>
-        <div class="container col" id="packs">
+        <div class="container col" id="appointments">
             <section class="banner">
                 <div class="scroll-animation content">
                     <div class="info custom">
@@ -391,6 +392,73 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container col">
+            <section class="banner">
+                <div class="scroll-animation content">
+                    <div class="info">
+                        <h1 data-translate="eBooks - AC Nutritionis">eBooks AC Nutritionis</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="padding"></div>
+            <div class="banner">
+                <div class="card-carousel">
+                    <a href="#appointments" class="card" id="1">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="2">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="3">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="4">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="5">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="6">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="./ebooks/1.pdf" target="_blank" class="card" id="7">
+                        <div class="image-container"></div>
+                        <p>Download</p>
+                    </a>
+                    <a href="#appointments" class="card" id="8">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="9">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="10">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="11">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="12">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                    <a href="#appointments" class="card" id="13">
+                        <div class="image-container"></div>
+                        <p>Lock</p>
+                    </a>
+                </div>
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
             </div>
         </div>
         <div class="container col" id="contact">
@@ -487,6 +555,51 @@
         &#8673;
     </button>
     <script src="./js/index.js"></script>
+    <script src="./js/ebooks.js"></script>
+    <script>
+        const imageContainer = document.getElementById('image-container');
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+
+        imageContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startPosition = e.pageX - currentTranslate;
+        });
+
+        imageContainer.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startPosition = e.touches[0].clientX - currentTranslate;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const newPosition = e.pageX - startPosition;
+                imageContainer.style.transform = `translateX(${newPosition}px)`;
+            }
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) {
+                const newPosition = e.touches[0].clientX - startPosition;
+                imageContainer.style.transform = `translateX(${newPosition}px)`;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                currentTranslate = parseInt(getComputedStyle(imageContainer).transform.split(',')[4]);
+            }
+        });
+
+        document.addEventListener('touchend', () => {
+            if (isDragging) {
+                isDragging = false;
+                currentTranslate = parseInt(getComputedStyle(imageContainer).transform.split(',')[4]);
+            }
+        });
+    </script>
 </body>
 
 </html>

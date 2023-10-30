@@ -228,6 +228,11 @@ main {
 
 .container:nth-child(7) {
     min-height: 600px;
+    background-image: url('../img/ebooks.webp');
+}
+
+.container:nth-child(8) {
+    min-height: 600px;
     background-image: url('../img/footer.webp');
 }
 
@@ -469,7 +474,7 @@ main {
     display: none;
 }
 
-.image-container {
+.alexito {
     display: block;
     max-width: 400px;
     max-height: 400px;
@@ -478,7 +483,7 @@ main {
     overflow: hidden;
 }
 
-.image-container img {
+.alexito img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -560,6 +565,18 @@ li {
 
 ul {
     text-align: left;
+}
+
+/*Library*/
+#image-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+}
+#image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
 /*Contact*/
@@ -781,7 +798,7 @@ textarea {
         margin: 0 25px 0 25px;
     }
 
-    .image-container {
+    .alexito {
         max-width: 250px;
         max-height: 250px;
         margin: 0 20px 0 20px;
@@ -927,7 +944,7 @@ textarea {
         max-width: 70%;
     }
 
-    .image-container {
+    .alexito {
         display: none;
     }
 

@@ -212,6 +212,7 @@ const translations = {
     'Nutrición': 'Nutrition',
     'Sobre mí': 'About me',
     'Servicios': 'Services',
+    'Consultas': 'Appointments',
     'Contacto': 'Contact',
     'Idioma': 'Language',
     'Nutrición para la recuperación': 'Nutrition for Recovery',

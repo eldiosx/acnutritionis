@@ -1,0 +1,130 @@
+  .visuallyhidden {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      opacity: 0;
+
+  }
+
+  .card-carousel {
+      --card-width: 80%;
+      --card-max-width: 280px;
+      --card-height: 350px;
+      --carousel-min-width: 600px;
+      z-index: 1;
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      height: var(--card-height);
+      min-width: var(--carousel-min-width);
+      transition: filter .3s ease;
+  }
+
+  @media screen and (max-width: 640px) {
+      .card-carousel {
+          margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+      }
+  }
+
+  .card-carousel.smooth-return {
+      transition: all .2s ease;
+  }
+
+  .card-carousel .card {
+      width: var(--card-width);
+      max-width: var(--card-max-width);
+      text-align: center;
+      padding: 1em;
+      min-width: 250px;
+      height: var(--card-height);
+      position: absolute;
+      margin: 0 auto;
+      color: rgba(247, 247, 247, 0.9);
+      transition: inherit;
+      border-radius: 1em;
+      filter: brightness(.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .card.highlight {
+      filter: brightness(1)
+  }
+
+
+  .card:nth-of-type(1) .image-container {
+      background-image: url("/img/ebook/8.webp");
+  }
+
+  .card:nth-of-type(2) .image-container {
+      background-image: url("/img/ebook/9.webp")
+  }
+
+  .card:nth-of-type(3) .image-container {
+      background-image: url("/img/ebook/10.webp")
+  }
+
+  .card:nth-of-type(4) .image-container {
+      background-image: url("/img/ebook/11.webp")
+  }
+
+  .card:nth-of-type(5) .image-container {
+      background-image: url("/img/ebook/12.webp")
+  }
+
+  .card:nth-of-type(6) .image-container {
+      background-image: url("/img/ebook/13.webp")
+  }
+
+  .card:nth-of-type(7) .image-container {
+      background-image: url("/img/ebook/1.webp")
+  }
+
+  .card:nth-of-type(8) .image-container {
+      background-image: url("/img/ebook/2.webp")
+  }
+
+  .card:nth-of-type(9) .image-container {
+      background-image: url("/img/ebook/3.webp")
+  }
+
+  .card:nth-of-type(10) .image-container {
+      background-image: url("/img/ebook/4.webp")
+  }
+
+  .card:nth-of-type(11) .image-container {
+      background-image: url("/img/ebook/5.webp")
+  }
+
+  .card:nth-of-type(12) .image-container {
+      background-image: url("/img/ebook/6.webp")
+  }
+
+  .card:nth-of-type(13) .image-container {
+      background-image: url("/img/ebook/7.webp")
+  }
+
+
+
+  .image-container {
+      width: 9em;
+      height: 11em;
+      position: relative;
+      background-size: cover;
+      margin-bottom: 0em;
+      padding: 1em;
+
+  }
+
+  .image-container::after {
+      content: "";
+      display: block;
+      width: 120%;
+      height: 120%;
+      border-radius: 100%;
+      position: absolute;
+      top: calc(-10% - 3px);
+      left: calc(-10% - 3px);
+  }
