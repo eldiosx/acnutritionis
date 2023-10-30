@@ -556,50 +556,6 @@
     </button>
     <script src="./js/index.js"></script>
     <script src="./js/ebooks.js"></script>
-    <script>
-        const imageContainer = document.getElementById('image-container');
-        let isDragging = false;
-        let startPosition = 0;
-        let currentTranslate = 0;
-
-        imageContainer.addEventListener('mousedown', (e) => {
-            isDragging = true;
-            startPosition = e.pageX - currentTranslate;
-        });
-
-        imageContainer.addEventListener('touchstart', (e) => {
-            isDragging = true;
-            startPosition = e.touches[0].clientX - currentTranslate;
-        });
-
-        document.addEventListener('mousemove', (e) => {
-            if (isDragging) {
-                const newPosition = e.pageX - startPosition;
-                imageContainer.style.transform = `translateX(${newPosition}px)`;
-            }
-        });
-
-        document.addEventListener('touchmove', (e) => {
-            if (isDragging) {
-                const newPosition = e.touches[0].clientX - startPosition;
-                imageContainer.style.transform = `translateX(${newPosition}px)`;
-            }
-        });
-
-        document.addEventListener('mouseup', () => {
-            if (isDragging) {
-                isDragging = false;
-                currentTranslate = parseInt(getComputedStyle(imageContainer).transform.split(',')[4]);
-            }
-        });
-
-        document.addEventListener('touchend', () => {
-            if (isDragging) {
-                isDragging = false;
-                currentTranslate = parseInt(getComputedStyle(imageContainer).transform.split(',')[4]);
-            }
-        });
-    </script>
 </body>
 
 </html>
