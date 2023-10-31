@@ -9,7 +9,7 @@
   .card-carousel {
       --card-width: 80%;
       --card-max-width: 280px;
-      --card-height: 350px;
+      --card-height: 450px;
       --carousel-min-width: 600px;
       z-index: 1;
       position: relative;
@@ -115,22 +115,11 @@
 
 
   .image-container {
-      width: 9em;
-      height: 11em;
+      width: 12em;
+      height: 15em;
       position: relative;
       background-size: cover;
       margin-bottom: 0em;
       padding: 1em;
 
-  }
-
-  .image-container::after {
-      content: "";
-      display: block;
-      width: 120%;
-      height: 120%;
-      border-radius: 100%;
-      position: absolute;
-      top: calc(-10% - 3px);
-      left: calc(-10% - 3px);
   }
