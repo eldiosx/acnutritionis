@@ -1,4 +1,4 @@
-/*General*/
+
 * {
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ h2 {
     transform: translateY(0);
 }
 
-/*Header*/
+
 
 header {
     position: fixed;
@@ -171,7 +171,7 @@ nav a:hover {
     transform: rotate(90deg);
 }
 
-/*Contents*/
+
 
 main {
     height: 100%;
@@ -469,7 +469,7 @@ main {
     padding: 25px;
 }
 
-/*About me*/
+
 
 .mobile-image-container {
     display: none;
@@ -490,7 +490,7 @@ main {
     object-fit: cover;
 }
 
-/*Planing*/
+
 
 .icon-navigate_before,
 .icon-navigate_next {
@@ -568,7 +568,7 @@ ul {
     text-align: left;
 }
 
-/*Library*/
+
 #image-container {
     display: flex;
     overflow: hidden;
@@ -580,7 +580,7 @@ ul {
     transition: transform 0.3s;
 }
 
-/*Contact*/
+
 
 form {
     width: 500px;
@@ -606,7 +606,7 @@ textarea {
     border-radius: 3px;
 }
 
-/*Footer*/
+
 .contact div {
     margin: 50px;
     width: 250px;
@@ -683,7 +683,7 @@ textarea {
     left: 2%;
 }
 
-/*Scroll Button*/
+
 .scroll-to-top {
     display: none;
     position: fixed;
@@ -722,10 +722,10 @@ textarea {
     }
 }
 
-/*Responsive - Tablet mode*/
+
 @media (max-width: 1300px) {
 
-    /*General*/
+    
 
     body,
     html {
@@ -743,7 +743,7 @@ textarea {
         text-align: center;
     }
 
-    /*Header*/
+    
 
     header {
         height: 80px;
@@ -758,7 +758,7 @@ textarea {
         gap: 30px;
     }
 
-    /*Contents*/
+    
 
     .desktop {
         display: flex;
@@ -833,7 +833,7 @@ textarea {
     }
 }
 
-/*Responsive - Mobile mode*/
+
 
 @media (max-width: 710px) {
 
@@ -860,7 +860,7 @@ textarea {
         font-size: 15px;
     }
 
-    /*General*/
+    
 
     body,
     html {
@@ -879,7 +879,7 @@ textarea {
         text-align: center;
     }
 
-    /*Header*/
+    
 
     header {
         height: 70px;
@@ -893,7 +893,7 @@ textarea {
         display: none;
     }
 
-    /*Contents*/
+    
 
     .aboutme {
         padding-top: 5px;
@@ -1079,4 +1079,3 @@ textarea {
     }
 }
 
-/*Responsive - Smartwatch mode*/
