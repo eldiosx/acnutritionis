@@ -42,17 +42,18 @@
       justify-content: center;
   }
 
-  .lock img, .download img{
-    transform: translateY(5px);
-    width: 20px;
+  .lock img,
+  .download img {
+      transform: translateY(5px);
+      width: 20px;
   }
 
   .card-carousel .card:hover .lock {
-    color: rgb(173, 0, 0);
+      color: rgb(173, 0, 0);
   }
 
   .card-carousel .card:hover .download {
-    color: rgb(0, 173, 0);
+      color: rgb(0, 173, 0);
   }
 
   .card.highlight {
@@ -112,8 +113,6 @@
       background-image: url("/img/ebook/7.webp")
   }
 
-
-
   .image-container {
       width: 12em;
       height: 15em;
@@ -122,4 +121,30 @@
       margin-bottom: 0em;
       padding: 1em;
 
+  }
+
+  @media (max-width: 500px) {
+      .card-carousel {
+          --card-width: 80%;
+          --card-max-width: 280px;
+          --card-height: 400px;
+          --carousel-min-width: 600px;
+          z-index: 1;
+          position: relative;
+          margin: 0 auto;
+          width: 100%;
+          height: var(--card-height);
+          min-width: var(--carousel-min-width);
+          transition: filter .3s ease;
+      }
+
+      .image-container {
+          width: 10em;
+          height: 12.5em;
+          position: relative;
+          background-size: cover;
+          margin-bottom: 0em;
+          padding: 1em;
+
+      }
   }
