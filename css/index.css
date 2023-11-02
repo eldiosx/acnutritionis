@@ -189,6 +189,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    overflow: hidden;
 }
 
 .container:nth-child(1) {
