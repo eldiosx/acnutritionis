@@ -10,7 +10,7 @@
       --card-width: 80%;
       --card-max-width: 280px;
       --card-height: 450px;
-      --carousel-min-width: 600px;
+      --carousel-min-width: 400px;
       z-index: 1;
       position: relative;
       margin: 0 auto;
@@ -128,9 +128,9 @@
   @media (max-width: 500px) {
       .card-carousel {
           --card-width: 80%;
-          --card-max-width: 280px;
+          --card-max-width: 200px;
           --card-height: 400px;
-          --carousel-min-width: 600px;
+          --carousel-min-width: 200px;
           z-index: 1;
           position: relative;
           margin: 0 auto;
