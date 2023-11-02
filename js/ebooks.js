@@ -112,6 +112,10 @@ class CardCarousel extends DraggingEvent {
     // Initializers
     this.build()
 
+    this.container.addEventListener('touchmove', function (e) {
+      e.preventDefault();
+    });
+
     // Bind dragging event
     super.getDistance(this.moveCards.bind(this))
   }

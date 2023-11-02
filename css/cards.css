@@ -18,6 +18,8 @@
       height: var(--card-height);
       min-width: var(--carousel-min-width);
       transition: filter .3s ease;
+      overflow: hidden;
+
   }
 
   .card-carousel.smooth-return {
