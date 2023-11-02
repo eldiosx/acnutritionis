@@ -114,14 +114,18 @@ class CardCarousel extends DraggingEvent {
 
     // Bind dragging event
     super.getDistance(this.moveCards.bind(this))
-     // Disable vertical scroll on the container
-     this.container.addEventListener("wheel", (e) => {
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-      }
-    });
+        // Skip scroll Y
+        this.container.addEventListener('touchstart', function(e) {
+          let startY = e.touches[0].clientY;
+          this.container.addEventListener('touchmove', function(e) {
+            let deltaY = e.touches[0].clientY - startY;
+            //  Max scroll Y
+            if (Math.abs(deltaY) > 10) {
+              e.preventDefault();
+            }
+          });
+        });
   }
-
 
   updateCardWidth() {
     this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
