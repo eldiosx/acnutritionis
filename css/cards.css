@@ -1,11 +1,3 @@
-  .visuallyhidden {
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      opacity: 0;
-
-  }
-
   .card-carousel {
       --card-width: 80%;
       --card-max-width: 280px;
@@ -18,7 +10,6 @@
       height: var(--card-height);
       min-width: var(--carousel-min-width);
       transition: filter .3s ease;
-      overflow: hidden;
 
   }
 

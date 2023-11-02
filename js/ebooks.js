@@ -32,13 +32,9 @@ class DraggingEvent {
 
     this.target.addEventListener("touchstart", e => {
       handler = callback(e)
-
       window.addEventListener("touchmove", handler)
-
       window.addEventListener("touchend", clearDraggingEvent)
-
       document.body.addEventListener("mouseleave", clearDraggingEvent)
-
       function clearDraggingEvent() {
         window.removeEventListener("touchmove", handler)
         window.removeEventListener("touchend", clearDraggingEvent)
