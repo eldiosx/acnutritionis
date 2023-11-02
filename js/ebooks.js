@@ -114,7 +114,14 @@ class CardCarousel extends DraggingEvent {
 
     // Bind dragging event
     super.getDistance(this.moveCards.bind(this))
+     // Disable vertical scroll on the container
+     this.container.addEventListener("wheel", (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+      }
+    });
   }
+
 
   updateCardWidth() {
     this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
