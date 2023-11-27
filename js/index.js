@@ -170,6 +170,7 @@ const select = document.getElementById("selectplan");
 const freepack = document.getElementById("freepack");
 const startplan = document.getElementById("startplan");
 const nutritionpack = document.getElementById("nutritionplan");
+const date = document.getElementById("date");
 const checkplan = document.getElementById("checkplan");
 guide.classList.add("show");
 select.addEventListener("change", () => {
@@ -178,24 +179,35 @@ select.addEventListener("change", () => {
         freepack.classList.add("show");
         startplan.classList.remove("show");
         nutritionpack.classList.remove("show");
+        date.classList.remove("show");
         checkplan.classList.remove("show");
     } else if (select.value === "start") {
         guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.add("show");
         nutritionpack.classList.remove("show");
+        date.classList.remove("show");
         checkplan.classList.remove("show");
     } else if (select.value === "nutrition") {
         guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.remove("show");
         nutritionpack.classList.add("show");
+        date.classList.remove("show");
+        checkplan.classList.remove("show");
+    } else if (select.value === "date") {
+        guide.classList.remove("show");
+        freepack.classList.remove("show");
+        startplan.classList.remove("show");
+        nutritionpack.classList.remove("show");
+        date.classList.add("show");
         checkplan.classList.remove("show");
     } else if (select.value === "check") {
         guide.classList.remove("show");
         freepack.classList.remove("show");
         startplan.classList.remove("show");
         nutritionpack.classList.remove("show");
+        date.classList.remove("show");
         checkplan.classList.add("show");
     }
 });
