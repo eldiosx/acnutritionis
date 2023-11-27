@@ -449,6 +449,10 @@ main {
     color: var(--text-button);
     text-decoration: none;
     font-size: 24px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    align-self: center;
 }
 
 #selectplan:hover {

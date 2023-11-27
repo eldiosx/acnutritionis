@@ -170,7 +170,7 @@ const select = document.getElementById("selectplan");
 const freepack = document.getElementById("freepack");
 const startplan = document.getElementById("startplan");
 const nutritionpack = document.getElementById("nutritionplan");
-const date = document.getElementById("date");
+const date = document.getElementById("dateplan");
 const checkplan = document.getElementById("checkplan");
 guide.classList.add("show");
 select.addEventListener("change", () => {
