@@ -82,28 +82,6 @@ function toggleNav() {
     }
 }
 
-// Send email
-
-// document.getElementById("send").addEventListener("click", function () {
-//     const name = document.getElementById("name").value;
-//     const telefono = document.getElementById("telefono").value;
-//     const email = document.getElementById("email").value;
-//     const info = document.getElementById("info").value;
-
-//     const message = `Nombre: ${name}\nTeléfono: ${telefono}\nCorreo Electrónico: ${email}\nInformación: ${info}`;
-
-//     const link = `mailto:info@acnutritionis.com?subject=Formulario de AC Nutritionis&body=${encodeURIComponent(message)}`;
-//     window.location.href = link;
-
-//     document.getElementById("contact-form").reset();
-// });
-
-// document.getElementById("contact-form").addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     resetForm();
-// });
-
-
 // Slider
 const background4 = document.querySelector('.background4');
 const prevBtn = document.querySelector('.icon-navigate_before');
