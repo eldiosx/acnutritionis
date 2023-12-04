@@ -23,19 +23,19 @@ window.addEventListener('scroll', () => {
     var navLinks = document.getElementById("navLinks");
     if (window.innerWidth > 1300) {
         if (window.scrollY > 100) {
-            header.style.height = '70px';
-            logo.style.height = '70px';
-        } else {
-            header.style.height = '110px';
-            logo.style.height = '100px';
-        }
-    } else if (window.innerWidth > 700) {
-        if (window.scrollY > 50) {
             header.style.height = '60px';
             logo.style.height = '60px';
         } else {
             header.style.height = '80px';
             logo.style.height = '70px';
+        }
+    } else if (window.innerWidth > 700) {
+        if (window.scrollY > 50) {
+            header.style.height = '50px';
+            logo.style.height = '50px';
+        } else {
+            header.style.height = '70px';
+            logo.style.height = '60px';
         }
     }
 });

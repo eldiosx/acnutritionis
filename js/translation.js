@@ -42,7 +42,7 @@ const translations = {
     'Educación nutricional.': 'Nutritional education.',
     'Modificación de tu planificación dietética.': 'Modification of your dietary plan.',
     'Duración: 30 minutos.': 'Duration: 30 minutes.',
-    'Duración':'Duration',
+    'Duración': 'Duration',
     'Seguimientos': 'Follow-ups',
     'En esta 1ª consulta analizaré detalladamente tu situación:': 'In this first consultation, I will thoroughly analyze your situation:',
     'Historia clínica y nutricional.': 'Patient\'s medical and nutritional history.',

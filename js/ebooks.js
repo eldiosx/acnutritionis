@@ -114,17 +114,17 @@ class CardCarousel extends DraggingEvent {
 
     // Bind dragging event
     super.getDistance(this.moveCards.bind(this))
-        // Skip scroll Y
-        this.container.addEventListener('touchstart', function(e) {
-          let startY = e.touches[0].clientY;
-          this.container.addEventListener('touchmove', function(e) {
-            let deltaY = e.touches[0].clientY - startY;
-            //  Max scroll Y
-            if (Math.abs(deltaY) > 10) {
-              e.preventDefault();
-            }
-          });
-        });
+    // Skip scroll Y
+    this.container.addEventListener('touchstart', function (e) {
+      let startY = e.touches[0].clientY;
+      this.container.addEventListener('touchmove', function (e) {
+        let deltaY = e.touches[0].clientY - startY;
+        //  Max scroll Y
+        if (Math.abs(deltaY) > 10) {
+          e.preventDefault();
+        }
+      });
+    });
   }
 
   updateCardWidth() {
