@@ -1093,7 +1093,7 @@ textarea {
 
     body,
     html {
-        font-size: 15px;
+        font-size: 10px;
         background-color: black;
     }
 
@@ -1103,8 +1103,12 @@ textarea {
     }
 
     h2 {
-        font-size: 17px;
+        font-size: 15px;
         padding: 5px 0 5px 0;
         text-align: center;
+    }
+
+    .container p {
+        font-size: 10px;
     }
 }
