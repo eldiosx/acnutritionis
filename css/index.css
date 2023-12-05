@@ -839,10 +839,28 @@ textarea {
 
 @media (max-width: 710px) {
 
+
+    body,
+    html {
+        font-size: 20px;
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 5px 0 5px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 5px 0 5px 0;
+        text-align: center;
+    }
+
     hr {
         display: none;
     }
-    
+
     .separator {
         padding: 5px;
     }
@@ -875,27 +893,6 @@ textarea {
         width: 200px;
         font-size: 15px;
     }
-
-
-
-    body,
-    html {
-        font-size: 20px;
-        background-color: black;
-    }
-
-    h1 {
-        font-size: 25px;
-        padding: 10px 0 10px 0;
-    }
-
-    h2 {
-        font-size: 20px;
-        padding: 10px 0 10px 0;
-        text-align: center;
-    }
-
-
 
     header {
         height: 70px;
