@@ -25,6 +25,7 @@
 }
 
 hr {
+    margin-top: 20px;
     border: none;
     height: 3px;
     background-color: white;
@@ -837,6 +838,14 @@ textarea {
 
 
 @media (max-width: 710px) {
+
+    hr {
+        display: none;
+    }
+    
+    .separator {
+        padding: 5px;
+    }
 
     .logobig {
         max-width: 200px;
