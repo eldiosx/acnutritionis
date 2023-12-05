@@ -24,6 +24,12 @@
     --hover-button: rgba(155, 155, 155, 0.85);
 }
 
+hr {
+    border: none;
+    height: 3px;
+    background-color: white;
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -198,11 +204,6 @@ main {
 }
 
 .container:nth-child(2) {
-    min-height: 800px;
-    background-image: url('../img/bowl.webp');
-}
-
-.container:nth-child(3) {
     min-height: 900px;
     background-image: url('../img/desktop.webp');
 }
@@ -216,22 +217,22 @@ main {
     background-image: url('../img/working2.webp');
 }
 
-.container:nth-child(5) {
+.container:nth-child(4) {
     min-height: 900px;
     background-image: url('../img/working.webp');
 }
 
-.container:nth-child(6) {
+.container:nth-child(5) {
     min-height: 700px;
     background-image: url('../img/prices.webp');
 }
 
-.container:nth-child(7) {
+.container:nth-child(6) {
     min-height: 600px;
     background-image: url('../img/ebooks.webp');
 }
 
-.container:nth-child(8) {
+.container:nth-child(7) {
     min-height: 600px;
     background-image: url('../img/footer.webp');
 }
@@ -427,8 +428,8 @@ main {
 }
 
 .logobig {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
     margin: 0 50px 0 50px;
 }
 
@@ -716,8 +717,8 @@ textarea {
     }
 
     .logobig {
-        max-width: 350px;
-        max-height: 350px;
+        max-width: 500px;
+        max-height: 500px;
         margin: 0 40px 0 40px;
     }
 }
@@ -794,8 +795,8 @@ textarea {
     }
 
     .logobig {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 400px;
+        max-height: 400px;
         margin: 0 25px 0 25px;
     }
 
@@ -1050,18 +1051,14 @@ textarea {
         display: block;
     }
 
-    .container:nth-child(5) {
+    .container:nth-child(4) {
         min-height: 1200px;
         background-image: url('../img/working.webp');
     }
 
-    .container:nth-child(6) {
+    .container:nth-child(5) {
         min-height: 900px;
         background-image: url('../img/prices.webp');
-    }
-
-    .logobig {
-        display: none;
     }
 
     .padding {
