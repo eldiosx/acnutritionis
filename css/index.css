@@ -1007,7 +1007,7 @@ textarea {
 
     .open-header #logo {
         transform: translateY(-40%);
-        height: 100px;
+        height: 90px;
         left: 5%;
         position: absolute;
 
@@ -1088,7 +1088,15 @@ textarea {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
+
+    .open-header #logo {
+        transform: translateY(-40%);
+        height: 40px;
+        left: 5%;
+        position: absolute;
+
+    }
 
 
     body,
