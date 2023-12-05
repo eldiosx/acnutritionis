@@ -880,17 +880,17 @@ textarea {
 
     body,
     html {
-        font-size: 24px;
+        font-size: 20px;
         background-color: black;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px 0 10px 0;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 20px;
         padding: 10px 0 10px 0;
         text-align: center;
     }
