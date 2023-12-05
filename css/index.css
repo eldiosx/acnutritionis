@@ -125,7 +125,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 80px;
     transition: height 0.3s;
 }
 
@@ -140,7 +140,7 @@ header {
 
 #logo {
     transition: height 0.3s;
-    height: 100px;
+    height: 70px;
     padding: 10px 5px 5px 5px;
 }
 
