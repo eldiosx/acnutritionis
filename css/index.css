@@ -185,11 +185,9 @@ nav a:hover {
 .icon-menu2 {
     display: none;
     transform: rotate(90deg);
-    width: 1.5em;
+    width: 3em;
     transition: transform 0.3s ease-in-out;
 }
-
-
 
 main {
     height: 100%;
@@ -510,8 +508,8 @@ main {
     position: absolute;
     color: var(--text-color);
     cursor: pointer;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .navigate_left {
@@ -724,8 +722,12 @@ textarea {
 
     .navigate_left,
     .navigate_right {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigate_left {
+        right: 2%;
     }
 
     .navigate_right {
@@ -741,8 +743,6 @@ textarea {
 
 
 @media (max-width: 1300px) {
-
-
 
     body,
     html {
@@ -807,8 +807,8 @@ textarea {
 
     .navigate_left,
     .navigate_right {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .logobig {
@@ -980,8 +980,8 @@ textarea {
 
     .navigate_left,
     .navigate_right {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .custom {
