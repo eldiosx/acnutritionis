@@ -62,21 +62,21 @@ var isNavOpen = false;
 
 function toggleNav() {
     var header = document.getElementById("header");
-    var navLinks = document.getElementById("navLinks");
     var menuIcon = document.getElementById("button-menu");
+    var menuIcon2 = document.getElementById("button-menu2");
 
     if (window.innerWidth < 700) {
         if (isNavOpen) {
             header.classList.remove("open-header");
             header.style.height = '80px';
             logo.style.height = '60px';
-            menuIcon.classList.remove("icon-cross");
-            menuIcon.classList.add("icon-menu");
+            menuIcon.style.display = 'flex';
+            menuIcon2.style.display = 'none';
         } else {
             header.classList.add("open-header");
             header.style.height = '100%';
-            menuIcon.classList.remove("icon-menu");
-            menuIcon.classList.add("icon-cross");
+            menuIcon2.style.display = 'flex';
+            menuIcon.style.display = 'none';
         }
         isNavOpen = !isNavOpen;
     }
@@ -84,8 +84,8 @@ function toggleNav() {
 
 // Slider
 const background4 = document.querySelector('.background4');
-const prevBtn = document.querySelector('.icon-navigate_before');
-const nextBtn = document.querySelector('.icon-navigate_next');
+const prevBtn = document.querySelector('.navigate_left');
+const nextBtn = document.querySelector('.navigate_right');
 const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
 let intervalId;

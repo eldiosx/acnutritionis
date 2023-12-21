@@ -8,7 +8,6 @@
     <meta name="generator" content="Ignisus">
     <title>AC Nutritionis</title>
     <link rel="icon" href="img/logoMini.webp">
-    <link href="./css/style.css" rel="stylesheet">
     <link href="./css/ebooks.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
 </head>
@@ -16,14 +15,13 @@
 <body>
     <!-- Loader -->
     <div id="loader" class="loader">
-        <div class="icon-spinner2">
-        </div>
+        <img class="spinner" src="./img/icons/spinner.svg" alt="">
     </div>
     <!-- Header -->
     <header id="header">
         <div class="header-container">
             <a href="#">
-                <img id="logo" src="./img/aclogo.webp" alt="Logo">
+                <img id="logo" src="../img/aclogo.webp" alt="Logo">
             </a>
             <nav id="navLinks">
                 <a href="#" onclick="toggleNav()" data-translate="Inicio">
@@ -40,8 +38,8 @@
                 </a>
             </nav>
             <div class="menu-button" onclick="toggleNav()">
-                <span id="button-menu" class="icon-menu">
-                </span>
+                <img id="button-menu" class="icon-menu" src="../img/icons/menu.svg" alt="menu">
+                <img id="button-menu2" class="icon-menu2" src="../img/icons/cross.svg" alt="menu">
             </div>
         </div>
     </header>
@@ -160,8 +158,8 @@
                     </div>
                 </section>
             </div>
-            <div class="icon-navigate_before"></div>
-            <div class="icon-navigate_next"></div>
+            <div><img class="navigate_left" src="./img/icons/arrow-left.svg" alt=""></div>
+            <div><img class="navigate_right" src="./img/icons/arrow-right.svg" alt=""></div>
         </div>
         <div class="container col">
             <section class="banner">
@@ -630,17 +628,21 @@
             <div class="banner-empty">
                 <div class="content">
                     <div class="info">
-                        <p>
-                            <a onclick="copyemail()" id="email" class="icon-envelope" title="Click para copiar">
-                                &nbsp;info@acnutritionis.com
+                        <p class="contact2">
+                            <img class="icon" src="../img/icons/email2.svg" alt="">
+                            &nbsp;
+                            <a onclick="copyemail()" id="email" title="Click para copiar">
+                                info@acnutritionis.com
                             </a>
                         </p>
                         <br>
                     </div>
                     <div class="info">
-                        <p>
-                            <a onclick="copynumber()" id="number" class="icon-phone1" title="Click para copiar">
-                                &nbsp;+34 672 268 898
+                        <p class="contact2">
+                            <img class="icon" src="../img/icons/phone.svg" alt="">
+                            &nbsp;
+                            <a onclick="copynumber()" id="number" title="Click para copiar">
+                                +34 672 268 898
                             </a>
                         </p>
                         <br>
