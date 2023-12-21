@@ -76,6 +76,15 @@ html {
     font-size: 24px;
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.text {
+    text-align: center;
+}
+
 h1 {
     font-size: 48px;
     padding: 20px 0 20px 0;
@@ -610,6 +619,10 @@ textarea {
 
 
 .contact div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
     margin: 50px;
     width: 250px;
     background-color: var(--background-button);
@@ -1103,6 +1116,17 @@ textarea {
     html {
         font-size: 10px;
         background-color: black;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact div {
+        margin: 40px;
+        width: 150px;
+        font-size: 15px;
     }
 
     h1 {
