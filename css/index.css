@@ -44,10 +44,10 @@ hr {
     background-color: rgb(0, 0, 0);
 }
 
-.spinner {
+.icon-spinner2 {
     animation: spin 2s linear infinite;
     color: rgb(255, 255, 255);
-    width: 10vh;
+    font-size: 10vh;
 }
 
 @keyframes spin {
@@ -177,16 +177,13 @@ nav a:hover {
     cursor: pointer;
 }
 
-.icon-menu {
-    width: 1.5em;
+.icon-list2 {
+    font-size: 1.5em;
     transition: transform 0.3s ease-in-out;
 }
 
-.icon-menu2 {
-    display: none;
+.icon-cross {
     transform: rotate(90deg);
-    width: 1.5em;
-    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -505,21 +502,24 @@ main {
 
 
 
-.navigate_left,
-.navigate_right {
+.icon-navigate_before,
+.icon-navigate_next {
     position: absolute;
     color: var(--text-color);
     cursor: pointer;
-    width: 70px;
-    height: 70px;
 }
 
-.navigate_left {
+.icon-navigate_before {
     left: 3%;
 }
 
-.navigate_right {
+.icon-navigate_next {
     right: 3%;
+}
+
+.icon-navigate_before::before,
+.icon-navigate_next::before {
+    font-size: 70px;
 }
 
 .slider {
@@ -632,12 +632,6 @@ textarea {
     color: var(--text-button);
 }
 
-.contact2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contact:hover div {
     background-color: var(--hover-button);
 }
@@ -664,8 +658,13 @@ textarea {
     background-color: #000000;
 }
 
-#email:hover,
-#number:hover {
+.footer .icon-envelope::before,
+.footer .icon-phone1 {
+    color: var(--text-color);
+}
+
+.footer .icon-envelope:hover,
+.footer .icon-phone1:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -695,7 +694,7 @@ textarea {
     text-decoration: underline;
 }
 
-.navigate_left {
+.icon-navigate_before {
     left: 2%;
 }
 
@@ -722,13 +721,12 @@ textarea {
 
 @media (max-width: 1500px) {
 
-    .navigate_left,
-    .navigate_right {
-        width: 60px;
-        height: 60px;
+    .icon-navigate_before::before,
+    .icon-navigate_next::before {
+        font-size: 60px;
     }
 
-    .navigate_right {
+    .icon-navigate_next {
         right: 2%;
     }
 
@@ -797,18 +795,17 @@ textarea {
         font-size: 16px;
     }
 
-    .navigate_left {
+    .icon-navigate_before {
         left: 1%;
     }
 
-    .navigate_right {
+    .icon-navigate_next {
         right: 1%;
     }
 
-    .navigate_left,
-    .navigate_right {
-        width: 40px;
-        height: 40px;
+    .icon-navigate_before::before,
+    .icon-navigate_next::before {
+        font-size: 50px;
     }
 
     .logobig {
@@ -978,10 +975,9 @@ textarea {
         display: none;
     }
 
-    .navigate_left,
-    .navigate_right {
-        width: 30px;
-        height: 30px;
+    .icon-navigate_before::before,
+    .icon-navigate_next::before {
+        font-size: 40px;
     }
 
     .custom {
