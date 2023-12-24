@@ -21,13 +21,15 @@ checkScrollAnimations();
 
 window.addEventListener('scroll', () => {
     var navLinks = document.getElementById("navLinks");
-    if (window.innerWidth < 1300 && window.innerWidth > 700) {
+    if (isNavOpen) {
+
+    } else if (window.innerWidth < 1300 && window.innerWidth > 710) {
         if (window.scrollY > 100) {
             header.style.height = '60px';
         } else {
             header.style.height = '80px';
         }
-    } else if (window.innerWidth < 700 && window.innerWidth > 310) {
+    } else if (window.innerWidth < 710 && window.innerWidth > 310) {
         if (window.scrollY > 50) {
             header.style.height = '50px';
         } else {
@@ -67,7 +69,7 @@ function toggleNav() {
     var menuIcon = document.getElementById("button-menu");
     var menuIcon2 = document.getElementById("button-menu2");
 
-    if (window.innerWidth < 700 && window.innerWidth > 310) {
+    if (window.innerWidth < 710 && window.innerWidth > 310) {
         if (isNavOpen) {
             header.classList.remove("open-header");
             header.style.height = '70px';
