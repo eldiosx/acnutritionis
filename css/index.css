@@ -10,6 +10,13 @@
     transition: .4s;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 @font-face {
     font-family: 'frankruhlibre';
     src: url('./fonts/FrankRuhlLibre-Bold.woff2') format('woff2'),
@@ -168,8 +175,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--text-color);
-    text-decoration: underline;
+    color: white;
+    text-shadow: #CCC 1px 0 10px; 
 }
 
 .menu-button {
@@ -454,7 +461,6 @@ main {
     margin: auto;
 }
 
-
 #selectplan {
     border-radius: 5px;
     background-color: transparent;
@@ -462,11 +468,10 @@ main {
     text-decoration: none;
     font-size: 24px;
 }
-
 #selectplan:hover {
     cursor: pointer;
-}
 
+}
 
 .col {
     flex-direction: column;

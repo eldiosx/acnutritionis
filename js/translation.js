@@ -7,7 +7,7 @@ const translations = {
     'Servicios': 'Services',
     'Consultas': 'Appointments',
     'Contacto': 'Contact',
-    'Idioma': 'Language',
+    '🇪🇦': '🇬🇧',
     'Nutrición para la recuperación': 'Nutrition for Recovery',
     '¡Hola!, soy Alejandro Campos dietista-nutricionista y te ayudaré a dejar de lado las dietas restrictivas, a que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la alimentación.': 'Hello! I\'m Alejandro Campos, a dietitian-nutritionist, and I\'ll help you move away from restrictive diets, learn to eat without guilt, and embrace the pleasure of food.',
     '¡Quiero una cita!': 'I want a date!',
