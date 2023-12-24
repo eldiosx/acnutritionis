@@ -71,11 +71,13 @@ function toggleNav() {
         if (isNavOpen) {
             header.classList.remove("open-header");
             header.style.height = '70px';
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
             menuIcon.style.display = 'flex';
             menuIcon2.style.display = 'none';
         } else {
             header.classList.add("open-header");
             header.style.height = '100%';
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
             menuIcon2.style.display = 'flex';
             menuIcon.style.display = 'none';
         }
@@ -84,11 +86,13 @@ function toggleNav() {
         if (isNavOpen) {
             header.classList.remove("open-header");
             header.style.height = '50px';
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
             menuIcon.style.display = 'flex';
             menuIcon2.style.display = 'none';
         } else {
             header.classList.add("open-header");
             header.style.height = '100%';
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
             menuIcon2.style.display = 'flex';
             menuIcon.style.display = 'none';
         }

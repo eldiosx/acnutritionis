@@ -1015,11 +1015,6 @@ textarea {
         object-fit: cover;
     }
 
-    .open-header {
-        background-color: rgba(0, 0, 0, 0.900);
-        width: 100%;
-    }
-
     .open-header #button-menu2 {
         right: 5%;
         position: absolute;
