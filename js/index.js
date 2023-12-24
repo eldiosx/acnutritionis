@@ -21,21 +21,23 @@ checkScrollAnimations();
 
 window.addEventListener('scroll', () => {
     var navLinks = document.getElementById("navLinks");
-    if (window.innerWidth > 1300) {
+    if (window.innerWidth < 1300 && window.innerWidth > 700) {
         if (window.scrollY > 100) {
             header.style.height = '60px';
-            logo.style.height = '60px';
         } else {
             header.style.height = '80px';
-            logo.style.height = '70px';
         }
-    } else if (window.innerWidth > 700) {
+    } else if (window.innerWidth < 700 && window.innerWidth > 310) {
         if (window.scrollY > 50) {
             header.style.height = '50px';
-            logo.style.height = '50px';
         } else {
             header.style.height = '70px';
-            logo.style.height = '60px';
+        }
+    } else if (window.innerWidth < 310) {
+        if (window.scrollY > 30) {
+            header.style.height = '40px';
+        } else {
+            header.style.height = '50px';
         }
     }
 });
@@ -65,11 +67,23 @@ function toggleNav() {
     var menuIcon = document.getElementById("button-menu");
     var menuIcon2 = document.getElementById("button-menu2");
 
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 700 && window.innerWidth > 310) {
         if (isNavOpen) {
             header.classList.remove("open-header");
-            header.style.height = '80px';
-            logo.style.height = '60px';
+            header.style.height = '70px';
+            menuIcon.style.display = 'flex';
+            menuIcon2.style.display = 'none';
+        } else {
+            header.classList.add("open-header");
+            header.style.height = '100%';
+            menuIcon2.style.display = 'flex';
+            menuIcon.style.display = 'none';
+        }
+        isNavOpen = !isNavOpen;
+    } else if (window.innerWidth < 310) {
+        if (isNavOpen) {
+            header.classList.remove("open-header");
+            header.style.height = '50px';
             menuIcon.style.display = 'flex';
             menuIcon2.style.display = 'none';
         } else {

@@ -129,7 +129,7 @@ h2 {
 
 
 
-header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -176,7 +176,7 @@ nav a {
 
 nav a:hover {
     color: white;
-    text-shadow: #CCC 1px 0 10px; 
+    text-shadow: #CCC 1px 0 10px;
 }
 
 .menu-button {
@@ -468,6 +468,7 @@ main {
     text-decoration: none;
     font-size: 24px;
 }
+
 #selectplan:hover {
     cursor: pointer;
 
@@ -513,6 +514,11 @@ main {
     cursor: pointer;
     width: 50px;
     height: 50px;
+}
+
+.navigate_left:hover,
+.navigate_right:hover {
+    scale: 1.5;
 }
 
 .navigate_left {
@@ -765,7 +771,7 @@ textarea {
 
 
 
-    header {
+    #header {
         height: 80px;
     }
 
@@ -913,7 +919,7 @@ textarea {
         font-size: 15px;
     }
 
-    header {
+    #header {
         height: 70px;
     }
 
@@ -924,8 +930,6 @@ textarea {
     #navLinks {
         display: none;
     }
-
-
 
     .aboutme {
         padding-top: 5px;
@@ -1013,24 +1017,27 @@ textarea {
 
     .open-header {
         background-color: rgba(0, 0, 0, 0.900);
+        width: 100%;
     }
 
-    .open-header #button-menu {
-        right: 10%;
+    .open-header #button-menu2 {
+        right: 5%;
         position: absolute;
+        transform: translateY(-50%);
     }
 
     .open-header #navLinks {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin: auto;
     }
 
     .open-header #logo {
-        transform: translateY(-40%);
+        transform: translateY(-50%);
         height: 90px;
         left: 5%;
         position: absolute;
-
     }
 
     .alex {
@@ -1111,13 +1118,13 @@ textarea {
 @media (max-width: 310px) {
 
     .open-header #logo {
-        transform: translateY(-40%);
-        height: 40px;
-        left: 5%;
-        position: absolute;
-
+        height: 50px;
+        left: 1%;
     }
 
+    .open-header #button-menu2 {
+        right: 3%;
+    }
 
     body,
     html {
@@ -1149,5 +1156,13 @@ textarea {
 
     .container p {
         font-size: 10px;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    #logo {
+        height: 40px;
     }
 }
