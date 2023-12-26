@@ -1,0 +1,134 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-banner);
+    color: var(--text-color);
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    transition: height 0.3s;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo {
+    transition: height 0.3s;
+    height: 70px;
+    padding: 10px 5px 5px 5px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+#navLinks {
+    display: flex;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: #CCC 1px 0 10px;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+#button-menu {
+    width: 1.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+#button-menu2 {
+    display: none;
+    transform: rotate(90deg);
+    width: 3em;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1300px) {
+    #header {
+        height: 80px;
+    }
+
+    #logo {
+        height: 70px;
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 710px) {
+    #header {
+        height: 70px;
+    }
+
+    #logo {
+        height: 60px;
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    .open-header #button-menu2 {
+        right: 5%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+
+    .open-header #navLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .open-header #logo {
+        transform: translateY(-50%);
+        height: 90px;
+        left: 5%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 310px) {
+    #header {
+        height: 50px;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+    .open-header #logo {
+        height: 50px;
+        left: 1%;
+    }
+
+    .open-header #button-menu2 {
+        right: 3%;
+    }
+}

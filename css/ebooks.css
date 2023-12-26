@@ -1,7 +1,7 @@
   .card-carousel {
       --card-width: 80%;
       --card-max-width: 280px;
-      --card-height: 450px;
+      --card-height: 420px;
       --carousel-min-width: 400px;
       z-index: 1;
       position: relative;
@@ -24,7 +24,6 @@
       text-align: center;
       padding: 1em;
       min-width: 250px;
-      height: var(--card-height);
       position: absolute;
       margin: 0 auto;
       color: rgba(247, 247, 247, 0.9);
@@ -36,17 +35,28 @@
       justify-content: center;
   }
 
-  .lock img,
-  .download img {
-      transform: translateY(5px);
-      width: 20px;
+  .card .text-container {
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
   }
 
-  .card-carousel .card:hover .lock {
+  .card .text-container img {
+      color: var(--text);
+      width: 20px;
+      height: 20px;
+  }
+
+  .card .text-container p {
+      flex-grow: 1;
+  }
+
+
+  .card:hover .text-container {
       color: rgb(173, 0, 0);
   }
 
-  .card-carousel .card:hover .download {
+  .card:hover .unlock {
       color: rgb(0, 173, 0);
   }
 
@@ -128,8 +138,8 @@
   }
 
   .card:nth-of-type(19) .image-container {
-    background-image: url("/img/ebook/10.webp")
-}
+      background-image: url("/img/ebook/10.webp")
+  }
 
   .image-container {
       width: 12em;
@@ -141,28 +151,28 @@
 
   }
 
+  @media (max-width: 1300px) {
+      .card-carousel {
+          --card-height: 350px;
+      }
+  }
+
   @media (max-width: 500px) {
       .card-carousel {
           --card-width: 80%;
           --card-max-width: 200px;
-          --card-height: 400px;
+          --card-height: 300px;
           --carousel-min-width: 200px;
-          z-index: 1;
-          position: relative;
-          margin: 0 auto;
-          width: 100%;
-          height: var(--card-height);
-          min-width: var(--carousel-min-width);
-          transition: filter .3s ease;
       }
 
       .image-container {
           width: 10em;
           height: 12.5em;
-          position: relative;
-          background-size: cover;
-          margin-bottom: 0em;
-          padding: 1em;
+      }
+  }
 
+  @media (max-width: 310px) {
+      .card-carousel {
+          --card-height: 170px;
       }
   }
