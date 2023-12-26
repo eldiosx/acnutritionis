@@ -11,21 +11,14 @@ class DraggingEvent {
 
     this.target.addEventListener("mousedown", e => {
       e.preventDefault()
-
       handler = callback(e)
-
       window.addEventListener("mousemove", handler)
-
       document.addEventListener("mouseleave", clearDraggingEvent)
-
       window.addEventListener("mouseup", clearDraggingEvent)
-
       function clearDraggingEvent() {
         window.removeEventListener("mousemove", handler)
         window.removeEventListener("mouseup", clearDraggingEvent)
-
         document.removeEventListener("mouseleave", clearDraggingEvent)
-
         handler(null)
       }
     })
@@ -44,7 +37,6 @@ class DraggingEvent {
     })
   }
 
-  // Get the distance that the user has dragged
   getDistance(callback) {
     function distanceInit(e1) {
       let startingX, startingY;
@@ -56,7 +48,6 @@ class DraggingEvent {
         startingX = e1.clientX
         startingY = e1.clientY
       }
-
 
       return function (e2) {
         if (e2 === null) {
@@ -86,35 +77,21 @@ class DraggingEvent {
 class CardCarousel extends DraggingEvent {
   constructor(container, controller = undefined) {
     super(container)
-
-    // DOM elements
     this.container = container
     this.controllerElement = controller
     this.cards = container.querySelectorAll(".card")
-
-    // Carousel data
     this.centerIndex = (this.cards.length - 1) / 2;
     this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
     this.xScale = {};
-
-    // Resizing
     window.addEventListener("resize", this.updateCardWidth.bind(this))
-
     if (this.controllerElement) {
       this.controllerElement.addEventListener("keydown", this.controller.bind(this))
     }
-
-
-    // Initializers
     this.build()
-
     this.container.addEventListener('touchmove', function (e) {
       e.preventDefault();
     });
-
-    // Bind dragging event
     super.getDistance(this.moveCards.bind(this))
-    // Skip scroll Y
     this.container.addEventListener('touchstart', function (e) {
       let startY = e.touches[0].clientY;
       this.container.addEventListener('touchmove', function (e) {
@@ -139,12 +116,8 @@ class CardCarousel extends DraggingEvent {
       const scale = this.calcScale(x)
       const scale2 = this.calcScale2(x)
       const zIndex = -(Math.abs(i - this.centerIndex))
-
       const leftPos = this.calcPos(x, scale2)
-
-
       this.xScale[x] = this.cards[i]
-
       this.updateCards(this.cards[i], {
         x: x,
         scale: scale,
@@ -159,19 +132,15 @@ class CardCarousel extends DraggingEvent {
     const temp = { ...this.xScale };
 
     if (e.keyCode === 39) {
-      // Left arrow
       for (let x in this.xScale) {
         const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
-
         temp[newX] = this.xScale[x]
       }
     }
 
     if (e.keyCode == 37) {
-      // Right arrow
       for (let x in this.xScale) {
         const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
-
         temp[newX] = this.xScale[x]
       }
     }
@@ -198,7 +167,6 @@ class CardCarousel extends DraggingEvent {
 
     if (x < 0) {
       formula = (scale * 100 - this.cardWidth) / 2
-
       return formula
 
     } else if (x > 0) {
@@ -207,7 +175,6 @@ class CardCarousel extends DraggingEvent {
       return formula
     } else {
       formula = 100 - (scale * 100 + this.cardWidth) / 2
-
       return formula
     }
   }
@@ -219,7 +186,6 @@ class CardCarousel extends DraggingEvent {
 
     if (data.scale || data.scale == 0) {
       card.style.transform = `scale(${data.scale})`
-
       if (data.scale == 0) {
         card.style.opacity = data.scale
       } else {
@@ -230,28 +196,23 @@ class CardCarousel extends DraggingEvent {
     if (data.leftPos) {
       card.style.left = `${data.leftPos}%`
     }
-
     if (data.zIndex || data.zIndex == 0) {
       if (data.zIndex == 0) {
         card.classList.add("highlight")
       } else {
         card.classList.remove("highlight")
       }
-
       card.style.zIndex = data.zIndex
     }
   }
 
   calcScale2(x) {
     let formula;
-
     if (x <= 0) {
       formula = 1 - -1 / 5 * x
-
       return formula
     } else if (x > 0) {
       formula = 1 - 1 / 5 * x
-
       return formula
     }
   }
@@ -274,12 +235,10 @@ class CardCarousel extends DraggingEvent {
     if (x !== x + rounded) {
       if (x + rounded > original) {
         if (x + rounded > this.centerIndex) {
-
           newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
         }
       } else if (x + rounded < original) {
         if (x + rounded < -this.centerIndex) {
-
           newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
         }
       }
@@ -288,9 +247,7 @@ class CardCarousel extends DraggingEvent {
     }
 
     const temp = -Math.abs(newX + rounded)
-
     this.updateCards(card, { zIndex: temp })
-
     return newX;
   }
 
@@ -299,13 +256,10 @@ class CardCarousel extends DraggingEvent {
 
     if (data != null) {
       this.container.classList.remove("smooth-return")
-      xDist = data.x / 250;
+      xDist = data.x / 100;
     } else {
-
-
       this.container.classList.add("smooth-return")
       xDist = 0;
-
       for (let x in this.xScale) {
         this.updateCards(this.xScale[x], {
           x: x,
@@ -319,8 +273,6 @@ class CardCarousel extends DraggingEvent {
         scale = this.calcScale(x + xDist),
         scale2 = this.calcScale2(x + xDist),
         leftPos = this.calcPos(x + xDist, scale2)
-
-
       this.updateCards(this.cards[i], {
         scale: scale,
         leftPos: leftPos
