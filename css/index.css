@@ -149,7 +149,7 @@ main {
 
 .container:nth-child(1) {
     min-height: 600px;
-
+    background: rgb(77, 0, 128)
 }
 
 .container:nth-child(2) {
@@ -211,11 +211,6 @@ main {
     padding: 10px;
 }
 
-.button:hover {
-    background-color: var(--hover-button);
-    cursor: pointer;
-}
-
 .banner {
     width: 100%;
     background-color: var(--background-banner);
@@ -259,6 +254,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: justify;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .schemetitle {
@@ -267,6 +263,7 @@ main {
     padding: 20px;
     margin: 30px;
     position: absolute;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .scheme {
@@ -283,19 +280,14 @@ main {
     justify-content: center;
     text-align: justify;
     margin-top: 160px;
-}
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
-.scheme1:hover,
-.scheme2:hover {
-    transform: translateY(-5px) translateX(-5px);
-    padding: 25px;
-    box-shadow: 8px 8px rgba(51, 51, 51, 0.479);
 }
 
 .scheme-right {
     margin: 0 auto;
     left: 50%;
-    transform: translateX(-160%);
+    transform: translateX(-170%);
     background-color: rgba(90, 115, 109, 0.7);
 
 }
@@ -303,18 +295,6 @@ main {
 .scheme-left {
     transform: translateY(-20%);
     background-color: rgba(77, 90, 93, 0.7);
-}
-
-.scheme-left:hover {
-    transform: translateY(-5px) translateX(-5px);
-    padding: 25px;
-    box-shadow: 5px 5px rgba(51, 51, 51, 0.479);
-}
-
-.scheme-right:hover {
-    transform: translateY(-5px) translateX(-165%);
-    padding: 25px;
-    box-shadow: 5px 5px rgba(51, 51, 51, 0.479);
 }
 
 .desktop {
@@ -400,11 +380,6 @@ main {
     font-size: 24px;
 }
 
-#selectplan:hover {
-    cursor: pointer;
-
-}
-
 .col {
     flex-direction: column;
 }
@@ -445,11 +420,6 @@ main {
     cursor: pointer;
     width: 50px;
     height: 50px;
-}
-
-.navigate_left:hover,
-.navigate_right:hover {
-    scale: 1.5;
 }
 
 .navigate_left {
@@ -576,10 +546,6 @@ textarea {
     align-items: center;
 }
 
-.contact:hover div {
-    background-color: var(--hover-button);
-}
-
 .footer {
     width: 100%;
     display: flex;
@@ -600,12 +566,6 @@ textarea {
 
 .copyright {
     background-color: #000000;
-}
-
-#email:hover,
-#number:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 .alex {
@@ -629,10 +589,6 @@ textarea {
 
 }
 
-.cr:hover {
-    text-decoration: underline;
-}
-
 .navigate_left {
     left: 2%;
 }
@@ -654,8 +610,46 @@ textarea {
     z-index: 9999;
 }
 
-.scroll-to-top:hover {
-    background-color: var(--hover-button);
+
+@media only screen and (min-width: 768px) {
+    .cr:hover {
+        text-decoration: underline;
+    }
+
+    #email:hover,
+    #number:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .contact:hover div {
+        background-color: var(--hover-button);
+    }
+
+    .navigate_left:hover,
+    .navigate_right:hover {
+        scale: 1.5;
+    }
+
+    #selectplan:hover {
+        cursor: pointer;
+
+    }
+
+    .scheme1:hover,
+    .scheme2:hover {
+        transform: scale(1.02);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button:hover {
+        background-color: var(--hover-button);
+        cursor: pointer;
+    }
+
+    .scroll-to-top:hover {
+        background-color: var(--hover-button);
+    }
 }
 
 @media (max-width: 1500px) {
@@ -678,6 +672,10 @@ textarea {
         max-width: 500px;
         max-height: 500px;
         margin: 0 40px 0 40px;
+    }
+
+    .scheme-right {
+        transform: translateX(-150%);
     }
 }
 
