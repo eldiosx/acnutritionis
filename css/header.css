@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     background-color: var(--background-banner);
-    color: var(--text-color);
+    color: var(--text);
     padding: 10px 0;
     z-index: 1000;
     display: flex;
@@ -39,12 +39,12 @@ nav {
 }
 
 nav a {
-    color: var(--text-color);
+    color: var(--text);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: white;
+    color: var(--text-hover);
     text-shadow: #CCC 1px 0 10px;
 }
 
