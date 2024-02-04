@@ -69,7 +69,7 @@ const translations = {
     'Nombre': 'Name',
     'Descargar': 'Download',
     'Bloqueado': 'Lock',
-    '2ª Consulta': '2º Meeting',
+    '1ª Consulta': '1st Meeting',
     'Para cualquier otro tipo de consultas, dudas o propuestas, ¡contáctame ahora!': 'For any other inquiries, doubts, or proposals, contact me now!',
     '(Recibirás siempre una respuesta en un plazo de 24-48 H días hábiles)': '(You will always receive a response within 24-48 business hours.)',
     'Teléfono': 'Phone',
