@@ -161,43 +161,6 @@ nextBtn.addEventListener('click', function () {
     showNextSlide();
 });
 
-
-//Select pack
-const guide = document.getElementById("guidepack");
-const select = document.getElementById("selectplan");
-const freepack = document.getElementById("freepack");
-const startplan = document.getElementById("startplan");
-const date = document.getElementById("dateplan");
-const checkplan = document.getElementById("checkplan");
-guide.classList.add("show");
-select.addEventListener("change", () => {
-    if (select.value === "free") {
-        guide.classList.remove("show");
-        freepack.classList.add("show");
-        startplan.classList.remove("show");
-        date.classList.remove("show");
-        checkplan.classList.remove("show");
-    } else if (select.value === "start") {
-        guide.classList.remove("show");
-        freepack.classList.remove("show");
-        startplan.classList.add("show");
-        date.classList.remove("show");
-        checkplan.classList.remove("show");
-    } else if (select.value === "date") {
-        guide.classList.remove("show");
-        freepack.classList.remove("show");
-        startplan.classList.remove("show");
-        date.classList.add("show");
-        checkplan.classList.remove("show");
-    } else if (select.value === "check") {
-        guide.classList.remove("show");
-        freepack.classList.remove("show");
-        startplan.classList.remove("show");
-        date.classList.remove("show");
-        checkplan.classList.add("show");
-    }
-});
-
 //Copy
 function copynumber() {
     var texto = document.getElementById("number");

@@ -420,86 +420,88 @@
             <div class="banner-empty">
                 <div class="content">
                     <div class="mobile info">
-                        <div  class="scroll-animation alex"><img src="./img/alesito.webp" alt="Logo">
+                        <div class="scroll-animation alex"><img src="./img/alesito.webp" alt="Logo">
                         </div>
                     </div>
                     <div class="scroll-animation info custom">
-                        <span class="button">
-                            <select id="selectplan">
-                                <option value="guide" disabled selected data-translate="Selecciona tu plan">
-                                </option>
-                                <option value="free" data-translate="PLAN GRATUITO">
-                                </option>
-                                <option value="start" data-translate="PLAN DE INICIO">
-                                </option>
-                                <option value="date" data-translate="CONSULTA">
-                                </option>
-                                <option value="check" data-translate="SEGUIMIENTOS">
-                                </option>
-                            </select>
-                        </span>
-                        <div class="background">
-                            <p id="guidepack" class="hide"
-                                data-translate="Escoge un plan para saber mas información y su precio.">
-                            </p>
-                            <p id="freepack" class="hide"
-                                data-translate="¿Aún tienes dudas sobre empezar tu plan? Conóceme eligiendo este pack y concertaremos una sesión de unos 20-30 min para que me cuentes tu situación de forma general y conozcas mi método de trabajo sin ningún compromiso.">
-                            </p>
-                            <p id="startplan" class="hide">
-                                <span
-                                    data-translate="Incluye la 1ª y 2ª consulta por videollamada conmigo, el estudio y valoración de tus necesidades, herramientas nutricionales y prácticas para logar tus objetivos así como la entrega de tu tratamiento nutricional personalizado.">
-                                </span>
-                                <br>
-                                <b>
-                                    <span data-translate="Precio">
+                        <details name="plan">
+                            <summary class="button"><span data-translate="PLAN GRATUITO"></span></summary>
+                            <div class="background">
+                                <p
+                                    data-translate="¿Aún tienes dudas sobre empezar tu plan? Conóceme eligiendo este pack y concertaremos una sesión de unos 20-30 min para que me cuentes tu situación de forma general y conozcas mi método de trabajo sin ningún compromiso.">
+                                </p>
+                            </div>
+                        </details>
+                        <details name="plan">
+                            <summary class="button"><span data-translate="PLAN DE INICIO"></span></summary>
+                            <div class="background">
+                                <p>
+                                    <span
+                                        data-translate="Incluye la 1ª y 2ª consulta por videollamada conmigo, el estudio y valoración de tus necesidades, herramientas nutricionales y prácticas para logar tus objetivos así como la entrega de tu tratamiento nutricional personalizado.">
                                     </span>
-                                    <span>
-                                        :&nbsp;65&nbsp;€
+                                    <br>
+                                    <b>
+                                        <span data-translate="Precio">
+                                        </span>
+                                        <span>
+                                            :&nbsp;65&nbsp;€
+                                        </span>
+                                    </b>
+                                </p>
+                            </div>
+                        </details>
+                        <details name="plan">
+                            <summary class="button"><span data-translate="CONSULTA"></span></summary>
+                            <div class="background">
+                                <p>
+                                    <span
+                                        data-translate="Contrata una consulta individual para empezar con tu tratamiento personalizado. Te proporcionaré herramientas prácticas y teóricas que te ayudarán a lograr tus objetivos y reconectar con tus señales biológicas.">
                                     </span>
-                                </b>
-                            </p>
-                            <p id="dateplan" class="hide">
-                                <span
-                                    data-translate="Contrata una consulta individual para empezar con tu tratamiento personalizado. Te proporcionaré herramientas prácticas y teóricas que te ayudarán a lograr tus objetivos y reconectar con tus señales biológicas.">
-                                </span>
-                                <br>
-                                <b>
-                                    <span data-translate="Precio">
+                                    <br>
+                                    <b>
+                                        <span data-translate="Precio">
+                                        </span>
+                                        <span>
+                                            :&nbsp;45&nbsp;€
+                                        </span>
+                                    </b>
+                                    <b>
+                                        <span data-translate="Duración">
+                                        </span>
+                                        <span>
+                                            :&nbsp;40&nbsp;min
+                                        </span>
+                                    </b>
+                                </p>
+                            </div>
+                        </details>
+                        <details name="plan">
+                            <summary class="button"><span data-translate="SEGUIMIENTOS"></span></summary>
+                            <div class="background">
+                                <p>
+                                    <span
+                                        data-translate="Los seguimientos se realizan a las 3-4 semanas del tratamiento, puede realizarse uno cada semana o cada dos semanas en función de cada paciente con el objetivo de resolver dificultades, dudas, educación nutricional y la modificación del plan dietético.">
                                     </span>
-                                    <span>
-                                        :&nbsp;45&nbsp;€
-                                    </span>
-                                </b>
-                                <b>
-                                    <span data-translate="Duración">
-                                    </span>
-                                    <span>
-                                        :&nbsp;40&nbsp;min
-                                    </span>
-                                </b>
-                            </p>
-                            <p id="checkplan" class="hide">
-                                <span
-                                    data-translate="Los seguimientos se realizan a las 3-4 semanas del tratamiento, puede realizarse uno cada semana o cada dos semanas en función de cada paciente con el objetivo de resolver dificultades, dudas, educación nutricional y la modificación del plan dietético.">
-                                </span>
-                                <br>
-                                <b>
-                                    <span data-translate="Precio">
-                                    </span>
-                                    <span>
-                                        :&nbsp;35&nbsp;€
-                                    </span>
-                                </b>
-                                <b>
-                                    <span data-translate="Duración">
-                                    </span>
-                                    <span>
-                                        :&nbsp;30&nbsp;min
-                                    </span>
-                                </b>
-                            </p>
-                        </div>
+                                    <br>
+                                    <b>
+                                        <span data-translate="Precio">
+                                        </span>
+                                        <span>
+                                            :&nbsp;35&nbsp;€
+                                        </span>
+                                    </b>
+                                    <b>
+                                        <span data-translate="Duración">
+                                        </span>
+                                        <span>
+                                            :&nbsp;30&nbsp;min
+                                        </span>
+                                    </b>
+                                </p>
+                            </div>
+                        </details>
                     </div>
+                    <img class="desktop scroll-animation alexbackground" src="./img/alesito.webp" alt="Logo">
                 </div>
             </div>
         </div>

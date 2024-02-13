@@ -180,7 +180,7 @@ main {
 
 .container:nth-child(5) {
     min-height: 700px;
-    background-color: rgb(213, 193, 177);
+    background-color: rgb(212, 206, 200);
 }
 
 .container:nth-child(6) {
@@ -562,6 +562,13 @@ textarea {
 
 .copyright {
     background-color: #000000;
+}
+
+.alexbackground {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    width: 200px;
 }
 
 .alex {
