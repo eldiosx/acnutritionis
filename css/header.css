@@ -32,20 +32,20 @@
 nav {
     display: flex;
     gap: 50px;
+
+    a {
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--text-hover);
+        text-shadow: #CCC 1px 0 10px;
+    }
 }
 
 #navLinks {
     display: flex;
-}
-
-nav a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--text-hover);
-    text-shadow: #CCC 1px 0 10px;
 }
 
 .menu-button {
@@ -93,25 +93,28 @@ nav a:hover {
         display: none;
     }
 
-    .open-header #button-menu2 {
-        right: 5%;
-        position: absolute;
-        transform: translateY(-50%);
+    .open-header {
+        #button-menu2 {
+            right: 5%;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        #navLinks {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        #logo {
+            transform: translateY(-50%);
+            height: 90px;
+            left: 5%;
+            position: absolute;
+        }
     }
 
-    .open-header #navLinks {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-    }
-
-    .open-header #logo {
-        transform: translateY(-50%);
-        height: 90px;
-        left: 5%;
-        position: absolute;
-    }
 }
 
 @media (max-width: 310px) {
@@ -123,12 +126,14 @@ nav a:hover {
         height: 40px;
     }
 
-    .open-header #logo {
-        height: 50px;
-        left: 1%;
-    }
+    .open-header {
+        #logo {
+            height: 50px;
+            left: 1%;
+        }
 
-    .open-header #button-menu2 {
-        right: 3%;
+        #button-menu2 {
+            right: 3%;
+        }
     }
 }

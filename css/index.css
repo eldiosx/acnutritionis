@@ -304,36 +304,38 @@ main {
 
 .line-container {
     position: relative;
+
+    .line {
+        width: 5px;
+        background: linear-gradient(to bottom, rgba(90, 115, 109, 0.7), rgba(77, 90, 93, 0.7));
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .circle1 {
+        width: 35px;
+        height: 35px;
+        background-color: rgba(90, 115, 109, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -35px;
+    }
+
+    .circle2 {
+        width: 35px;
+        height: 35px;
+        background-color: rgba(77, 90, 93, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -35px;
+    }
 }
 
-.line {
-    width: 5px;
-    background: linear-gradient(to bottom, rgba(90, 115, 109, 0.7), rgba(77, 90, 93, 0.7));
-    height: 500px;
-    margin: 0 auto;
-}
 
-.circle1 {
-    width: 35px;
-    height: 35px;
-    background-color: rgba(90, 115, 109, 0.7);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -35px;
-}
-
-.circle2 {
-    width: 35px;
-    height: 35px;
-    background-color: rgba(77, 90, 93, 0.7);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -35px;
-}
 
 .banner-empty {
     width: 100%;
@@ -446,6 +448,7 @@ main {
     opacity: 1;
     transform: translateX(0);
     transition: transform 1.2s, opacity 0.6s;
+
 }
 
 .slide.activeRight {
@@ -457,8 +460,6 @@ main {
     opacity: 0;
     transform: translateX(-100%);
 }
-
-
 
 .fatcs {
     margin: 50px;
@@ -487,15 +488,13 @@ ul {
     display: flex;
     overflow: hidden;
     width: 300px;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
 }
-
-#image-container img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-
 
 form {
     width: 500px;
@@ -551,13 +550,13 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #232323
-}
+    background-color: #232323;
 
-.footer p {
-    font-size: 23px;
-    line-height: 1.5;
+    p {
+        font-size: 23px;
+        line-height: 1.5;
 
+    }
 }
 
 .copyright {
@@ -577,12 +576,12 @@ textarea {
     height: 500px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.726);
-}
 
-.alex img {
+    img {
 
-    height: 100%;
-    object-fit: cover;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .cr {
@@ -740,13 +739,12 @@ textarea {
         margin: 0 20px 0 20px;
     }
 
-    .line {
-        height: 350px;
-    }
-
     .line-container {
         transform: translateY(5%);
 
+        .line {
+            height: 350px;
+        }
     }
 
 }
@@ -758,13 +756,12 @@ textarea {
         width: 220px;
     }
 
-    .line {
-        height: 450px;
-    }
-
     .line-container {
         transform: translateY(0%);
 
+        .line {
+            height: 450px;
+        }
     }
 }
 
@@ -908,12 +905,12 @@ textarea {
         height: 300px;
         width: 300px;
         background-color: rgba(255, 255, 255, 0.726);
-    }
 
-    .alex img {
+        img {
 
-        height: 150%;
-        object-fit: cover;
+            height: 150%;
+            object-fit: cover;
+        }
     }
 
     .line-container {
@@ -923,11 +920,11 @@ textarea {
 
     .footer {
         padding: 5px;
-    }
 
-    .footer p {
-        font-size: 13px;
+        p {
+            font-size: 13px;
 
+        }
     }
 
     form {
