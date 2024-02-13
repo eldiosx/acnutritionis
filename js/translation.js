@@ -52,7 +52,7 @@ const translations = {
     'Entrega y explicación de tu plan': 'Providing and explaining your dietary plan',
     'Recomendaciones adaptadas a ti': 'Customized recommendations',
     'Ideas de recetas nutritivas': 'Nutritious recipe ideas',
-    'eBook guía de nutrición inicial': 'Initial nutrition guide eBook',
+    'Regalo eBook guía de nutrición inicial': 'Gift: Initial nutrition guide eBook',
     'Duración: La 1ª consulta dura al rededor de 1 hora, para conocer tus necesidades. El resto de consultas duran 40 minutos aproximadamente.': 'Duration: The 1st consultation lasts about 1 hour to understand your needs. The remaining consultations last approximately 40 minutes.',
     'Escoge un plan para saber mas información y su precio.': 'Choose a plan to access more information and its price.',
     'Selecciona tu plan': 'Choose your plan',

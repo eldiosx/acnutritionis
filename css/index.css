@@ -180,7 +180,7 @@ main {
 
 .container:nth-child(5) {
     min-height: 700px;
-    background-image: url('../img/prices.webp');
+    background-color: rgb(213, 193, 177);
 }
 
 .container:nth-child(6) {
