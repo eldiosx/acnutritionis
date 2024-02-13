@@ -156,7 +156,7 @@ main {
 
 .container:nth-child(1) {
     min-height: 600px;
-    background: rgb(77, 0, 128)
+    background-image: url('../img/desktop.webp');
 }
 
 .container:nth-child(2) {
@@ -254,7 +254,7 @@ main {
     margin: 30px;
     display: flex;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -267,10 +267,6 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.scheme {
-    margin: 20px;
-}
-
 .scheme2 {
     border-radius: 20px;
     background-color: rgba(77, 90, 93, 0.7);
@@ -279,7 +275,7 @@ main {
     margin: 30px;
     display: flex;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
     margin-top: 160px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
@@ -956,7 +952,6 @@ textarea {
 
     .container:nth-child(5) {
         min-height: 900px;
-        background-image: url('../img/prices.webp');
     }
 
     .padding {
