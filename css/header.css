@@ -17,14 +17,31 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+
+    animation: header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 100px;
 }
 
-
+@keyframes header {
+    to {
+        height: 60px;
+    }
+}
 
 #logo {
     transition: height 0.3s;
     height: 70px;
     padding: 10px 5px 5px 5px;
+    animation: header-logo linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 100px;
+}
+
+@keyframes header-logo {
+    to {
+        height: 50px;
+    }
 }
 
 nav {
@@ -33,7 +50,6 @@ nav {
 
     a {
         color: var(--text);
-        text-decoration: none;
     }
 
     a:hover {
@@ -64,13 +80,6 @@ nav {
 }
 
 @media (max-width: 1300px) {
-    #header {
-        height: 80px;
-    }
-
-    #logo {
-        height: 70px;
-    }
 
     nav {
         display: flex;
@@ -83,8 +92,20 @@ nav {
         height: 70px;
     }
 
+    @keyframes header {
+        to {
+            height: 50px;
+        }
+    }
+
     #logo {
         height: 60px;
+    }
+
+    @keyframes header-logo {
+        to {
+            height: 40px;
+        }
     }
 
     #navLinks {
@@ -120,8 +141,20 @@ nav {
         height: 50px;
     }
 
+    @keyframes header {
+        to {
+            height: 40px;
+        }
+    }
+
     #logo {
         height: 40px;
+    }
+
+    @keyframes header-logo {
+        to {
+            height: 35px;
+        }
     }
 
     .open-header {

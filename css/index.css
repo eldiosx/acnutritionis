@@ -41,7 +41,6 @@ button:focus {
 
 hr {
     margin-top: 20px;
-    border: none;
     height: 3px;
     background-color: var(--background-button);
     margin-right: 20px;
@@ -104,21 +103,22 @@ h2 {
     text-align: center;
 }
 
-
-.scroll-animation:not(:hover) {
-    animation: scrollAnimation 0.8s ease forwards;
+section {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
 }
 
 
-@keyframes scrollAnimation {
+@keyframes reveal {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        translate: 0 100px;
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        translate: 0 0;
     }
 }
 
@@ -215,7 +215,6 @@ main {
     border-radius: 5px;
     background-color: var(--background-button);
     color: var(--text-button);
-    text-decoration: none;
     font-size: 20px;
     padding: 10px;
 }
@@ -382,7 +381,6 @@ main {
     border-radius: 5px;
     background-color: transparent;
     color: var(--text-button);
-    text-decoration: none;
     font-size: 20px;
 }
 
@@ -595,8 +593,7 @@ textarea {
 
 .cr {
     color: var(--text);
-    font-size: 15px;
-    text-decoration: none;
+    font-size: 0.9rem;
 
 }
 
@@ -604,21 +601,30 @@ textarea {
     left: 2%;
 }
 
-
 .scroll-to-top {
-    display: none;
+    opacity: 0;
+    line-height: 1.8;
+    margin: auto;
+    text-align: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: var(--background-button);
     color: var(--text-button);
-    border: none;
     border-radius: 100%;
     width: 50px;
     height: 50px;
     font-size: 25px;
-    cursor: pointer;
     z-index: 9999;
+    animation: btn-top linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+}
+
+@keyframes btn-top {
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -960,11 +966,6 @@ textarea {
     form {
         width: 100%;
         padding: 10px;
-    }
-
-    .cr {
-        font-size: 10px;
-
     }
 }
 
