@@ -1,175 +1,173 @@
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--background-banner);
-    color: var(--text);
-    padding: 10px 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    transition: height 0.3s;
-    width: 100%;
-    max-width: 1600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-banner);
+  color: var(--text);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  transition: height 0.3s;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 
-    /* animation: header linear both; */
-    animation-timeline: scroll(root block);
-    animation-range: 0 100px;
+  /* animation: header linear both; */
+  animation-timeline: scroll(root block);
+  animation-range: 0 100px;
 }
 
 @keyframes header {
-    to {
-        height: 60px;
-    }
+  to {
+    height: 60px;
+  }
 }
 
 #logo {
-    transition: height 0.3s;
-    height: 70px;
-    padding: 10px 5px 5px 5px;
-    animation: header-logo linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 0 100px;
+  transition: height 0.3s;
+  height: 70px;
+  padding: 10px 5px 5px 5px;
+  animation: header-logo linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 100px;
 }
 
 @keyframes header-logo {
-    to {
-        height: 50px;
-    }
+  to {
+    height: 50px;
+  }
 }
 
 nav {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 
-    a {
-        color: var(--text);
-    }
+  a {
+    color: var(--text);
+  }
 
-    a:hover {
-        color: var(--text-hover);
-        text-shadow: #CCC 1px 0 10px;
-    }
+  a:hover {
+    color: var(--text-hover);
+    text-shadow: #ccc 1px 0 10px;
+  }
 }
 
 #navLinks {
-    display: flex;
+  display: flex;
 }
 
 .menu-button {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 #button-menu {
-    width: 1.5em;
-    transition: transform 0.3s ease-in-out;
+  width: 1.5em;
+  transition: transform 0.3s ease-in-out;
 }
 
 #button-menu2 {
-    display: none;
-    transform: rotate(90deg);
-    width: 3em;
-    transition: transform 0.3s ease-in-out;
+  display: none;
+  transform: rotate(90deg);
+  width: 3em;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 1300px) {
-
-    nav {
-        display: flex;
-        gap: 30px;
-    }
+  nav {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 710px) {
-    #header {
-        height: 70px;
-    }
+  #header {
+    height: 70px;
+  }
 
-    @keyframes header {
-        to {
-            height: 50px;
-        }
+  @keyframes header {
+    to {
+      height: 50px;
     }
+  }
 
-    #logo {
-        height: 60px;
+  #logo {
+    height: 60px;
+  }
+
+  @keyframes header-logo {
+    to {
+      height: 40px;
     }
+  }
 
-    @keyframes header-logo {
-        to {
-            height: 40px;
-        }
+  #navLinks {
+    display: none;
+  }
+
+  #header.open-header {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .open-header {
+    #button-menu2 {
+      right: 5%;
+      position: absolute;
+      transform: translateY(-50%);
     }
 
     #navLinks {
-        display: none;
-    }
-
-    #header.open-header {
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .open-header {
-        #button-menu2 {
-            right: 5%;
-            position: absolute;
-            transform: translateY(-50%);
-        }
-
-        #navLinks {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: auto;
-        }
-
-        #logo {
-            transform: translateY(-50%);
-            height: 90px;
-            left: 5%;
-            position: absolute;
-        }
-    }
-
-}
-
-@media (max-width: 310px) {
-    #header {
-        height: 50px;
-    }
-
-    @keyframes header {
-        to {
-            height: 40px;
-        }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
     }
 
     #logo {
-        height: 40px;
+      transform: translateY(-50%);
+      height: 90px;
+      left: 5%;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  #header {
+    height: 50px;
+  }
+
+  @keyframes header {
+    to {
+      height: 40px;
+    }
+  }
+
+  #logo {
+    height: 40px;
+  }
+
+  @keyframes header-logo {
+    to {
+      height: 35px;
+    }
+  }
+
+  .open-header {
+    #logo {
+      height: 50px;
+      left: 1%;
     }
 
-    @keyframes header-logo {
-        to {
-            height: 35px;
-        }
+    #button-menu2 {
+      right: 3%;
     }
-
-    .open-header {
-        #logo {
-            height: 50px;
-            left: 1%;
-        }
-
-        #button-menu2 {
-            right: 3%;
-        }
-    }
+  }
 }
