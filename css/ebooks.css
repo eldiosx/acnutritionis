@@ -1,166 +1,145 @@
-  .card-carousel {
-      --card-width: 80%;
-      --card-max-width: 280px;
-      --card-height: 420px;
-      --carousel-min-width: 400px;
-      z-index: 1;
-      position: relative;
-      margin: 0 auto;
+  .slider-ebooks {
+      display: flex;
+      max-width: 500px;
+      height: 300px;
       width: 100%;
-      height: var(--card-height);
-      min-width: var(--carousel-min-width);
-      transition: filter .3s ease;
-      overflow-y: hidden;
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
 
-      .card {
-          width: var(--card-width);
-          max-width: var(--card-max-width);
+      .ebook {
           text-align: center;
-          padding: 1em;
-          min-width: 250px;
-          position: absolute;
           margin: 0 auto;
           color: rgba(247, 247, 247, 0.9);
           transition: inherit;
-          filter: brightness(.5);
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-      }
 
-  }
+          .text-container {
+              display: flex;
+              border-radius: 5px;
+              align-items: center;
 
-  .card-carousel.smooth-return {
-      transition: all .2s ease;
-  }
+              img {
+                  color: var(--text);
+                  width: 20px;
+                  height: 20px;
+              }
 
-  .card .text-container {
-      display: flex;
-      border-radius: 5px;
-      align-items: center;
-
-      img {
-          color: var(--text);
-          width: 20px;
-          height: 20px;
-      }
-
-      p {
-          flex-grow: 1;
+              p {
+                  flex-grow: 1;
+              }
+          }
       }
   }
 
-  .card:hover .text-container {
+  .ebook:hover .text-container {
       color: rgb(173, 0, 0);
   }
 
-  .card:hover .unlock {
+  .ebook:hover .unlock {
       color: rgb(0, 173, 0);
   }
 
-  .card.highlight {
-      filter: brightness(1)
-  }
-
-  .card:nth-of-type(1) .image-container {
-      background-image: url("/img/ebook/14.webp")
-  }
-
-  .card:nth-of-type(2) .image-container {
-      background-image: url("/img/ebook/15.webp")
-  }
-
-  .card:nth-of-type(3) .image-container {
-      background-image: url("/img/ebook/16.webp")
-  }
-
-  .card:nth-of-type(4) .image-container {
-      background-image: url("/img/ebook/17.webp")
-  }
-
-  .card:nth-of-type(5) .image-container {
-      background-image: url("/img/ebook/18.webp")
-  }
-
-  .card:nth-of-type(6) .image-container {
-      background-image: url("/img/ebook/19.webp")
-  }
-
-  .card:nth-of-type(7) .image-container {
-      background-image: url("/img/ebook/20.webp")
-  }
-
-  .card:nth-of-type(8) .image-container {
-      background-image: url("/img/ebook/21.webp")
-  }
-
-  .card:nth-of-type(9) .image-container {
-      background-image: url("/img/ebook/22.webp")
-  }
-
-  .card:nth-of-type(10) .image-container {
-      background-image: url("/img/ebook/23.webp")
-  }
-
-  .card:nth-of-type(11) .image-container {
-      background-image: url("/img/ebook/24.webp")
-  }
-
-  .card:nth-of-type(12) .image-container {
-      background-image: url("/img/ebook/25.webp")
-  }
-
-  .card:nth-of-type(13) .image-container {
+  .ebook:nth-of-type(1) .image-container {
       background-image: url("/img/ebook/1.webp")
   }
 
-  .card:nth-of-type(14) .image-container {
+  .ebook:nth-of-type(2) .image-container {
       background-image: url("/img/ebook/2.webp")
   }
 
-  .card:nth-of-type(15) .image-container {
+  .ebook:nth-of-type(3) .image-container {
       background-image: url("/img/ebook/3.webp")
   }
 
-  .card:nth-of-type(16) .image-container {
+  .ebook:nth-of-type(4) .image-container {
       background-image: url("/img/ebook/4.webp")
   }
 
-  .card:nth-of-type(17) .image-container {
+  .ebook:nth-of-type(5) .image-container {
       background-image: url("/img/ebook/5.webp")
   }
 
-  .card:nth-of-type(18) .image-container {
+  .ebook:nth-of-type(6) .image-container {
       background-image: url("/img/ebook/6.webp")
   }
 
-  .card:nth-of-type(19) .image-container {
+  .ebook:nth-of-type(7) .image-container {
       background-image: url("/img/ebook/7.webp")
   }
 
-  .card:nth-of-type(20) .image-container {
+  .ebook:nth-of-type(8) .image-container {
       background-image: url("/img/ebook/8.webp")
   }
 
-  .card:nth-of-type(21) .image-container {
+  .ebook:nth-of-type(9) .image-container {
       background-image: url("/img/ebook/9.webp")
   }
 
-  .card:nth-of-type(22) .image-container {
+  .ebook:nth-of-type(10) .image-container {
       background-image: url("/img/ebook/10.webp")
   }
 
-  .card:nth-of-type(23) .image-container {
+  .ebook:nth-of-type(11) .image-container {
       background-image: url("/img/ebook/11.webp");
   }
 
-  .card:nth-of-type(24) .image-container {
+  .ebook:nth-of-type(12) .image-container {
       background-image: url("/img/ebook/12.webp")
   }
 
-  .card:nth-of-type(25) .image-container {
+  .ebook:nth-of-type(13) .image-container {
       background-image: url("/img/ebook/13.webp")
+  }
+
+  .ebook:nth-of-type(14) .image-container {
+      background-image: url("/img/ebook/14.webp")
+  }
+
+  .ebook:nth-of-type(15) .image-container {
+      background-image: url("/img/ebook/15.webp")
+  }
+
+  .ebook:nth-of-type(16) .image-container {
+      background-image: url("/img/ebook/16.webp")
+  }
+
+  .ebook:nth-of-type(17) .image-container {
+      background-image: url("/img/ebook/17.webp")
+  }
+
+  .ebook:nth-of-type(18) .image-container {
+      background-image: url("/img/ebook/18.webp")
+  }
+
+  .ebook:nth-of-type(19) .image-container {
+      background-image: url("/img/ebook/19.webp")
+  }
+
+  .ebook:nth-of-type(20) .image-container {
+      background-image: url("/img/ebook/20.webp")
+  }
+
+  .ebook:nth-of-type(21) .image-container {
+      background-image: url("/img/ebook/21.webp")
+  }
+
+  .ebook:nth-of-type(22) .image-container {
+      background-image: url("/img/ebook/22.webp")
+  }
+
+  .ebook:nth-of-type(23) .image-container {
+      background-image: url("/img/ebook/23.webp")
+  }
+
+  .ebook:nth-of-type(24) .image-container {
+      background-image: url("/img/ebook/24.webp")
+  }
+
+  .ebook:nth-of-type(25) .image-container {
+      background-image: url("/img/ebook/25.webp")
   }
 
   .image-container {
@@ -168,33 +147,13 @@
       height: 15em;
       position: relative;
       background-size: cover;
-      margin-bottom: 0em;
-      padding: 1em;
 
-  }
-
-  @media (max-width: 1300px) {
-      .card-carousel {
-          --card-height: 350px;
-      }
   }
 
   @media (max-width: 500px) {
-      .card-carousel {
-          --card-width: 80%;
-          --card-max-width: 200px;
-          --card-height: 300px;
-          --carousel-min-width: 200px;
-      }
 
       .image-container {
           width: 10em;
           height: 12.5em;
-      }
-  }
-
-  @media (max-width: 310px) {
-      .card-carousel {
-          --card-height: 170px;
       }
   }
