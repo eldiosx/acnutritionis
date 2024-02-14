@@ -20,7 +20,6 @@ function toggleNav() {
 }
 
 // Slider
-const background4 = document.querySelector(".background4");
 const prevBtn = document.querySelector(".navigate_left");
 const nextBtn = document.querySelector(".navigate_right");
 const slides = document.querySelectorAll(".slide");
