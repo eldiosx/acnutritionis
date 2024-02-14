@@ -112,6 +112,11 @@ nav {
         display: none;
     }
 
+    #header.open-header {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
     .open-header {
         #button-menu2 {
             right: 5%;

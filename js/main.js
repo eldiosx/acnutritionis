@@ -7,37 +7,17 @@ function toggleNav() {
     var menuIcon = document.getElementById("button-menu");
     var menuIcon2 = document.getElementById("button-menu2");
 
-    if (window.innerWidth < 710 && window.innerWidth > 310) {
-        if (isNavOpen) {
-            header.classList.remove("open-header");
-            header.style.height = '70px';
-            header.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
-            menuIcon.style.display = 'flex';
-            menuIcon2.style.display = 'none';
-        } else {
-            header.classList.add("open-header");
-            header.style.height = '100%';
-            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
-            menuIcon2.style.display = 'flex';
-            menuIcon.style.display = 'none';
-        }
-        isNavOpen = !isNavOpen;
-    } else if (window.innerWidth < 310) {
-        if (isNavOpen) {
-            header.classList.remove("open-header");
-            header.style.height = '50px';
-            header.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
-            menuIcon.style.display = 'flex';
-            menuIcon2.style.display = 'none';
-        } else {
-            header.classList.add("open-header");
-            header.style.height = '100%';
-            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
-            menuIcon2.style.display = 'flex';
-            menuIcon.style.display = 'none';
-        }
-        isNavOpen = !isNavOpen;
+    if (isNavOpen) {
+        header.classList.remove("open-header");
+        menuIcon.style.display = 'flex';
+        menuIcon2.style.display = 'none';
+    } else {
+        header.classList.add("open-header");
+        menuIcon2.style.display = 'flex';
+        menuIcon.style.display = 'none';
     }
+    isNavOpen = !isNavOpen;
+
 }
 
 // Slider
