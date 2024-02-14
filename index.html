@@ -22,28 +22,26 @@
     </div>
     <!-- Header -->
     <header id="header">
-        <div class="header-container">
-            <a href="#">
-                <img id="logo" src="../img/aclogo.webp" alt="Logo">
+        <a href="#">
+            <img id="logo" src="../img/aclogo.webp" alt="Logo">
+        </a>
+        <nav id="navLinks">
+            <a href="#" onclick="toggleNav()" data-translate="Inicio">
             </a>
-            <nav id="navLinks">
-                <a href="#" onclick="toggleNav()" data-translate="Inicio">
-                </a>
-                <a href="#aboutme" onclick="toggleNav()" data-translate="Sobre mí">
-                </a>
-                <a href="#services" onclick="toggleNav()" data-translate="Servicios">
-                </a>
-                <a href="#appointments" onclick="toggleNav()" data-translate="Consultas">
-                </a>
-                <a href="#contact" onclick="toggleNav()" data-translate="Contacto">
-                </a>
-                <a href="" onclick="toggleLang()" data-translate="🇪🇦">
-                </a>
-            </nav>
-            <div class="menu-button" onclick="toggleNav()">
-                <img id="button-menu" src="../img/icons/menu.svg" alt="menu">
-                <img id="button-menu2" src="../img/icons/cross.svg" alt="menu">
-            </div>
+            <a href="#aboutme" onclick="toggleNav()" data-translate="Sobre mí">
+            </a>
+            <a href="#services" onclick="toggleNav()" data-translate="Servicios">
+            </a>
+            <a href="#appointments" onclick="toggleNav()" data-translate="Consultas">
+            </a>
+            <a href="#contact" onclick="toggleNav()" data-translate="Contacto">
+            </a>
+            <a href="" onclick="toggleLang()" data-translate="🇪🇦">
+            </a>
+        </nav>
+        <div class="menu-button" onclick="toggleNav()">
+            <img id="button-menu" src="../img/icons/menu.svg" alt="menu">
+            <img id="button-menu2" src="../img/icons/cross.svg" alt="menu">
         </div>
     </header>
     <!-- Content -->
@@ -52,92 +50,86 @@
             <video preload muted autoplay loop playsinline poster="img/start.webp" id="video-background">
                 <source src="img/start.mp4" type="video/mp4">
             </video>
-            <section class="banner">
-                <div class="content">
-                    <img class="logobig" src="./img/aclogobig.webp" alt="Logo">
-                    <div class="info">
-                        <h1 data-translate="Nutrición para la recuperación">
-                        </h1>
-                        <p class="center"
-                            data-translate="¡Hola!, soy Alejandro Campos dietista-nutricionista y te ayudaré a dejar de lado las dietas restrictivas, a que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la alimentación.">
-                        </p>
-                        <hr>
-                        <h1 data-translate="Alimentación consciente">
-                        </h1>
-                        <p
-                            data-translate="Consigamos juntos dejar de lado a la cultura de la dieta, permitiéndote cultivar aspectos como la autocompasión, el placer por la comida y a reconectar con tus señales de hambre y saciedad.">
-                        </p>
-                        <div class="separator">
-                        </div>
+            <section class="banner content">
+                <img class="logobig" src="./img/aclogobig.webp" alt="Logo">
+                <div class="info">
+                    <h1 data-translate="Nutrición para la recuperación">
+                    </h1>
+                    <p class="center"
+                        data-translate="¡Hola!, soy Alejandro Campos dietista-nutricionista y te ayudaré a dejar de lado las dietas restrictivas, a que aprendas a comer sin culpa y a que seas capaz de disfrutar del placer de la alimentación.">
+                    </p>
+                    <hr>
+                    <h1 data-translate="Alimentación consciente">
+                    </h1>
+                    <p
+                        data-translate="Consigamos juntos dejar de lado a la cultura de la dieta, permitiéndote cultivar aspectos como la autocompasión, el placer por la comida y a reconectar con tus señales de hambre y saciedad.">
+                    </p>
+                    <div class="separator">
                     </div>
                 </div>
             </section>
         </div>
         <div class="container" id="aboutme">
-            <section class="banner">
-                <div class="scroll-animation content">
-                    <div class="mobile-image-container">
-                        <img src="./img/alex.webp" alt="Logo">
-                    </div>
-                    <div class="info">
-                        <h2 class="left aboutme">
-                            <span data-translate="Sobre mí">
-                            </span>...
-                        </h2>
-                        <h1 class="left aboutme">
-                            Alejandro Campos
-                        </h1>
-                        <p class="left aboutme"
-                            data-translate="Mi pasión siempre ha sido ayudar a las personas a mejorar su calidad de vida mediante una alimentación flexible y equilibrada, evitando la obsesión por la comida y las dietas restrictivas.">
-                        </p>
-                        <br>
-                        <p class="left"
-                            data-translate="Siempre me ha apasionado la nutrición clínica, por ello me he especializado en el área de los TCA y obesidad.">
-                        </p>
-                        <br>
-                        <p class="left"
-                            data-translate="Mi método de trabajo se basa en aplicar las bases de una alimentación flexible, saludable, consciente y personalizada en función tus necesidades, siendo capaz de adaptarme a cada situación.">
-                        </p>
-                        <br>
-                    </div>
-                    <div class="alexito">
-                        <img src="./img/alex.webp" alt="Logo">
-                    </div>
+            <section class="banner scroll-animation content">
+                <div class="mobile-image-container">
+                    <img src="./img/alex.webp" alt="Logo">
+                </div>
+                <div class="info">
+                    <h2 class="left aboutme">
+                        <span data-translate="Sobre mí">
+                        </span>...
+                    </h2>
+                    <h1 class="left aboutme">
+                        Alejandro Campos
+                    </h1>
+                    <p class="left aboutme"
+                        data-translate="Mi pasión siempre ha sido ayudar a las personas a mejorar su calidad de vida mediante una alimentación flexible y equilibrada, evitando la obsesión por la comida y las dietas restrictivas.">
+                    </p>
+                    <br>
+                    <p class="left"
+                        data-translate="Siempre me ha apasionado la nutrición clínica, por ello me he especializado en el área de los TCA y obesidad.">
+                    </p>
+                    <br>
+                    <p class="left"
+                        data-translate="Mi método de trabajo se basa en aplicar las bases de una alimentación flexible, saludable, consciente y personalizada en función tus necesidades, siendo capaz de adaptarme a cada situación.">
+                    </p>
+                    <br>
+                </div>
+                <div class="alexito">
+                    <img src="./img/alex.webp" alt="Logo">
                 </div>
             </section>
         </div>
         <div class="container background4" id="services">
             <div class="slider">
-                <section class="slide">
-                    <div class="scroll-animation content">
-                        <div class="info">
-                            <h1 data-translate="Asesoramiento Nutricional">
-                            </h1>
-                            <div class="fatcs">
-                                <ul class="list">
-                                    <li data-translate="Trastornos de la conducta alimentaria">
-                                    </li>
-                                    <li data-translate="Reeducación alimentaria">
-                                    </li>
-                                    <li
-                                        data-translate="Alimentación en pacientes con patologías digestivas (SII, SIBO etc.)">
-                                    </li>
-                                </ul>
-                                <ul class="list">
-                                    <li data-translate="Alergias e intolerancias">
-                                    </li>
-                                    <li data-translate="Alimentación vegana y vegetariana">
-                                    </li>
-                                    <li data-translate="Alimentación para pacientes con obesidad, DM2 etc.">
-                                    </li>
-                                </ul>
-                            </div>
+                <section class="slide scroll-animation content">
+                    <div class="info">
+                        <h1 data-translate="Asesoramiento Nutricional">
+                        </h1>
+                        <div class="fatcs">
+                            <ul class="list">
+                                <li data-translate="Trastornos de la conducta alimentaria">
+                                </li>
+                                <li data-translate="Reeducación alimentaria">
+                                </li>
+                                <li
+                                    data-translate="Alimentación en pacientes con patologías digestivas (SII, SIBO etc.)">
+                                </li>
+                            </ul>
+                            <ul class="list">
+                                <li data-translate="Alergias e intolerancias">
+                                </li>
+                                <li data-translate="Alimentación vegana y vegetariana">
+                                </li>
+                                <li data-translate="Alimentación para pacientes con obesidad, DM2 etc.">
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
                 <section class="slide">
                     <div class="scroll-animation content">
-                        <div class="scroll-animation info">
+                        <div class="info">
                             <h1 data-translate="Coaching Nutricional">
                             </h1>
                             <div class="fatcs">
@@ -171,119 +163,108 @@
             </div>
         </div>
         <div class="container col">
-            <section class="banner">
-                <div class="scroll-animation content">
-                    <div class="info">
-                        <h1 data-translate="¿Cómo trabajo?">
-                        </h1>
-                    </div>
+            <section class="banner scroll-animation content">
+                <div class="info">
+                    <h1 data-translate="¿Cómo trabajo?">
+                    </h1>
                 </div>
             </section>
             <div class="padding"></div>
             <section class="scroll-animation banner-empty">
-                <div class="desktop">
-                    <div class="content">
-                        <div class="info">
-                            <h2 class="schemetitle scheme-right" data-translate="1ª y 2ª Consulta">
-                            </h2>
-                            <div class="scheme2 col">
-                                <p
-                                    data-translate="Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades. En cada seguimiento se realizará:">
-                                </p>
-                                <div>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Actualización de tu estado">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Análisis de logros y dificultades">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Revisión de registros y actividades">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Modificación de tu planificación">
-                                        </span>
-                                    </p>
-                                </div>
-                                <p data-translate="Duración: 30 minutos">
-                                </p>
-                            </div>
+                <div class="desktop content">
+                    <div class="info">
+                        <h2 class="schemetitle scheme-right" data-translate="1ª y 2ª Consulta">
+                        </h2>
+                        <div class="scheme2 col">
+                            <p
+                                data-translate="Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades. En cada seguimiento se realizará:">
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Actualización de tu estado">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Análisis de logros y dificultades">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Revisión de registros y actividades">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Modificación de tu planificación">
+                                </span>
+                            </p>
+                            <p data-translate="Duración: 30 minutos">
+                            </p>
                         </div>
-                        <div class="line-container">
-                            <div class="circle1"></div>
-                            <div class="line"></div>
-                            <div class="circle2"></div>
+                    </div>
+                    <div class="line-container">
+                        <div class="circle1"></div>
+                        <div class="line"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="info">
+                        <div class="scheme1 col">
+                            <p data-translate="¿Qué incluyen?">
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Elaboración del historial clínico">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Estudio nutricional inicial">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Establecimiento de objetivos">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Análisis de tu historia de dietas">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Tratamiento nutricional personalizado">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Entrega y explicación de tu plan">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Recomendaciones adaptadas a ti">
+                                </span>
+                            </p>
+                            <p>
+                                <span>&#9900;&nbsp;</span>
+                                <span data-translate="Ideas de recetas nutritivas">
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    🎁
+                                </span>
+                                <span data-translate="regalo eBook guía de nutrición inicial">
+                                </span>
+                            </p>
+                            <p
+                                data-translate="Duración: La 1ª consulta dura al rededor de 1 hora, para conocer tus necesidades. El resto de consultas duran 40 minutos aproximadamente.">
+                            </p>
                         </div>
-                        <div class="info">
-                            <div class="scheme1 col">
-                                <p data-translate="¿Qué incluyen?">
-                                </p>
-                                <div>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Elaboración del historial clínico">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Estudio nutricional inicial">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Establecimiento de objetivos">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Análisis de tu historia de dietas">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Tratamiento nutricional personalizado">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Entrega y explicación de tu plan">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Recomendaciones adaptadas a ti">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>&#9900;&nbsp;</span>
-                                        <span data-translate="Ideas de recetas nutritivas">
-                                        </span>
-                                    </p>
-                                    <p>
-                                        <span>
-                                            🎁
-                                        </span>
-                                        <span data-translate="regalo eBook guía de nutrición inicial">
-                                        </span>
-                                    </p>
-                                </div>
-                                <div>
-                                    <br>
-                                </div>
-                                <p
-                                    data-translate="Duración: La 1ª consulta dura al rededor de 1 hora, para conocer tus necesidades. El resto de consultas duran 40 minutos aproximadamente.">
-                                </p>
-                            </div>
-                            <h2 class="schemetitle scheme-left" data-translate="Seguimientos">
-                            </h2>
-                        </div>
+                        <h2 class="schemetitle scheme-left" data-translate="Seguimientos">
+                        </h2>
                     </div>
                 </div>
                 <!-- Mobile -->
@@ -419,9 +400,8 @@
             </div>
             <div class="banner-empty">
                 <div class="content">
-                    <div class="mobile info">
-                        <div class="scroll-animation alex"><img src="./img/alesito.webp" alt="Logo">
-                        </div>
+                    <div class="mobile scroll-animation alex">
+                        <img src="./img/alesito.webp" alt="Logo">
                     </div>
                     <div class="scroll-animation info custom">
                         <details name="plan">
@@ -506,12 +486,10 @@
             </div>
         </div>
         <div class="container col">
-            <section class="banner">
-                <div class="scroll-animation content">
-                    <div class="info">
-                        <h1 data-translate="eBooks - AC Nutritionis">
-                        </h1>
-                    </div>
+            <section class="banner scroll-animation content">
+                <div class="info">
+                    <h1 data-translate="eBooks - AC Nutritionis">
+                    </h1>
                 </div>
             </section>
             <div class="padding">
@@ -833,46 +811,39 @@
             </div>
         </div>
         <div class="footer col" id="footer">
-            <div class="banner-empty">
-                <div class="content">
-                    <div class="info">
-                        <h2
-                            data-translate="Para cualquier otro tipo de consultas, dudas o propuestas, ¡contáctame ahora!">
-                        </h2>
-                        <br>
-                    </div>
+            <div class="banner-empty content">
+                <div class="info">
+                    <h2 data-translate="Para cualquier otro tipo de consultas, dudas o propuestas, ¡contáctame ahora!">
+                    </h2>
+                    <br>
                 </div>
             </div>
-            <div class="banner-empty">
-                <div class="content">
-                    <div class="info">
-                        <p class="contact2">
-                            <img class="icon" src="../img/icons/email2.svg" alt="">
-                            &nbsp;
-                            <a onclick="copyemail()" id="email" title="Copy/Copiar">
-                                info@acnutritionis.com
-                            </a>
-                        </p>
-                        <br>
-                    </div>
-                    <div class="info">
-                        <p class="contact2">
-                            <img class="icon" src="../img/icons/phone.svg" alt="">
-                            &nbsp;
-                            <a onclick="copynumber()" id="number" title="Copy/Copiar">
-                                +34 672 268 898
-                            </a>
-                        </p>
-                        <br>
-                    </div>
+            <div class="banner-empty content">
+                <div class="info">
+                    <p class="contact2">
+                        <img class="icon" src="../img/icons/email2.svg" alt="">
+                        &nbsp;
+                        <a onclick="copyemail()" id="email" title="Copy/Copiar">
+                            info@acnutritionis.com
+                        </a>
+                    </p>
+                    <br>
+                </div>
+                <div class="info">
+                    <p class="contact2">
+                        <img class="icon" src="../img/icons/phone.svg" alt="">
+                        &nbsp;
+                        <a onclick="copynumber()" id="number" title="Copy/Copiar">
+                            +34 672 268 898
+                        </a>
+                    </p>
+                    <br>
                 </div>
             </div>
-            <div class="banner-empty">
-                <div class="content">
-                    <div class="info">
-                        <p data-translate="(Recibirás siempre una respuesta en un plazo de 24-48 H días hábiles)">
-                        </p>
-                    </div>
+            <div class="banner-empty content">
+                <div class="info">
+                    <p data-translate="(Recibirás siempre una respuesta en un plazo de 24-48 H días hábiles)">
+                    </p>
                 </div>
             </div>
         </div>

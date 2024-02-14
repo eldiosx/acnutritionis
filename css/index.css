@@ -179,7 +179,7 @@ main {
 }
 
 .container:nth-child(5) {
-    min-height: 700px;
+    min-height: 1000px;
     background-color: rgb(212, 206, 200);
 }
 
@@ -570,16 +570,18 @@ textarea {
     width: 200px;
 }
 
+
 .alex {
+
     overflow: hidden;
     border-radius: 10px;
-    height: 500px;
+    height: 300px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.726);
 
     img {
-
-        height: 100%;
+        margin: auto;
+        height: 150%;
         object-fit: cover;
     }
 }
@@ -899,20 +901,6 @@ textarea {
         object-fit: cover;
     }
 
-    .alex {
-        overflow: hidden;
-        border-radius: 10px;
-        height: 300px;
-        width: 300px;
-        background-color: rgba(255, 255, 255, 0.726);
-
-        img {
-
-            height: 150%;
-            object-fit: cover;
-        }
-    }
-
     .line-container {
         display: none;
     }
@@ -955,7 +943,7 @@ textarea {
     }
 
     .container:nth-child(5) {
-        min-height: 900px;
+        min-height: 1000px;
     }
 
     .padding {

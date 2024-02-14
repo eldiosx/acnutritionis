@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: var(--background-banner);
     color: var(--text);
     padding: 10px 0;
@@ -12,9 +11,6 @@
     align-items: center;
     height: 80px;
     transition: height 0.3s;
-}
-
-.header-container {
     width: 100%;
     max-width: 1600px;
     display: flex;
@@ -22,6 +18,8 @@
     align-items: center;
     padding: 0 20px;
 }
+
+
 
 #logo {
     transition: height 0.3s;
