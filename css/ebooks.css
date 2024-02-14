@@ -1,7 +1,7 @@
 .slider-ebooks {
   display: flex;
-  max-width: 500px;
-  height: 300px;
+  max-width: 1200px;
+  height: 400px;
   width: 100%;
   overflow-x: scroll;
   scroll-snap-type: x proximity;
@@ -149,7 +149,16 @@
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .slider-ebooks {
+    height: 300px;
+  }
+}
+
 @media (max-width: 500px) {
+  .slider-ebooks {
+    height: 220px;
+  }
   .image-container {
     width: 10em;
     height: 12.5em;

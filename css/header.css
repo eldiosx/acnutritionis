@@ -11,6 +11,10 @@
   align-items: center;
   transition: height 0.3s;
   width: 100%;
+}
+
+.header-container {
+  width: 100%;
   max-width: 1600px;
   display: flex;
   justify-content: space-between;
