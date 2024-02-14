@@ -104,16 +104,24 @@ h2 {
     text-align: center;
 }
 
-.scroll-animation {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+
+.scroll-animation:not(:hover) {
+    animation: scrollAnimation 0.8s ease forwards;
 }
 
-.scroll-animation.active {
-    opacity: 1;
-    transform: translateY(0);
+
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 
 .hide {
     display: none;
@@ -569,7 +577,6 @@ textarea {
     right: 0;
     width: 200px;
 }
-
 
 .alex {
 

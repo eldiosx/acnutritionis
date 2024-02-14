@@ -3,21 +3,6 @@
 const header = document.querySelector('header');
 var logo = document.getElementById("logo");
 
-function checkScrollAnimations() {
-    const elements = document.querySelectorAll('.scroll-animation');
-    elements.forEach((element) => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-
-        if (elementPosition < screenPosition) {
-            element.classList.add('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', checkScrollAnimations);
-
-checkScrollAnimations();
 
 window.addEventListener('scroll', () => {
     var navLinks = document.getElementById("navLinks");
