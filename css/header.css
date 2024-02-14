@@ -18,7 +18,7 @@
     align-items: center;
     padding: 0 20px;
 
-    animation: header linear both;
+    /* animation: header linear both; */
     animation-timeline: scroll(root block);
     animation-range: 0 100px;
 }
