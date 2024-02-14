@@ -4,7 +4,6 @@
   left: 0;
   background-color: var(--background-banner);
   color: var(--text);
-  padding: 10px 0;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -28,7 +27,7 @@
   padding: 10px 5px 5px 5px;
   animation: header-logo linear both;
   animation-timeline: scroll(root block);
-  animation-range: 0 100px;
+  animation-range: 0 50px;
 }
 
 @keyframes header-logo {
@@ -129,7 +128,7 @@ nav {
 
   @keyframes header-logo {
     to {
-      height: 35px;
+      height: 30px;
     }
   }
 

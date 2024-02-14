@@ -50,21 +50,17 @@ function showSlidePrev(index) {
 }
 
 function showNextSlide() {
-  background4.classList.add("background4-2");
   let newIndex = currentIndex + 1;
   if (newIndex >= slides.length) {
     newIndex = 0;
-    background4.classList.remove("background4-2");
   }
   showSlideNext(newIndex);
 }
 
 function showPrevSlide() {
-  background4.classList.remove("background4-2");
   let newIndex = currentIndex - 1;
   if (newIndex < 0) {
     newIndex = slides.length - 1;
-    background4.classList.add("background4-2");
   }
   showSlidePrev(newIndex);
 }
