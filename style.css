@@ -327,7 +327,7 @@ main {
 }
 
 .container:nth-child(4) {
-  min-height: 1000px;
+  min-height: 900px;
   background-image: url("./img/working.webp");
 }
 
@@ -909,7 +909,7 @@ textarea {
   }
 
   .scheme2 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .fatcs {
