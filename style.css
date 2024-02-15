@@ -77,6 +77,158 @@ hr {
   }
 }
 
+/*
+Header
+*/
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-banner);
+  color: var(--text);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s;
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#logo {
+  transition: height 0.3s;
+  height: 70px;
+  padding: 10px 5px 5px 5px;
+  animation: header-logo linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 50px;
+}
+
+@keyframes header-logo {
+  to {
+    height: 50px;
+  }
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+
+  a {
+    color: var(--text);
+  }
+
+  a:hover {
+    color: var(--text-hover);
+    text-shadow: #ccc 1px 0 10px;
+  }
+}
+
+#navLinks {
+  display: flex;
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+#button-menu {
+  width: 1.5em;
+  transition: transform 0.3s ease-in-out;
+}
+
+#button-menu2 {
+  display: none;
+  transform: rotate(90deg);
+  width: 3em;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1300px) {
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 710px) {
+  #logo {
+    height: 50px;
+  }
+
+  @keyframes header-logo {
+    to {
+      height: 40px;
+    }
+  }
+
+  #navLinks {
+    display: none;
+  }
+
+  #header.open-header {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .open-header {
+    #button-menu2 {
+      right: 5%;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    #navLinks {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+
+    #logo {
+      transform: translateY(-50%);
+      height: 90px;
+      left: 5%;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  #logo {
+    height: 40px;
+  }
+
+  @keyframes header-logo {
+    to {
+      height: 30px;
+    }
+  }
+
+  .open-header {
+    #logo {
+      height: 50px;
+      left: 1%;
+    }
+
+    #button-menu2 {
+      right: 3%;
+    }
+  }
+}
+
+/*Body*/
+
 #video-background {
   position: absolute;
   left: 0;
@@ -161,37 +313,40 @@ main {
 
 .container:nth-child(1) {
   min-height: 600px;
-  background-image: url("../img/start.webp");
+  background-image: url("./img/start.webp");
 }
 
 .container:nth-child(2) {
   min-height: 900px;
-  background-image: url("../img/desktop.webp");
+  background-image: url("./img/desktop.webp");
 }
 
 .container:nth-child(3) {
   min-height: 800px;
-  background-image: url("../img/services.webp");
+  background-image: url("./img/services.webp");
 }
 
 .container:nth-child(4) {
   min-height: 900px;
-  background-image: url("../img/working.webp");
+  background-image: url("./img/working.webp");
 }
 
 .container:nth-child(5) {
   min-height: 1000px;
   background-color: rgb(212, 206, 200);
+  background-image: url("./img/alesito.webp");
+  background-size: contain;
+  background-position: right bottom;
 }
 
 .container:nth-child(6) {
   min-height: 600px;
-  background-image: url("../img/ebooks.webp");
+  background-image: url("./img/ebooks.webp");
 }
 
 .container:nth-child(7) {
   min-height: 600px;
-  background-image: url("../img/footer.webp");
+  background-image: url("./img/footer.webp");
 }
 
 .center {
@@ -554,13 +709,6 @@ textarea {
   background-color: #000000;
 }
 
-.alexbackground {
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-}
-
 .alex {
   overflow: hidden;
   border-radius: 10px;
@@ -904,11 +1052,12 @@ textarea {
 
   .container:nth-child(4) {
     min-height: 1200px;
-    background-image: url("../img/working.webp");
+    background-image: url("./img/working.webp");
   }
 
   .container:nth-child(5) {
     min-height: 1000px;
+    background-image: none;
   }
 
   .padding {
@@ -939,5 +1088,193 @@ textarea {
 
   h1 {
     padding: 5px 0 5px 0;
+  }
+}
+
+details > .background {
+  animation: open-prices 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes open-prices {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+/* eBooks */
+
+.slider-ebooks {
+  display: flex;
+  max-width: 1200px;
+  height: 400px;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+
+  .ebook {
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(247, 247, 247, 0.9);
+    transition: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .text-container {
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+
+      img {
+        color: var(--text);
+        width: 20px;
+        height: 20px;
+      }
+
+      p {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.ebook:hover .text-container {
+  color: rgb(173, 0, 0);
+}
+
+.ebook:hover .unlock {
+  color: rgb(0, 173, 0);
+}
+
+.ebook:nth-of-type(1) .image-container {
+  background-image: url("/img/ebook/1.webp");
+}
+
+.ebook:nth-of-type(2) .image-container {
+  background-image: url("/img/ebook/2.webp");
+}
+
+.ebook:nth-of-type(3) .image-container {
+  background-image: url("/img/ebook/3.webp");
+}
+
+.ebook:nth-of-type(4) .image-container {
+  background-image: url("/img/ebook/4.webp");
+}
+
+.ebook:nth-of-type(5) .image-container {
+  background-image: url("/img/ebook/5.webp");
+}
+
+.ebook:nth-of-type(6) .image-container {
+  background-image: url("/img/ebook/6.webp");
+}
+
+.ebook:nth-of-type(7) .image-container {
+  background-image: url("/img/ebook/7.webp");
+}
+
+.ebook:nth-of-type(8) .image-container {
+  background-image: url("/img/ebook/8.webp");
+}
+
+.ebook:nth-of-type(9) .image-container {
+  background-image: url("/img/ebook/9.webp");
+}
+
+.ebook:nth-of-type(10) .image-container {
+  background-image: url("/img/ebook/10.webp");
+}
+
+.ebook:nth-of-type(11) .image-container {
+  background-image: url("/img/ebook/11.webp");
+}
+
+.ebook:nth-of-type(12) .image-container {
+  background-image: url("/img/ebook/12.webp");
+}
+
+.ebook:nth-of-type(13) .image-container {
+  background-image: url("/img/ebook/13.webp");
+}
+
+.ebook:nth-of-type(14) .image-container {
+  background-image: url("/img/ebook/14.webp");
+}
+
+.ebook:nth-of-type(15) .image-container {
+  background-image: url("/img/ebook/15.webp");
+}
+
+.ebook:nth-of-type(16) .image-container {
+  background-image: url("/img/ebook/16.webp");
+}
+
+.ebook:nth-of-type(17) .image-container {
+  background-image: url("/img/ebook/17.webp");
+}
+
+.ebook:nth-of-type(18) .image-container {
+  background-image: url("/img/ebook/18.webp");
+}
+
+.ebook:nth-of-type(19) .image-container {
+  background-image: url("/img/ebook/19.webp");
+}
+
+.ebook:nth-of-type(20) .image-container {
+  background-image: url("/img/ebook/20.webp");
+}
+
+.ebook:nth-of-type(21) .image-container {
+  background-image: url("/img/ebook/21.webp");
+}
+
+.ebook:nth-of-type(22) .image-container {
+  background-image: url("/img/ebook/22.webp");
+}
+
+.ebook:nth-of-type(23) .image-container {
+  background-image: url("/img/ebook/23.webp");
+}
+
+.ebook:nth-of-type(24) .image-container {
+  background-image: url("/img/ebook/24.webp");
+}
+
+.ebook:nth-of-type(25) .image-container {
+  background-image: url("/img/ebook/25.webp");
+}
+
+.image-container {
+  width: 12em;
+  height: 15em;
+  position: relative;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .slider-ebooks {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider-ebooks {
+    height: 220px;
+  }
+  .image-container {
+    width: 10em;
+    height: 12.5em;
   }
 }

@@ -10,9 +10,7 @@
         AC Nutritionis
     </title>
     <link rel="icon" href="img/logoMini.webp">
-    <link href="./css/ebooks.css" rel="stylesheet">
-    <link href="./css/header.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,6 +32,9 @@
                 <a href="#services" onclick="toggleNav()" data-translate="Servicios">
                 </a>
                 <a href="#appointments" onclick="toggleNav()" data-translate="Consultas">
+                </a>
+                <a href="#ebooks" onclick="toggleNav()">
+                    eBooks
                 </a>
                 <a href="#contact" onclick="toggleNav()" data-translate="Contacto">
                 </a>
@@ -269,7 +270,7 @@
                                 <span>
                                     🎁
                                 </span>
-                                <span data-translate="regalo eBook guía de nutrición inicial">
+                                <span data-translate="eBook guía de nutrición inicial">
                                 </span>
                             </p>
                             <p
@@ -494,11 +495,10 @@
                         </div>
                     </details>
                 </div>
-                <img class="desktop alexbackground" src="./img/alesito.webp" alt="Logo">
             </div>
         </div>
         <!-- eBooks -->
-        <div class="container col">
+        <div id="ebooks" class="container col">
             <section class="banner">
                 <div class="content">
                     <div class="info">
@@ -880,8 +880,7 @@
             &uarr;
         </a>
     </div>
-    <script src="./js/translation.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
