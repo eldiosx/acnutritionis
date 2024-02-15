@@ -81,13 +81,13 @@ function fetchTranslations() {
     .catch((error) => console.error("Error:", error));
 }
 
-function setCookie(name, value, days, sameSite = "Strict") {
+function setCookie(name, value, days) {
   const expires = new Date(
     Date.now() + days * 24 * 60 * 60 * 1000
   ).toUTCString();
   document.cookie = `${name}=${encodeURIComponent(
     value
-  )}; expires=${expires}; path=/`;
+  )}; expires=${expires}; path=/; SameSite=Strict`;
 }
 function getCookie(name) {
   const cookies = document.cookie
@@ -110,7 +110,7 @@ function applyTranslation() {
 
 function toggleLang() {
   isTranslated = !isTranslated;
-  setCookie("isTranslated", isTranslated ? "es" : "en", 30, "Strict");
+  setCookie("isTranslated", isTranslated ? "es" : "en", 30);
   applyTranslation();
 }
 
