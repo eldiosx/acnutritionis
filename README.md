@@ -11,7 +11,7 @@
 Features:
 
 - [x] Gecko, Blink, WebKit.
-- [X] Prioritize native CSS
+- [X] Prioritize the latest in native CSS
 - [X] Minimize JavaScript usage
 
 ## Live server: [Preview](https://acnutritionis.com/)
