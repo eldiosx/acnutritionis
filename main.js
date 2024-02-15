@@ -58,12 +58,6 @@ function copyemail() {
   copyToClipboard("email");
 }
 
-//Loader
-window.addEventListener("load", function () {
-  var loadingContainer = document.getElementById("loader");
-  loadingContainer.style.display = "none";
-});
-
 //Translate
 let translations = JSON.parse(localStorage.getItem("translations")) || {};
 if (Object.keys(translations).length === 0) {
@@ -117,4 +111,10 @@ function toggleLang() {
 applyTranslation();
 document.querySelectorAll(".translateButton").forEach((button) => {
   button.addEventListener("click", toggleLang);
+});
+
+//Loader
+window.addEventListener("load", function () {
+  var loadingContainer = document.getElementById("loader");
+  loadingContainer.style.display = "none";
 });
