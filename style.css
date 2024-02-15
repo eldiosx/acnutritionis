@@ -327,7 +327,7 @@ main {
 }
 
 .container:nth-child(4) {
-  min-height: 900px;
+  min-height: 1000px;
   background-image: url("./img/working.webp");
 }
 
@@ -437,9 +437,7 @@ main {
 }
 
 .scheme-right {
-  margin: 0 auto;
-  left: 50%;
-  transform: translateX(-170%);
+  left: 25%;
   background-color: rgba(90, 115, 109, 0.7);
 }
 
@@ -790,7 +788,7 @@ textarea {
 
   .scheme1:hover,
   .scheme2:hover {
-    transform: scale(1.02);
+    scale: 1.02;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
 
@@ -825,9 +823,6 @@ textarea {
     margin: 0 40px 0 40px;
   }
 
-  .scheme-right {
-    transform: translateX(-150%);
-  }
 }
 
 @media (max-width: 1300px) {
@@ -1114,12 +1109,19 @@ details > .background {
 
 /* eBooks */
 
+@media only screen and (min-width: 768px) {
+  .ebook:hover {
+    scale: 1.1;
+  }
+}
+
 .slider-ebooks {
   display: flex;
   max-width: 1200px;
   height: 400px;
   width: 100%;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x proximity;
 
   .ebook {
@@ -1159,103 +1161,103 @@ details > .background {
 }
 
 .ebook:nth-of-type(1) .image-container {
-  background-image: url("/img/ebook/1.webp");
+  background-image: url("./img/ebook/1.webp");
 }
 
 .ebook:nth-of-type(2) .image-container {
-  background-image: url("/img/ebook/2.webp");
+  background-image: url("./img/ebook/2.webp");
 }
 
 .ebook:nth-of-type(3) .image-container {
-  background-image: url("/img/ebook/3.webp");
+  background-image: url("./img/ebook/3.webp");
 }
 
 .ebook:nth-of-type(4) .image-container {
-  background-image: url("/img/ebook/4.webp");
+  background-image: url("./img/ebook/4.webp");
 }
 
 .ebook:nth-of-type(5) .image-container {
-  background-image: url("/img/ebook/5.webp");
+  background-image: url("./img/ebook/5.webp");
 }
 
 .ebook:nth-of-type(6) .image-container {
-  background-image: url("/img/ebook/6.webp");
+  background-image: url("./img/ebook/6.webp");
 }
 
 .ebook:nth-of-type(7) .image-container {
-  background-image: url("/img/ebook/7.webp");
+  background-image: url("./img/ebook/7.webp");
 }
 
 .ebook:nth-of-type(8) .image-container {
-  background-image: url("/img/ebook/8.webp");
+  background-image: url("./img/ebook/8.webp");
 }
 
 .ebook:nth-of-type(9) .image-container {
-  background-image: url("/img/ebook/9.webp");
+  background-image: url("./img/ebook/9.webp");
 }
 
 .ebook:nth-of-type(10) .image-container {
-  background-image: url("/img/ebook/10.webp");
+  background-image: url("./img/ebook/10.webp");
 }
 
 .ebook:nth-of-type(11) .image-container {
-  background-image: url("/img/ebook/11.webp");
+  background-image: url("./img/ebook/11.webp");
 }
 
 .ebook:nth-of-type(12) .image-container {
-  background-image: url("/img/ebook/12.webp");
+  background-image: url("./img/ebook/12.webp");
 }
 
 .ebook:nth-of-type(13) .image-container {
-  background-image: url("/img/ebook/13.webp");
+  background-image: url("./img/ebook/13.webp");
 }
 
 .ebook:nth-of-type(14) .image-container {
-  background-image: url("/img/ebook/14.webp");
+  background-image: url("./img/ebook/14.webp");
 }
 
 .ebook:nth-of-type(15) .image-container {
-  background-image: url("/img/ebook/15.webp");
+  background-image: url("./img/ebook/15.webp");
 }
 
 .ebook:nth-of-type(16) .image-container {
-  background-image: url("/img/ebook/16.webp");
+  background-image: url("./img/ebook/16.webp");
 }
 
 .ebook:nth-of-type(17) .image-container {
-  background-image: url("/img/ebook/17.webp");
+  background-image: url("./img/ebook/17.webp");
 }
 
 .ebook:nth-of-type(18) .image-container {
-  background-image: url("/img/ebook/18.webp");
+  background-image: url("./img/ebook/18.webp");
 }
 
 .ebook:nth-of-type(19) .image-container {
-  background-image: url("/img/ebook/19.webp");
+  background-image: url("./img/ebook/19.webp");
 }
 
 .ebook:nth-of-type(20) .image-container {
-  background-image: url("/img/ebook/20.webp");
+  background-image: url("./img/ebook/20.webp");
 }
 
 .ebook:nth-of-type(21) .image-container {
-  background-image: url("/img/ebook/21.webp");
+  background-image: url("./img/ebook/21.webp");
 }
 
 .ebook:nth-of-type(22) .image-container {
-  background-image: url("/img/ebook/22.webp");
+  background-image: url("./img/ebook/22.webp");
 }
 
 .ebook:nth-of-type(23) .image-container {
-  background-image: url("/img/ebook/23.webp");
+  background-image: url("./img/ebook/23.webp");
 }
 
 .ebook:nth-of-type(24) .image-container {
-  background-image: url("/img/ebook/24.webp");
+  background-image: url("./img/ebook/24.webp");
 }
 
 .ebook:nth-of-type(25) .image-container {
-  background-image: url("/img/ebook/25.webp");
+  background-image: url("./img/ebook/25.webp");
 }
 
 .image-container {
