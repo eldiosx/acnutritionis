@@ -409,6 +409,7 @@ main {
   display: flex;
   justify-content: center;
   text-align: left;
+  max-width: 400px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -427,6 +428,7 @@ main {
   color: var(--text);
   padding: 20px;
   margin: 30px;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   text-align: left;
