@@ -333,10 +333,11 @@ main {
 
 .container:nth-child(5) {
   min-height: 1000px;
+  background-image: url("./img/prices.webp");
+  /* background-image: url("./img/alesito.webp");
   background-color: rgb(212, 206, 200);
-  background-image: url("./img/alesito.webp");
   background-size: contain;
-  background-position: right bottom;
+  background-position: right bottom; */
 }
 
 .container:nth-child(6) {
