@@ -8,10 +8,10 @@
 
 </div>
 
-## Live server: [Preview](https://eldiosx.github.io/acnutritionis/)
-
 Features:
 
 - [x] Gecko, Blink, WebKit.
 - [X] Prioritize native CSS
 - [X] Minimize JavaScript usage
+
+## Live server: [Preview](https://acnutritionis.com/)
