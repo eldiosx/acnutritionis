@@ -23,6 +23,7 @@ body,
 html {
   height: 100%;
   font-size: 20px;
+  background-color: black;
 }
 
 input:focus,
@@ -765,7 +766,7 @@ textarea {
   text-align: center;
   width: 100%;
   color: var(--text-button);
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: auto;
 }
 
@@ -975,7 +976,6 @@ textarea {
   body,
   html {
     font-size: 12px;
-    background-color: black;
   }
 
   .icon {
