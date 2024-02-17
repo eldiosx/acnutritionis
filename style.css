@@ -60,7 +60,7 @@ hr {
   z-index: 9999;
   background-color: rgb(0, 0, 0);
 
-  img {
+  & img {
     animation: spin 2s linear infinite;
     color: var(--background-button);
     width: 10vh;
@@ -123,13 +123,8 @@ nav {
   display: flex;
   gap: 50px;
 
-  a {
+  & a {
     color: var(--text);
-  }
-
-  a:hover {
-    color: var(--text-hover);
-    text-shadow: #ccc 1px 0 10px;
   }
 }
 
@@ -188,14 +183,14 @@ nav {
       transform: translateY(-50%);
     }
 
-    #navLinks {
+    & #navLinks {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: auto;
     }
 
-    #logo {
+    & #logo {
       transform: translateY(-50%);
       height: 90px;
       left: 5%;
@@ -216,12 +211,12 @@ nav {
   }
 
   .open-header {
-    #logo {
+    & #logo {
       height: 50px;
       left: 1%;
     }
 
-    #button-menu2 {
+    & #button-menu2 {
       right: 3%;
     }
   }
@@ -292,11 +287,11 @@ main {
   animation-timeline: view();
   animation-range: entry 10% cover 30%;
 
-  li {
+  & li {
     font-size: 1rem;
   }
 
-  p {
+  & p {
     font-size: 1rem;
   }
 }
@@ -394,7 +389,7 @@ main {
   justify-content: left;
   text-align: justify;
 
-  b {
+  & b {
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -434,18 +429,16 @@ main {
 .line-container {
   position: relative;
 
-  .line {
+  & .line {
     width: 5px;
-    background: linear-gradient(
-      to bottom,
-      rgba(90, 115, 109, 0.7),
-      rgba(77, 90, 93, 0.7)
-    );
+    background: linear-gradient(to bottom,
+        rgba(90, 115, 109, 0.7),
+        rgba(77, 90, 93, 0.7));
     height: 500px;
     margin: 0 auto;
   }
 
-  .circle1 {
+  & .circle1 {
     width: 35px;
     height: 35px;
     background-color: rgba(90, 115, 109, 0.7);
@@ -456,7 +449,7 @@ main {
     top: -35px;
   }
 
-  .circle2 {
+  & .circle2 {
     width: 35px;
     height: 35px;
     background-color: rgba(77, 90, 93, 0.7);
@@ -532,7 +525,7 @@ main {
   border-radius: 50%;
   overflow: hidden;
 
-  img {
+  & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -614,7 +607,7 @@ ul {
   overflow: hidden;
   width: 300px;
 
-  img {
+  & img {
     width: 100%;
     height: auto;
     transition: transform 0.3s;
@@ -677,7 +670,7 @@ textarea {
   background-position: center;
   background-color: #232323;
 
-  p {
+  & p {
     font-size: 1rem;
   }
 }
@@ -693,7 +686,7 @@ textarea {
   width: 300px;
   background-color: rgba(255, 255, 255, 0.726);
 
-  img {
+  & img {
     margin: auto;
     height: 150%;
     object-fit: cover;
@@ -724,7 +717,7 @@ textarea {
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
 
-  a {
+  & a {
     text-align: center;
     width: 100%;
     color: var(--text-button);
@@ -740,6 +733,11 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
+  nav a:hover {
+    color: var(--text-hover);
+    text-shadow: #ccc 1px 0 10px;
+  }
+
   .cr:hover {
     text-decoration: underline;
   }
@@ -780,6 +778,7 @@ textarea {
 }
 
 @media (max-width: 1500px) {
+
   .navigate_left,
   .navigate_right {
     width: 40px;
@@ -802,6 +801,7 @@ textarea {
 }
 
 @media (max-width: 1300px) {
+
   body,
   html {
     font-size: 16px;
@@ -856,6 +856,7 @@ textarea {
 }
 
 @media (max-width: 710px) {
+
   body,
   html {
     font-size: 14px;
@@ -1006,6 +1007,7 @@ textarea {
 }
 
 @media (max-width: 310px) {
+
   body,
   html {
     font-size: 12px;
@@ -1026,7 +1028,7 @@ textarea {
   }
 }
 
-details > .background {
+details>.background {
   animation: open-prices 0.3s ease-in-out;
   overflow: hidden;
 }
@@ -1062,7 +1064,7 @@ details > .background {
   overflow-y: hidden;
   scroll-snap-type: x proximity;
 
-  .ebook {
+  & .ebook {
     text-align: center;
     margin: 0 auto;
     color: rgba(247, 247, 247, 0.9);
@@ -1072,18 +1074,18 @@ details > .background {
     align-items: center;
     justify-content: center;
 
-    .text-container {
+    & .text-container {
       display: flex;
       border-radius: 5px;
       align-items: center;
 
-      img {
+      & img {
         color: var(--text);
         width: 20px;
         height: 20px;
       }
 
-      p {
+      & p {
         flex-grow: 1;
       }
     }
@@ -1215,6 +1217,7 @@ details > .background {
   .slider-ebooks {
     height: 220px;
   }
+
   .image-container {
     width: 10em;
     height: 12.5em;
