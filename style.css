@@ -48,23 +48,23 @@ hr {
   margin-right: 20px;
 }
 
-.loader {
+#loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   background-color: rgb(0, 0, 0);
+}
 
-  & img {
-    animation: spin 2s linear infinite;
-    color: var(--background-button);
-    width: 10vh;
-  }
+#loader img {
+  animation: spin 2s linear infinite;
+  color: var(--background-button);
+  width: 10vh;
 }
 
 @keyframes spin {
@@ -119,17 +119,17 @@ Header
   }
 }
 
+
+
 nav {
   display: flex;
   gap: 50px;
 
-  & a {
-    color: var(--text);
-  }
 }
 
-#navLinks {
-  display: flex;
+nav a {
+  color: var(--text);
+
 }
 
 .menu-button {
@@ -151,7 +151,7 @@ nav {
 
 @media (max-width: 1300px) {
   nav {
-    display: flex;
+    display: none;
     gap: 30px;
   }
 }
@@ -167,35 +167,29 @@ nav {
     }
   }
 
-  #navLinks {
-    display: none;
-  }
-
   #header.open-header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  .open-header {
-    #button-menu2 {
-      right: 5%;
-      position: absolute;
-      transform: translateY(-50%);
-    }
+  .open-header #button-menu2 {
+    right: 5%;
+    position: absolute;
+    transform: translateY(-50%);
+  }
 
-    & #navLinks {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-    }
+  .open-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
 
-    & #logo {
-      transform: translateY(-50%);
-      height: 90px;
-      left: 5%;
-      position: absolute;
-    }
+  .open-header #logo {
+    transform: translateY(-50%);
+    height: 90px;
+    left: 5%;
+    position: absolute;
   }
 }
 
@@ -210,17 +204,16 @@ nav {
     }
   }
 
-  .open-header {
-    & #logo {
-      height: 50px;
-      left: 1%;
-    }
+  .open-header #logo {
+    height: 50px;
+    left: 1%;
+  }
 
-    & #button-menu2 {
-      right: 3%;
-    }
+  .open-header #button-menu2 {
+    right: 3%;
   }
 }
+
 
 /*Body*/
 
@@ -286,14 +279,14 @@ main {
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 30%;
+}
 
-  & li {
-    font-size: 1rem;
-  }
+.container li {
+  font-size: 1rem;
+}
 
-  & p {
-    font-size: 1rem;
-  }
+.container p {
+  font-size: 1rem;
 }
 
 @keyframes reveal {
@@ -388,12 +381,12 @@ main {
   display: flex;
   justify-content: left;
   text-align: justify;
+}
 
-  & b {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
+.background b {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .scheme1 {
@@ -428,37 +421,37 @@ main {
 
 .line-container {
   position: relative;
+}
 
-  & .line {
-    width: 5px;
-    background: linear-gradient(to bottom,
-        rgba(90, 115, 109, 0.7),
-        rgba(77, 90, 93, 0.7));
-    height: 500px;
-    margin: 0 auto;
-  }
+.line-container .line {
+  width: 5px;
+  background: linear-gradient(to bottom,
+      rgba(90, 115, 109, 0.7),
+      rgba(77, 90, 93, 0.7));
+  height: 500px;
+  margin: 0 auto;
+}
 
-  & .circle1 {
-    width: 35px;
-    height: 35px;
-    background-color: rgba(90, 115, 109, 0.7);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -35px;
-  }
+.line-container .circle1 {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(90, 115, 109, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+}
 
-  & .circle2 {
-    width: 35px;
-    height: 35px;
-    background-color: rgba(77, 90, 93, 0.7);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -35px;
-  }
+.line-container .circle2 {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(77, 90, 93, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
 }
 
 .banner-empty {
@@ -524,12 +517,12 @@ main {
   margin: 0 50px 0 50px;
   border-radius: 50%;
   overflow: hidden;
+}
 
-  & img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.alexito img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .navigate_left,
@@ -606,12 +599,12 @@ ul {
   display: flex;
   overflow: hidden;
   width: 300px;
+}
 
-  & img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-  }
+#image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 form {
@@ -669,10 +662,10 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #232323;
+}
 
-  & p {
-    font-size: 1rem;
-  }
+.footer p {
+  font-size: 1rem;
 }
 
 .copyright {
@@ -685,12 +678,12 @@ textarea {
   height: 300px;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.726);
+}
 
-  & img {
-    margin: auto;
-    height: 150%;
-    object-fit: cover;
-  }
+.alex img {
+  margin: auto;
+  height: 150%;
+  object-fit: cover;
 }
 
 .cr {
@@ -716,14 +709,14 @@ textarea {
   animation: btn-top linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
+}
 
-  & a {
-    text-align: center;
-    width: 100%;
-    color: var(--text-button);
-    font-size: 25px;
-    margin: auto;
-  }
+.scroll-to-top a {
+  text-align: center;
+  width: 100%;
+  color: var(--text-button);
+  font-size: 25px;
+  margin: auto;
 }
 
 @keyframes btn-top {
@@ -796,10 +789,8 @@ textarea {
     margin: 0 20px 0 20px;
   }
 
-  .line-container {
-    .line {
-      height: 350px;
-    }
+  .line-container .line {
+    height: 350px;
   }
 }
 
@@ -1012,33 +1003,33 @@ details>.background {
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
+}
 
-  & .ebook {
-    text-align: center;
-    margin: 0 auto;
-    color: rgba(247, 247, 247, 0.9);
-    transition: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.ebook {
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(247, 247, 247, 0.9);
+  transition: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    & .text-container {
-      display: flex;
-      border-radius: 5px;
-      align-items: center;
+.ebook .text-container {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
 
-      & img {
-        color: var(--text);
-        width: 20px;
-        height: 20px;
-      }
+.ebook img {
+  color: var(--text);
+  width: 20px;
+  height: 20px;
+}
 
-      & p {
-        flex-grow: 1;
-      }
-    }
-  }
+.ebook p {
+  flex-grow: 1;
 }
 
 .ebook:nth-of-type(1) .image-container {

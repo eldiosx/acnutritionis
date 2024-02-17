@@ -1,3 +1,5 @@
+// Start Loader
+document.getElementById("loader").style.display = "flex";
 // Header Mobile
 
 var isNavOpen = false;
@@ -113,7 +115,7 @@ document.querySelectorAll(".translateButton").forEach((button) => {
   button.addEventListener("click", toggleLang);
 });
 
-//Loader
+//End Loader
 window.addEventListener("load", function () {
   var loadingContainer = document.getElementById("loader");
   loadingContainer.style.display = "none";
