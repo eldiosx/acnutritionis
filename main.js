@@ -15,31 +15,6 @@ function toggleNav() {
   isNavOpen = !isNavOpen;
 }
 
-// Slider
-const prevBtn = document.querySelector(".navigate_left");
-const nextBtn = document.querySelector(".navigate_right");
-const slides = document.querySelectorAll(".slide");
-let currentIndex = 1;
-
-toggleSlide();
-
-function toggleSlide(direction) {
-  let newIndex = currentIndex + (direction === "next" ? 1 : -1);
-  newIndex = newIndex < 0 ? slides.length - 1 : newIndex % slides.length;
-
-  slides.forEach((slide, index) => {
-    slide.classList.remove("activeLeft", "activeRight");
-    if (index === newIndex) {
-      slide.classList.add(direction === "next" ? "activeRight" : "activeLeft");
-    }
-  });
-
-  currentIndex = newIndex;
-}
-
-prevBtn.addEventListener("click", () => toggleSlide("prev"));
-nextBtn.addEventListener("click", () => toggleSlide("next"));
-
 //Copy
 function copyToClipboard(elementId) {
   const text = document.getElementById(elementId).textContent;
