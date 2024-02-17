@@ -112,8 +112,6 @@ Header
   }
 }
 
-
-
 nav {
   display: flex;
   gap: 40px;
@@ -583,14 +581,14 @@ ul {
   border: none;
 }
 
-a.slide__prev,
+a.slide_prev,
 .slider::before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left: 5%;
 }
 
-a.slide__next,
+a.slide_next,
 .slider::after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -599,8 +597,8 @@ a.slide__next,
 
 .slider::before,
 .slider::after,
-.slide__prev,
-.slide__next {
+.slide_prev,
+.slide_next {
   position: absolute;
   top: 48%;
   width: 30px;
@@ -619,7 +617,7 @@ a.slide__next,
   pointer-events: none;
 }
 
-.slider__nav {
+.slider_nav {
   box-sizing: border-box;
   position: absolute;
   bottom: 5%;
@@ -629,7 +627,7 @@ a.slide__next,
   text-align: center;
 }
 
-.slider__navlink {
+.slider_navlink {
   display: inline-block;
   height: 15px;
   width: 15px;
