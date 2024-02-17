@@ -123,7 +123,7 @@ Header
 
 nav {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 
 }
 
@@ -149,14 +149,14 @@ nav a {
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 1300px) {
+
+@media (max-width: 768px) {
+
   nav {
     display: none;
     gap: 30px;
   }
-}
 
-@media (max-width: 710px) {
   #logo {
     height: 50px;
   }
@@ -801,7 +801,7 @@ textarea {
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 768px) {
 
   body,
   html {
