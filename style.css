@@ -25,13 +25,6 @@ html {
   background-color: black;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-
 :root {
   --text: rgb(231, 231, 231);
   --text-hover: rgb(255, 255, 255);
@@ -668,17 +661,6 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
 }
 
 .contact div {
