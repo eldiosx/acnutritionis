@@ -732,51 +732,6 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  nav a:hover {
-    color: var(--text-hover);
-    text-shadow: #ccc 1px 0 10px;
-  }
-
-  .cr:hover {
-    text-decoration: underline;
-  }
-
-  #email:hover,
-  #number:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  .contact:hover div {
-    background-color: var(--hover-button);
-  }
-
-  .navigate_left:hover,
-  .navigate_right:hover {
-    scale: 1.5;
-  }
-
-  #selectplan:hover {
-    cursor: pointer;
-  }
-
-  .scheme1:hover,
-  .scheme2:hover {
-    scale: 1.02;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .button:hover {
-    background-color: var(--hover-button);
-    cursor: pointer;
-  }
-
-  .scroll-to-top:hover {
-    background-color: var(--hover-button);
-  }
-}
-
 @media (max-width: 1500px) {
 
   .navigate_left,
@@ -1049,12 +1004,6 @@ details>.background {
 
 /* eBooks */
 
-@media only screen and (min-width: 768px) {
-  .ebook:hover {
-    scale: 1.1;
-  }
-}
-
 .slider-ebooks {
   display: flex;
   max-width: 1200px;
@@ -1090,14 +1039,6 @@ details>.background {
       }
     }
   }
-}
-
-.ebook:hover .text-container {
-  color: rgb(173, 0, 0);
-}
-
-.ebook:hover .unlock {
-  color: rgb(0, 173, 0);
 }
 
 .ebook:nth-of-type(1) .image-container {
@@ -1221,5 +1162,64 @@ details>.background {
   .image-container {
     width: 10em;
     height: 12.5em;
+  }
+}
+
+/* Hover Effects */
+
+@media only screen and (min-width: 768px) {
+  nav a:hover {
+    color: var(--text-hover);
+    text-shadow: #ccc 1px 0 10px;
+  }
+
+  .cr:hover {
+    text-decoration: underline;
+  }
+
+  #email:hover,
+  #number:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .contact:hover div {
+    background-color: var(--hover-button);
+  }
+
+  .navigate_left:hover,
+  .navigate_right:hover {
+    scale: 1.5;
+  }
+
+  #selectplan:hover {
+    cursor: pointer;
+  }
+
+  .scheme1:hover,
+  .scheme2:hover {
+    scale: 1.02;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .button:hover {
+    background-color: var(--hover-button);
+    cursor: pointer;
+  }
+
+  .scroll-to-top:hover {
+    background-color: var(--hover-button);
+  }
+
+  .ebook:hover {
+    scale: 1.1;
+  }
+
+  .ebook:hover .text-container {
+    color: rgb(173, 0, 0);
+  }
+
+  .ebook:hover .unlock {
+    color: rgb(0, 173, 0);
   }
 }
