@@ -292,28 +292,28 @@ main {
 
 .container:nth-child(1) {
   min-height: 600px;
-  background-image: url("./img/start.webp");
+  background-image: url("./assets/start.webp");
 }
 
 .container:nth-child(2) {
   min-height: 900px;
-  background-image: url("./img/desktop.webp");
+  background-image: url("./assets/desktop.webp");
 }
 
 .container:nth-child(3) {
   min-height: 800px;
-  background-image: url("./img/services.webp");
+  background-image: url("./assets/services.webp");
 }
 
 .container:nth-child(4) {
   min-height: 900px;
-  background-image: url("./img/working.webp");
+  background-image: url("./assets/working.webp");
 }
 
 .container:nth-child(5) {
   min-height: 1000px;
-  background-image: url("./img/prices.webp");
-  /* background-image: url("./img/alesito.webp");
+  background-image: url("./assets/prices.webp");
+  /* background-image: url("./assets/alesito.webp");
   background-color: rgb(212, 206, 200);
   background-size: contain;
   background-position: right bottom; */
@@ -321,12 +321,12 @@ main {
 
 .container:nth-child(6) {
   min-height: 600px;
-  background-image: url("./img/ebooks.webp");
+  background-image: url("./assets/ebooks.webp");
 }
 
 .container:nth-child(7) {
   min-height: 600px;
-  background-image: url("./img/footer.webp");
+  background-image: url("./assets/footer.webp");
 }
 
 .center {
@@ -629,8 +629,8 @@ a.slide_next,
 
 .slider_navlink {
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   background-color: var(--text);
   margin: 0 10px 0 10px;
@@ -863,6 +863,14 @@ label {
     display: block;
   }
 
+  .slider::before,
+  .slider::after,
+  .slide_prev,
+  .slide_next {
+    width: 15px;
+    height: 15px;
+  }
+
   .list {
     max-width: 70%;
   }
@@ -933,7 +941,7 @@ label {
 
   .container:nth-child(4) {
     min-height: 1200px;
-    background-image: url("./img/working.webp");
+    background-image: url("./assets/working.webp");
   }
 
   .container:nth-child(5) {
@@ -1030,103 +1038,103 @@ details>.background {
 }
 
 .ebook:nth-of-type(1) .image-container {
-  background-image: url("./img/ebook/1.webp");
+  background-image: url("./assets/ebook/1.webp");
 }
 
 .ebook:nth-of-type(2) .image-container {
-  background-image: url("./img/ebook/2.webp");
+  background-image: url("./assets/ebook/2.webp");
 }
 
 .ebook:nth-of-type(3) .image-container {
-  background-image: url("./img/ebook/3.webp");
+  background-image: url("./assets/ebook/3.webp");
 }
 
 .ebook:nth-of-type(4) .image-container {
-  background-image: url("./img/ebook/4.webp");
+  background-image: url("./assets/ebook/4.webp");
 }
 
 .ebook:nth-of-type(5) .image-container {
-  background-image: url("./img/ebook/5.webp");
+  background-image: url("./assets/ebook/5.webp");
 }
 
 .ebook:nth-of-type(6) .image-container {
-  background-image: url("./img/ebook/6.webp");
+  background-image: url("./assets/ebook/6.webp");
 }
 
 .ebook:nth-of-type(7) .image-container {
-  background-image: url("./img/ebook/7.webp");
+  background-image: url("./assets/ebook/7.webp");
 }
 
 .ebook:nth-of-type(8) .image-container {
-  background-image: url("./img/ebook/8.webp");
+  background-image: url("./assets/ebook/8.webp");
 }
 
 .ebook:nth-of-type(9) .image-container {
-  background-image: url("./img/ebook/9.webp");
+  background-image: url("./assets/ebook/9.webp");
 }
 
 .ebook:nth-of-type(10) .image-container {
-  background-image: url("./img/ebook/10.webp");
+  background-image: url("./assets/ebook/10.webp");
 }
 
 .ebook:nth-of-type(11) .image-container {
-  background-image: url("./img/ebook/11.webp");
+  background-image: url("./assets/ebook/11.webp");
 }
 
 .ebook:nth-of-type(12) .image-container {
-  background-image: url("./img/ebook/12.webp");
+  background-image: url("./assets/ebook/12.webp");
 }
 
 .ebook:nth-of-type(13) .image-container {
-  background-image: url("./img/ebook/13.webp");
+  background-image: url("./assets/ebook/13.webp");
 }
 
 .ebook:nth-of-type(14) .image-container {
-  background-image: url("./img/ebook/14.webp");
+  background-image: url("./assets/ebook/14.webp");
 }
 
 .ebook:nth-of-type(15) .image-container {
-  background-image: url("./img/ebook/15.webp");
+  background-image: url("./assets/ebook/15.webp");
 }
 
 .ebook:nth-of-type(16) .image-container {
-  background-image: url("./img/ebook/16.webp");
+  background-image: url("./assets/ebook/16.webp");
 }
 
 .ebook:nth-of-type(17) .image-container {
-  background-image: url("./img/ebook/17.webp");
+  background-image: url("./assets/ebook/17.webp");
 }
 
 .ebook:nth-of-type(18) .image-container {
-  background-image: url("./img/ebook/18.webp");
+  background-image: url("./assets/ebook/18.webp");
 }
 
 .ebook:nth-of-type(19) .image-container {
-  background-image: url("./img/ebook/19.webp");
+  background-image: url("./assets/ebook/19.webp");
 }
 
 .ebook:nth-of-type(20) .image-container {
-  background-image: url("./img/ebook/20.webp");
+  background-image: url("./assets/ebook/20.webp");
 }
 
 .ebook:nth-of-type(21) .image-container {
-  background-image: url("./img/ebook/21.webp");
+  background-image: url("./assets/ebook/21.webp");
 }
 
 .ebook:nth-of-type(22) .image-container {
-  background-image: url("./img/ebook/22.webp");
+  background-image: url("./assets/ebook/22.webp");
 }
 
 .ebook:nth-of-type(23) .image-container {
-  background-image: url("./img/ebook/23.webp");
+  background-image: url("./assets/ebook/23.webp");
 }
 
 .ebook:nth-of-type(24) .image-container {
-  background-image: url("./img/ebook/24.webp");
+  background-image: url("./assets/ebook/24.webp");
 }
 
 .ebook:nth-of-type(25) .image-container {
-  background-image: url("./img/ebook/25.webp");
+  background-image: url("./assets/ebook/25.webp");
 }
 
 .image-container {
