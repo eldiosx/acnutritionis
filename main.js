@@ -15,7 +15,7 @@ function toggleNav() {
   isNavOpen = !isNavOpen;
 }
 
-//Copy
+// Copy
 function copyToClipboard(elementId) {
   const text = document.getElementById(elementId).textContent;
   navigator.clipboard
