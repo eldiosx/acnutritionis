@@ -547,7 +547,6 @@ input:nth-of-type(2):checked~label {
 
 label:before,
 label:after {
-  display: block;
   position: absolute;
   padding: 10rem;
   font-size: 3rem;
@@ -561,16 +560,14 @@ label:after {
 label:before {
   content: "\276D";
   right: 100%;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
 }
 
 label:after {
   content: "\276C";
   left: 100%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
+
+
 
 #image-container {
   display: flex;
