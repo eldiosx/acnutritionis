@@ -132,10 +132,12 @@
             </section>
         </div>
         <!-- Services -->
-        <div class="container slider-container" id="services">
-            <div class="slider">
-                <div class="slides">
-                    <div id="slide1" class="slide">
+        <div class="container" id="services">
+            <div class="banner">
+                <form class="slider">
+                    <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+                    <input type="radio" name="fancy" value="hearts" id="hearts" />
+                    <label for="clubs">
                         <div class="info">
                             <h1 data-translate="Asesoramiento Nutricional">
                                 Asesoramiento Nutricional
@@ -166,10 +168,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="slide_prev" href="#slide2" title="Next"></a>
-                        <a class="slide_next" href="#slide2" title="Next"></a>
-                    </div>
-                    <div id="slide2" class="slide">
+                    </label>
+                    <label for="hearts">
                         <div class="info">
                             <h1 data-translate="Coaching Nutricional">
                                 Coaching Nutricional
@@ -202,10 +202,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="slide_prev" href="#slide1" title="Prev"></a>
-                        <a class="slide_next" href="#slide1" title="Next"></a>
-                    </div>
-                </div>
+                    </label>
+                </form>
             </div>
         </div>
         <!-- Meetings -->
@@ -862,34 +860,6 @@
         </a>
     </div>
     <script src="./main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var prevLinks = document.querySelectorAll('.slide_prev');
-            var nextLinks = document.querySelectorAll('.slide_next');
-            prevLinks.forEach(function(link) {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href');
-                    window.location.hash = targetId;
-                    setTimeout(function() {
-                        window.location.hash = '#services';
-                    }, 50);
-                });
-            });
-    
-            nextLinks.forEach(function(link) {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href');
-                    window.location.hash = targetId;
-                    setTimeout(function() {
-                        window.location.hash = '#services';
-                    }, 50);
-                });
-            });
-        });
-    </script>
-    
 </body>
 
 </html>
