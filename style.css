@@ -21,7 +21,7 @@
 body,
 html {
   height: 100%;
-  font-size: 20px;
+  font-size: 18px;
   background-color: black;
 }
 
@@ -343,7 +343,7 @@ main {
   border-radius: 5px;
   background-color: var(--background-button);
   color: var(--text-button);
-  font-size: 20px;
+  font-size: 1rem;
   padding: 10px;
 }
 
@@ -380,29 +380,16 @@ main {
   justify-content: center;
 }
 
-.scheme1 {
+.scheme {
   border-radius: 20px;
-  background-color: rgba(90, 115, 109, 0.7);
+  background-color: var(--background-banner);
   color: var(--text);
   padding: 20px;
   margin: 30px;
   display: flex;
   justify-content: center;
   text-align: left;
-  max-width: 400px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.scheme2 {
-  border-radius: 20px;
-  background-color: rgba(77, 90, 93, 0.7);
-  color: var(--text);
-  padding: 20px;
-  margin: 30px;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  text-align: left;
+  max-width: 500px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -412,37 +399,11 @@ main {
 
 .line-container {
   position: relative;
-}
-
-.line-container .line {
-  width: 5px;
-  background: linear-gradient(to bottom,
-      rgba(90, 115, 109, 0.7),
-      rgba(77, 90, 93, 0.7));
+  width: 10px;
+  background-color: var(--background-banner);
   height: 500px;
-  margin: 0 auto;
-}
-
-.line-container .circle1 {
-  width: 35px;
-  height: 35px;
-  background-color: rgba(90, 115, 109, 0.7);
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -35px;
-}
-
-.line-container .circle2 {
-  width: 35px;
-  height: 35px;
-  background-color: rgba(77, 90, 93, 0.7);
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -35px;
+  margin: 0;
+  border-radius: 10px;
 }
 
 .banner-empty {
@@ -482,7 +443,7 @@ main {
   border-radius: 5px;
   background-color: transparent;
   color: var(--text-button);
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .col {
@@ -741,7 +702,7 @@ label {
 
   body,
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h2 {
@@ -760,9 +721,6 @@ label {
     margin: 0 20px 0 20px;
   }
 
-  .line-container .line {
-    height: 350px;
-  }
 }
 
 @media (max-width: 950px) {
@@ -805,13 +763,8 @@ label {
     height: 40px;
   }
 
-  .button {
-    font-size: 18px;
-  }
-
   #selectplan {
     margin-top: 30px;
-    font-size: 18px;
   }
 
   .contact div {
@@ -825,10 +778,6 @@ label {
 
   .mobile {
     display: flex;
-  }
-
-  .scheme2 {
-    margin-top: 10px;
   }
 
   .fatcs {
@@ -1165,8 +1114,7 @@ details>.background {
     cursor: pointer;
   }
 
-  .scheme1:hover,
-  .scheme2:hover {
+  .scheme:hover {
     scale: 1.02;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
