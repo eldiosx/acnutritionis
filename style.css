@@ -559,10 +559,6 @@ input.set {
   cursor: pointer;
 }
 
-#controls label:hover {
-  scale: 1.5;
-}
-
 #slide1:checked~#controls label:nth-child(2) {
   right: 0;
   display: block;
@@ -1086,6 +1082,10 @@ details>.background {
     text-shadow: #ccc 1px 0 10px;
   }
 
+  #controls label:hover {
+    scale: 1.5;
+  }
+
   .cr:hover {
     text-decoration: underline;
   }
@@ -1110,7 +1110,7 @@ details>.background {
   }
 
   .scheme:hover {
-    scale: 1.02;
+    scale: 1.05;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
 
