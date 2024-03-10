@@ -302,7 +302,6 @@ main {
 .container:nth-child(3) {
   min-height: 800px;
   background-image: url("./assets/services.webp");
-  overflow: hidden;
 }
 
 .container:nth-child(4) {
@@ -524,7 +523,7 @@ input.set {
 }
 
 #slides {
-  margin: 50px auto;
+  margin: 10px auto;
   width: 80%;
   position: relative;
 }
@@ -542,7 +541,6 @@ input.set {
 
 #slides .slide {
   width: 25%;
-  height: 200px;
   line-height: 200px;
   float: left;
 }
@@ -1051,16 +1049,18 @@ details>.background {
   background-size: cover;
 }
 
-@media (max-width: 1000px) {
-
-  label:before,
-  label:after {
-    padding: 1rem;
-  }
-
-}
-
 @media (max-width: 768px) {
+  #slides {
+    margin: 10px auto;
+    width: 95%;
+    position: relative;
+  }
+  
+  #slides .mask {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
 
   .slider-ebooks {
     height: 300px;
