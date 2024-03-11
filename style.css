@@ -362,12 +362,12 @@ main {
 }
 
 .custom {
-  max-width: 50%;
-  min-width: 50%;
+  width: 100%;
+  max-width: 750px;
 }
 
 .background {
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: var(--background-banner);
   color: var(--text);
   padding: 30px;
@@ -384,7 +384,7 @@ main {
 }
 
 .scheme {
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: var(--background-banner);
   color: var(--text);
   padding: 20px;
@@ -406,7 +406,7 @@ main {
   background-color: var(--background-banner);
   height: 500px;
   margin: 0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .banner-empty {
@@ -554,8 +554,7 @@ input.set {
   height: 60px;
   font-size: 2rem;
   position: absolute;
-  top: 50%;
-  margin-top: -30px;
+  top: 45%;
   cursor: pointer;
 }
 
@@ -621,20 +620,6 @@ input.set {
 
 .copyright {
   background-color: #000000;
-}
-
-.alex {
-  overflow: hidden;
-  border-radius: 10px;
-  height: 300px;
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.726);
-}
-
-.alex img {
-  margin: auto;
-  height: 150%;
-  object-fit: cover;
 }
 
 .cr {
@@ -786,11 +771,6 @@ input.set {
     height: 20px;
   }
 
-  .custom {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
   .left {
     text-align: center;
   }
@@ -897,6 +877,19 @@ details>.background {
     transform-origin: top;
     opacity: 1;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.calendy {
+  margin: auto;
+  opacity: 0.9;
+  border-radius: 5px;
+  width: 750px;
+  max-width: 100%;
+  height: 400px;
 }
 
 /* eBooks */
@@ -1051,7 +1044,7 @@ details>.background {
     width: 95%;
     position: relative;
   }
-  
+
   #slides .mask {
     width: 100%;
     overflow: hidden;
