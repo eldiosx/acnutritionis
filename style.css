@@ -1108,11 +1108,6 @@ details>.background {
     cursor: pointer;
   }
 
-  .scheme:hover {
-    scale: 1.05;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-
   .button:hover {
     background-color: var(--hover-button);
     cursor: pointer;
