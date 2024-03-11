@@ -312,10 +312,6 @@ main {
 .container:nth-child(5) {
   min-height: 1000px;
   background-image: url("./assets/prices.webp");
-  /* background-image: url("./assets/alesito.webp");
-  background-color: rgb(212, 206, 200);
-  background-size: contain;
-  background-position: right bottom; */
 }
 
 .container:nth-child(3) .banner {
@@ -828,7 +824,6 @@ input.set {
 
   .container:nth-child(4) {
     min-height: 1200px;
-    background-image: url("./assets/working.webp");
   }
 
   .container:nth-child(5) {
