@@ -15,27 +15,7 @@ function toggleNav() {
   isNavOpen = !isNavOpen;
 }
 
-// Copy
-function copyToClipboard(elementId) {
-  const text = document.getElementById(elementId).textContent;
-  navigator.clipboard
-    .writeText(text)
-    .then(() => {
-      console.log("Texto copiado con éxito");
-    })
-    .catch((err) => {
-      console.error("Error al copiar texto: ", err);
-    });
-}
-
-function copynumber() {
-  copyToClipboard("number");
-}
-function copyemail() {
-  copyToClipboard("email");
-}
-
-//Translate
+// Translate
 let translations = JSON.parse(localStorage.getItem("translations")) || {};
 if (Object.keys(translations).length === 0) {
   fetchTranslations();
@@ -90,7 +70,7 @@ document.querySelectorAll(".translateButton").forEach((button) => {
   button.addEventListener("click", toggleLang);
 });
 
-//End Loader
+// End Loader
 window.addEventListener("load", function () {
   var loadingContainer = document.getElementById("loader");
   loadingContainer.style.display = "none";
