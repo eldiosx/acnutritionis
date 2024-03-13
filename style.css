@@ -327,6 +327,7 @@ main {
 .container:nth-child(7) {
   min-height: 600px;
   background-image: url("./assets/footer.webp");
+  justify-content: space-between;
 }
 
 .center {
@@ -610,18 +611,18 @@ input.set {
 }
 
 .footer {
+  display: block;
+  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(150, 150, 150);
+  background-color: var(--background-banner);
 }
 
 .copyright {
-  background-color: #161616;
+  width: 100%;
+  background-color: var(--text-button);
 }
 
 .cr {
