@@ -217,15 +217,6 @@ nav a {
   object-fit: cover;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
-.text {
-  text-align: center;
-}
-
 h1 {
   font-size: 1.8rem;
   padding: 20px 0 20px 0;
@@ -318,7 +309,7 @@ main {
 
 .container:nth-child(6) {
   min-height: 900px;
-  background-image: url("./assets/footer.webp");
+  background-image: url("./assets/wallpaper1.webp");
   justify-content: space-between;
 }
 
@@ -373,7 +364,7 @@ main {
   justify-content: center;
 }
 
-.grid-container {
+.grid-scheme {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -408,7 +399,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
+  .grid-scheme {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -602,26 +593,40 @@ input.set {
   transition: transform 0.3s;
 }
 
-.contact div {
-  display: flex;
-  justify-content: center;
+.grid-contact {
   align-items: center;
-  background-size: cover;
-  margin: 50px;
-  width: 250px;
-  background-color: var(--background-button);
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: auto;
+}
+
+.contact {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  overflow: hidden;
+  background-color: var(--background-button);
   padding: 10px;
   color: var(--text-button);
-  font-size: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact img {
+  width: 1.5rem;
+  text-align: center;
+
 }
 
 .contact2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact2 img {
+  width: 1.5rem;
 }
 
 .footer {
@@ -708,13 +713,6 @@ input.set {
 
 }
 
-@media (max-width: 950px) {
-  .contact div {
-    margin: 50px;
-    width: 220px;
-  }
-}
-
 @media (max-width: 768px) {
 
   body,
@@ -751,11 +749,6 @@ input.set {
 
   #selectplan {
     margin-top: 30px;
-  }
-
-  .contact div {
-    margin: 40px;
-    width: 200px;
   }
 
   .aboutme {
@@ -835,15 +828,6 @@ input.set {
   body,
   html {
     font-size: 12px;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .contact div {
-    width: 150px;
   }
 
   h1 {
@@ -1066,7 +1050,7 @@ details>.background {
     text-decoration: underline;
   }
 
-  .contact:hover div {
+  .contact:hover {
     background-color: var(--hover-button);
     scale: 1.1;
 
