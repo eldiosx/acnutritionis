@@ -364,13 +364,6 @@ main {
   justify-content: center;
 }
 
-.grid-scheme {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 20px;
-}
-
 .scheme {
   border-radius: 5px;
   background-color: var(--background-banner);
@@ -378,44 +371,6 @@ main {
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.calendy {
-  grid-row: 3;
-  grid-column: 1 / 3;
-  background-color: var(--background-button);
-  display: flex;
-  justify-content: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
-.calendy a {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  color: var(--text-button);
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .grid-scheme {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .scheme:nth-child(2) {
-    grid-row: 3;
-  }
-
-  .scheme:nth-child(3) {
-    grid-row: 2;
-  }
-
-  .calendy {
-    grid-row: 5;
-    grid-column: 1;
-  }
 }
 
 .mobile {
@@ -1039,11 +994,6 @@ details>.background {
 
   #controls label:hover {
     scale: 1.5;
-  }
-
-  .calendy:hover {
-    scale: 1.04;
-    background-color: var(--hover-button);
   }
 
   .cr:hover {
