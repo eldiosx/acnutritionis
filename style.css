@@ -289,22 +289,22 @@ main {
 
 .container:nth-child(2) {
   min-height: 900px;
-  background-image: url("./assets/wallpaper1.webp");
+  background-image: url("./assets/desktop.webp");
 }
 
 .container:nth-child(3) {
   min-height: 600px;
-  background-image: url("./assets/wallpaper2.webp");
+  background-image: url("./assets/services.webp");
 }
 
 .container:nth-child(4) {
   min-height: 1100px;
-  background-image: url("./assets/wallpaper1.webp");
+  background-image: url("./assets/working.webp");
 }
 
 .container:nth-child(5) {
   min-height: 600px;
-  background-image: url("./assets/wallpaper2.webp");
+  background-image: url("./assets/ebooks.webp");
 }
 
 .container:nth-child(6) {
