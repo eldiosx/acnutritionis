@@ -43,7 +43,7 @@
                 <a href="#contact" onclick="toggleNav()" translate="Contacto">
                     Contacto
                 </a>
-                <a onclick="toggleLang()" translate="🇪🇦">
+                <a role="button" onclick="toggleLang()" translate="🇪🇦">
                     🇪🇦
                 </a>
             </nav>
@@ -138,7 +138,6 @@
                     <input type="radio" name="slider" id="slide2" class="set" />
                     <div class="mask">
                         <div class="overflow">
-
                             <div class="slide">
                                 <div class="info">
                                     <h1 translate="Asesoramiento Nutricional">
@@ -209,8 +208,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="controls" onclick="">
+                    <div id="controls">
                         <label for="slide1" style="transform: rotate(180deg);">&#10148;</label>
                         <label for="slide2">&#10148;</label>
                     </div>
@@ -327,8 +325,7 @@
                     </p>
                 </div>
                 <div class="scheme col">
-                    <p
-                        translate="Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades.">
+                    <p translate="Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades.">
                         Se realizarán 1 vez por semana o cada dos semanas en función de tus necesidades.
                     </p>
                     <div><br></div>
@@ -687,7 +684,7 @@
                     <div class="info">
                         <a href="mailto:info@acnutritionis.com" class="contact">
                             <div>
-                                <img class="icon" src="./assets/icons/email.svg" alt="Email">
+                                <img class="icon" src="./assets/icons/email.svg" alt="">
                                 &nbsp;
                                 <span class="text">
                                     Email
@@ -696,7 +693,7 @@
                         </a>
                         <a href="https://wa.me/34672268898" class="contact">
                             <div>
-                                <img class="icon" src="./assets/icons/whatsapp.svg" alt="Whatsapp">
+                                <img class="icon" src="./assets/icons/whatsapp.svg" alt="">
                                 &nbsp;
                                 <span class="text">
                                     Whatsapp
@@ -705,7 +702,7 @@
                         </a>
                         <a href="https://www.instagram.com/acnutritionis/" class="contact">
                             <div>
-                                <img class="icon" src="./assets/icons/instagram.svg" alt="Instagram">
+                                <img class="icon" src="./assets/icons/instagram.svg" alt="">
                                 &nbsp;
                                 <span class="text">
                                     Instagram
@@ -714,7 +711,7 @@
                         </a>
                         <a href="https://signal.me/#p/+34672268898" class="contact">
                             <div>
-                                <img class="icon" src="./assets/icons/signal.svg" alt="Signal">
+                                <img class="icon" src="./assets/icons/signal.svg" alt="">
                                 &nbsp;
                                 <span class="text">
                                     Signal
@@ -723,7 +720,7 @@
                         </a>
                         <a href="https://www.tiktok.com/@ac_nutritionis?_t=8iMzXsa73Ca&_r=1" class="contact">
                             <div>
-                                <img class="icon" src="./assets/icons/tiktok.svg" alt="TikTok">
+                                <img class="icon" src="./assets/icons/tiktok.svg" alt="">
                                 &nbsp;
                                 <span class="text">
                                     TikTok
@@ -745,7 +742,7 @@
                     <div class="info">
                         <p class="contact2">
                             <img class="icon" src="./assets/icons/email2.svg" alt="">
-                            &nbsp;info@acnutritionis.com
+                            &nbsp;info&#64;acnutritionis.com
                         </p>
                         <br>
                     </div>
@@ -772,12 +769,10 @@
                 </div>
             </div>
         </div>
-    </main>
-    <div class="scroll-to-top">
-        <a href="#home">
+        <a class="scroll-to-top" href="#home">
             &#8673;
         </a>
-    </div>
+    </main>
     <script src="./main.js"></script>
 </body>
 

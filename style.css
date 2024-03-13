@@ -119,6 +119,7 @@ nav {
 }
 
 nav a {
+
   color: var(--text);
   cursor: pointer;
 }
@@ -584,8 +585,7 @@ input.set {
   display: block;
 }
 
-#slide2:checked~#controls label:nth-child(1),
-#slide3:checked~#controls label:nth-child(2) {
+#slide2:checked~#controls label:nth-child(1) {
   left: 0;
   display: block;
 }
@@ -652,20 +652,14 @@ input.set {
   right: 20px;
   z-index: 900;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  padding: 5px 16px;
+  font-size: 2rem;
+  color: var(--text-button);
   background-color: var(--background-button);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   animation: btn-top linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
-}
-
-.scroll-to-top a {
-  text-align: center;
-  width: 100%;
-  color: var(--text-button);
-  font-size: 1.5rem;
-  margin: auto;
 }
 
 @keyframes btn-top {
@@ -744,9 +738,9 @@ input.set {
   .scroll-to-top {
     bottom: 10px;
     right: 10px;
-    width: 40px;
-    height: 40px;
+    padding: 1px 10px;
   }
+
 
   #selectplan {
     margin-top: 30px;
