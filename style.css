@@ -306,7 +306,7 @@ main {
 }
 
 .container:nth-child(4) {
-  min-height: 1000px;
+  min-height: 1100px;
   background-image: url("./assets/working.webp");
 }
 
@@ -817,10 +817,6 @@ input.set {
 
   .menu-button {
     display: block;
-  }
-
-  .container:nth-child(3) {
-    min-height: 1200px;
   }
 
   .padding {
