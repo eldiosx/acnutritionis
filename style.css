@@ -309,7 +309,7 @@ main {
 
 .container:nth-child(6) {
   min-height: 900px;
-  background-image: url("./assets/wallpaper1.webp");
+  background-image: url("./assets/footer.webp");
   justify-content: space-between;
 }
 
