@@ -1,4 +1,3 @@
-document.getElementById("loader").style.display = "flex";
 var isNavOpen = false;
 function toggleNav() {
   var header = document.getElementById("header");
@@ -57,8 +56,4 @@ function toggleLang() {
 applyTranslation();
 document.querySelectorAll(".translateButton").forEach((button) => {
   button.addEventListener("click", toggleLang);
-});
-window.addEventListener("load", function () {
-  var loadingContainer = document.getElementById("loader");
-  loadingContainer.style.display = "none";
 });

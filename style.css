@@ -41,25 +41,6 @@ hr {
   border-radius: 10px;
 }
 
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  background-color: rgb(0, 0, 0);
-}
-
-#loader img {
-  animation: spin 2s linear infinite;
-  color: var(--background-button);
-  width: 10vh;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -829,7 +810,7 @@ details>.background {
   align-items: center;
 }
 
-.ebook img {
+.text-container img {
   color: var(--text);
   width: 20px;
   height: 20px;
@@ -839,107 +820,7 @@ details>.background {
   flex-grow: 1;
 }
 
-.ebook:nth-of-type(1) .image-container {
-  background-image: url("./assets/ebook/1.webp");
-}
-
-.ebook:nth-of-type(2) .image-container {
-  background-image: url("./assets/ebook/2.webp");
-}
-
-.ebook:nth-of-type(3) .image-container {
-  background-image: url("./assets/ebook/3.webp");
-}
-
-.ebook:nth-of-type(4) .image-container {
-  background-image: url("./assets/ebook/4.webp");
-}
-
-.ebook:nth-of-type(5) .image-container {
-  background-image: url("./assets/ebook/5.webp");
-}
-
-.ebook:nth-of-type(6) .image-container {
-  background-image: url("./assets/ebook/6.webp");
-}
-
-.ebook:nth-of-type(7) .image-container {
-  background-image: url("./assets/ebook/7.webp");
-}
-
-.ebook:nth-of-type(8) .image-container {
-  background-image: url("./assets/ebook/8.webp");
-}
-
-.ebook:nth-of-type(9) .image-container {
-  background-image: url("./assets/ebook/9.webp");
-}
-
-.ebook:nth-of-type(10) .image-container {
-  background-image: url("./assets/ebook/10.webp");
-}
-
-.ebook:nth-of-type(11) .image-container {
-  background-image: url("./assets/ebook/11.webp");
-}
-
-.ebook:nth-of-type(12) .image-container {
-  background-image: url("./assets/ebook/12.webp");
-}
-
-.ebook:nth-of-type(13) .image-container {
-  background-image: url("./assets/ebook/13.webp");
-}
-
-.ebook:nth-of-type(14) .image-container {
-  background-image: url("./assets/ebook/14.webp");
-}
-
-.ebook:nth-of-type(15) .image-container {
-  background-image: url("./assets/ebook/15.webp");
-}
-
-.ebook:nth-of-type(16) .image-container {
-  background-image: url("./assets/ebook/16.webp");
-}
-
-.ebook:nth-of-type(17) .image-container {
-  background-image: url("./assets/ebook/17.webp");
-}
-
-.ebook:nth-of-type(18) .image-container {
-  background-image: url("./assets/ebook/18.webp");
-}
-
-.ebook:nth-of-type(19) .image-container {
-  background-image: url("./assets/ebook/19.webp");
-}
-
-.ebook:nth-of-type(20) .image-container {
-  background-image: url("./assets/ebook/20.webp");
-}
-
-.ebook:nth-of-type(21) .image-container {
-  background-image: url("./assets/ebook/21.webp");
-}
-
-.ebook:nth-of-type(22) .image-container {
-  background-image: url("./assets/ebook/22.webp");
-}
-
-.ebook:nth-of-type(23) .image-container {
-  background-image: url("./assets/ebook/23.webp");
-}
-
-.ebook:nth-of-type(24) .image-container {
-  background-image: url("./assets/ebook/24.webp");
-}
-
-.ebook:nth-of-type(25) .image-container {
-  background-image: url("./assets/ebook/25.webp");
-}
-
-.image-container {
+.image-container img {
   width: 12rem;
   height: 15rem;
   position: relative;
@@ -969,7 +850,7 @@ details>.background {
     height: 200px;
   }
 
-  .image-container {
+  .image-container img {
     width: 10rem;
     height: 12.5rem;
   }
