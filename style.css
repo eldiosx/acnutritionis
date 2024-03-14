@@ -140,25 +140,31 @@ nav a {
     }
   }
 
-  #header.open-header {
+  #header:target {
+    display: flex;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  .open-header #button-menu2 {
+  #header:target #button-menu2 {
+    display: flex;
     right: 5%;
     position: absolute;
     transform: translateY(-50%);
   }
 
-  .open-header nav {
+  #header:target #button-menu {
+    display: none;
+  }
+
+  #header:target nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
   }
 
-  .open-header #logo {
+  #header:target #logo {
     transform: translateY(-50%);
     height: 90px;
     left: 5%;

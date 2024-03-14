@@ -1,13 +1,3 @@
-var isNavOpen = false;
-function toggleNav() {
-  var header = document.getElementById("header");
-  var menuIcon = document.getElementById("button-menu");
-  var menuIcon2 = document.getElementById("button-menu2");
-  header.classList.toggle("open-header");
-  menuIcon.style.display = isNavOpen ? "flex" : "none";
-  menuIcon2.style.display = isNavOpen ? "none" : "flex";
-  isNavOpen = !isNavOpen;
-}
 let translations = JSON.parse(localStorage.getItem("translations")) || {};
 if (Object.keys(translations).length === 0) {
   fetchTranslations();
