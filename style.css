@@ -265,32 +265,31 @@ main {
 
 .container:nth-child(1) {
   min-height: 600px;
-  background-image: url("./assets/start.webp");
 }
 
 .container:nth-child(2) {
   min-height: 900px;
-  background-image: url("./assets/desktop.webp");
+  background-image: url("./assets/wallpaper/2.webp");
 }
 
 .container:nth-child(3) {
   min-height: 600px;
-  background-image: url("./assets/services.webp");
+  background-image: url("./assets/wallpaper/3.webp");
 }
 
 .container:nth-child(4) {
   min-height: 900px;
-  background-image: url("./assets/working.webp");
+  background-image: url("./assets/wallpaper/4.webp");
 }
 
 .container:nth-child(5) {
   min-height: 600px;
-  background-image: url("./assets/ebooks.webp");
+  background-image: url("./assets/wallpaper/5.webp");
 }
 
 .container:nth-child(6) {
   min-height: 900px;
-  background-image: url("./assets/footer.webp");
+  background-image: url("./assets/wallpaper/6.webp");
   justify-content: space-between;
 }
 
