@@ -314,7 +314,7 @@ main {
   font-size: 1rem;
   padding: 10px;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -338,23 +338,28 @@ main {
 }
 
 .background {
-  border-radius: 5px;
   background-color: var(--background-banner);
   color: var(--text);
-  padding: 30px;
   display: flex;
   justify-content: left;
   text-align: justify;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10px auto;
-
+  border-radius: 5px;
 }
 
-.background b {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
+.background .text {
+  padding: 0 30px 10px 30px;
+}
+
+.background summary {
+  padding: 10px;
+}
+
+details>.background {
+  animation: open-prices 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .scheme {
@@ -767,11 +772,6 @@ input.set {
   }
 }
 
-details>.background {
-  animation: open-prices 0.3s ease-in-out;
-  overflow: hidden;
-}
-
 @keyframes open-prices {
   0% {
     transform: scaleY(0);
@@ -871,6 +871,11 @@ details>.background {
 
   #controls label:hover {
     scale: 1.5;
+  }
+
+  .background summary:hover {
+    cursor: pointer;
+
   }
 
   .cr:hover {
