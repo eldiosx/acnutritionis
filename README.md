@@ -14,6 +14,6 @@ Features:
 
 - [X] Single HTML + CSS page
 - [x] Gecko, Blink, WebKit.
-- [X] Minimize JavaScript usage (Only for translation)
+- [X] NO JavaScript (Only for translation)
 
 ## Live server: [Preview](https://acnutritionis.com/)
