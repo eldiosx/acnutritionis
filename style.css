@@ -299,11 +299,6 @@ main {
   justify-content: space-between;
 }
 
-.left {
-  padding: 0 25px 0 25px;
-  text-align: left;
-}
-
 .button {
   display: block;
   margin: auto;
@@ -355,6 +350,7 @@ main {
 
 .background .text li {
   margin: 10px;
+  text-wrap: balance;
 }
 
 .background summary {
@@ -406,12 +402,18 @@ details>.background {
 }
 
 .aboutme {
-  padding-top: 30px;
+  padding: 20px;
 }
 
 .info {
   text-align: center;
   margin: auto;
+  text-wrap: balance;
+}
+
+.left {
+  text-align: left;
+  text-wrap: balance;
 }
 
 #selectplan {
@@ -429,7 +431,7 @@ details>.background {
   padding: 25px;
 }
 
-.mobile-image-container {
+.mobile-image {
   display: none;
 }
 
@@ -437,6 +439,8 @@ details>.background {
   display: block;
   max-width: 400px;
   max-height: 400px;
+  min-width: 400px;
+  min-height: 400px;
   margin: 0 50px 0 50px;
   border-radius: 50%;
   overflow: hidden;
@@ -445,7 +449,7 @@ details>.background {
 .alexito img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .fatcs {
@@ -483,7 +487,6 @@ input.set {
 }
 
 #slides {
-  margin: 10px auto;
   width: 80%;
   position: relative;
 }
@@ -655,6 +658,8 @@ input.set {
   .alexito {
     max-width: 250px;
     max-height: 250px;
+    min-width: 250px;
+    min-height: 250px;
     margin: 0 20px 0 20px;
   }
 
@@ -695,7 +700,7 @@ input.set {
   }
 
   .aboutme {
-    padding-top: 5px;
+    padding: 8px;
   }
 
   .mobile {
@@ -719,7 +724,7 @@ input.set {
     text-align: center;
   }
 
-  .mobile-image-container {
+  .mobile-image {
     display: block;
     max-width: 150px;
     max-height: 150px;
@@ -728,7 +733,7 @@ input.set {
     overflow: hidden;
   }
 
-  .mobile-image-container img {
+  .mobile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
