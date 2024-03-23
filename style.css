@@ -350,10 +350,18 @@ main {
   }
 }
 
+details>summary {
+  list-style: none;
+}
+
 .background summary {
   padding: 10px;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details>.background {
@@ -361,17 +369,8 @@ details>.background {
   overflow: hidden;
 }
 
-.scheme {
-  border-radius: 5px;
-  background-color: var(--background-banner);
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.mobile {
-  display: none;
+details[open] .icon {
+  transform: rotate(90deg);
 }
 
 .banner-empty {
@@ -705,10 +704,6 @@ input.set {
     padding: 8px;
     text-align: center;
 
-  }
-
-  .mobile {
-    display: flex;
   }
 
   .fatcs {
