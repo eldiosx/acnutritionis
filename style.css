@@ -96,11 +96,11 @@ Header
 nav {
   display: flex;
   gap: 40px;
+}
 
-  a {
-    color: var(--text);
-    cursor: pointer;
-  }
+nav a {
+  color: var(--text);
+  cursor: pointer;
 }
 
 .menu-button {
@@ -191,7 +191,6 @@ nav {
   }
 }
 
-
 /*Body*/
 
 #video-background {
@@ -247,14 +246,14 @@ main {
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 5% cover 20%;
+}
 
-  li {
-    font-size: 1rem;
-  }
+.container li {
+  font-size: 1rem;
+}
 
-  p {
-    font-size: 1rem;
-  }
+.container p {
+  font-size: 1rem;
 }
 
 @keyframes reveal {
@@ -309,10 +308,10 @@ main {
   width: 100%;
   max-width: 800px;
   text-align: center;
+}
 
-  a {
-    color: var(--text-button);
-  }
+.button a {
+  color: var(--text-button);
 }
 
 .banner {
@@ -341,13 +340,15 @@ main {
   margin: 10px auto;
   border-radius: 5px;
 
-  .text {
-    padding: 0 30px 10px 30px;
+}
 
-    li {
-      margin: 10px;
-    }
-  }
+.background .text {
+  padding: 0 30px 10px 30px;
+
+}
+
+.background .text li {
+  margin: 10px;
 }
 
 details>summary {
@@ -408,9 +409,10 @@ details[open] .icon {
   text-align: left;
   text-wrap: balance;
 
-  p {
-    margin-bottom: 20px;
-  }
+}
+
+.aboutme p {
+  margin-bottom: 20px;
 }
 
 .center {
@@ -538,12 +540,6 @@ input.set {
   display: flex;
   overflow: hidden;
   width: 300px;
-
-  img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-  }
 }
 
 .grid-contact {
@@ -564,21 +560,21 @@ input.set {
   padding: 15px;
   display: flex;
   justify-content: center;
+}
 
-  img {
-    width: 3rem;
-    text-align: center;
-  }
+.contact img {
+  width: 3rem;
+  text-align: center;
 }
 
 .contact2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  img {
-    width: 1.5rem;
-  }
+.contact2 img {
+  width: 1.5rem;
 }
 
 .footer {
@@ -615,14 +611,14 @@ input.set {
   animation: btn-top linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
+}
 
-  a {
-    text-align: center;
-    width: 100%;
-    color: var(--text-button);
-    font-size: 1.5rem;
-    margin: auto;
-  }
+.scroll-to-top a {
+  text-align: center;
+  width: 100%;
+  color: var(--text-button);
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 @keyframes btn-top {
@@ -813,29 +809,29 @@ input.set {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  p {
-    flex-grow: 1;
-  }
+.ebook p {
+  flex-grow: 1;
+}
 
-  .text-container {
-    display: flex;
-    border-radius: 5px;
-    align-items: center;
+.text-container {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
 
-    img {
-      color: var(--text);
-      width: 20px;
-      height: 20px;
-    }
-  }
+.text-container img {
+  color: var(--text);
+  width: 20px;
+  height: 20px;
+}
 
-  .image-container img {
-    width: 12rem;
-    height: 15rem;
-    position: relative;
-    background-size: cover;
-  }
+.image-container img {
+  width: 12rem;
+  height: 15rem;
+  position: relative;
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -853,17 +849,6 @@ input.set {
 
   .slider-ebooks {
     height: 250px;
-  }
-}
-
-@media (max-width: 500px) {
-  .slider-ebooks {
-    height: 200px;
-  }
-
-  .image-container img {
-    width: 10rem;
-    height: 12.5rem;
   }
 }
 
